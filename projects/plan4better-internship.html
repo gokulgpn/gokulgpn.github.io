@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plan4Better Internship · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/goat_platform.png" alt="Plan4Better GOAT Platform" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>GIS Internship — Plan4Better GmbH</h1>
+          <div class="proj-detail__tags">
+            <span>Internship</span><span>Accessibility</span><span>Isochrones</span><span>PostGIS</span><span>GOAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <p style="color:var(--muted); font-size:14px; margin-bottom:4px;">Plan4Better GmbH · Munich, Germany · January 2024 – September 2024</p>
+        <p style="color:var(--muted); font-size:13px;">Formal MSc Internship (Pflichtpraktikum) — RWTH Aachen University<br/>Supervised by Dr.-Ing. Andreas Witte &amp; Prof. Dr.-Ing. Tobias Kuhnimhof</p>
+
+        <h2>About Plan4Better &amp; GOAT</h2>
+        <p>Plan4Better is a Munich-based company specialising in data-driven planning tools for sustainable mobility and urban planning. Their flagship product, <strong>GOAT</strong>, is an open-source WebGIS platform for integrated urban and transport planning.</p>
+        <p>GOAT provides isochrone and multi-isochrone generation, public transport quality classes (ÖV-Güteklassen), Walkability Index calculation, local accessibility heatmaps, active mobility routing and average departure counts for public transport stops.</p>
+
+        <h2>Projects Undertaken</h2>
+        <p style="font-size:13px; color:var(--muted); font-style:italic;">Specific analysis outputs and client maps are not shown to respect client confidentiality.</p>
+
+        <div class="steps">
+          <div class="step">
+            <h3>Accessibility &amp; Walkability Analysis — Augsburg</h3>
+            <p>Population density analysis, public transport quality class assessment, POI accessibility analysis and heatmaps, and Walkability Index calculation across the study area. Outcome: actionable spatial insights for the city's mobility plan.</p>
+          </div>
+          <div class="step">
+            <h3>Parking Facility Accessibility — Amberg City Centre</h3>
+            <p>Catchment area calculation using driving and walking times, accessibility analysis from parking facilities to key POIs, and isochrone-based gap identification. Outcome: recommendations for optimising parking locations.</p>
+          </div>
+          <div class="step">
+            <h3>Supplemental Parking Analysis — POI to Car Park Walking Distances, Amberg</h3>
+            <p>Digitised parking locations from a PDF source in QGIS, independent walking-distance analysis from POIs to car parks, isochrones for multiple walking-time thresholds. Outcome: insights into alignment between parking and urban mobility needs.</p>
+          </div>
+          <div class="step">
+            <h3>Mobility Analysis — Hassels &amp; Reisholz, Düsseldorf</h3>
+            <p>Land use suitability assessment for shared mobility stations, public transport quality and accessibility evaluation, and scenario analysis for introducing new mobility hubs. Outcome: evidence base for e-scooter and e-bike expansion.</p>
+          </div>
+          <div class="step">
+            <h3>Pedestrian Network Isochrones vs. Circular Buffers — Augsburg</h3>
+            <p>Modified SQL scripts to implement pedestrian network isochrones within the GOAT backend, compared accessibility results under both approaches, and demonstrated measurable differences between Euclidean and network-based catchments. Outcome: more accurate accessibility measurements for transport planning.</p>
+          </div>
+        </div>
+
+        <h2>Technical Skills Applied</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;">
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">PostgreSQL</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">PostGIS</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Python</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">QGIS</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">GOAT</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Isochrones</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">ÖV-Güteklassen</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Walkability Index</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Accessibility Analysis</span>
+          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Mobility Planning</span>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

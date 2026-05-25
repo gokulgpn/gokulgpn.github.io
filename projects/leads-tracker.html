@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leads Tracker Chrome Extension · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/leads_tracker.jpeg" alt="Leads Tracker Chrome Extension" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Leads Tracker — Chrome Extension</h1>
+          <div class="proj-detail__tags">
+            <span>JavaScript</span><span>Chrome Extension</span><span>Web Development</span><span>Open Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>
+          A Chrome extension built to save and organise useful dataset URLs while researching European open datasets.
+          The project was developed as part of learning JavaScript through Scrimba, combining coursework with a practical,
+          real-world use case — building in public while learning.
+        </p>
+
+        <h2>Motivation</h2>
+        <p>
+          While exploring European open data sources for GIS and spatial analysis work, managing dozens of useful dataset
+          URLs across tabs became cumbersome. The Leads Tracker extension solves this by letting you save, view and
+          manage URLs directly from the browser toolbar — no switching apps needed.
+        </p>
+
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Save the Current Tab</h3>
+            <p>Click the extension icon and save the active tab's URL with one click. URLs are stored in Chrome's local storage so they persist across sessions.</p>
+          </div>
+          <div class="step">
+            <h3>Manual Input</h3>
+            <p>Type or paste any URL into the input field to save links you find outside the browser — from docs, emails or notes.</p>
+          </div>
+          <div class="step">
+            <h3>View &amp; Delete</h3>
+            <p>All saved URLs are listed as clickable links. Double-click the delete button to clear the entire list when you're done.</p>
+          </div>
+        </div>
+
+        <h2>Technologies</h2>
+        <ul>
+          <li>JavaScript (ES6) — core logic and DOM manipulation</li>
+          <li>Chrome Extensions API — <code>chrome.tabs</code> and <code>chrome.storage.local</code></li>
+          <li>HTML &amp; CSS — extension popup UI</li>
+          <li>Scrimba JavaScript course — learning framework</li>
+        </ul>
+
+        <h2>Project Repository</h2>
+        <p>
+          The project was pushed to GitHub and deployed through Netlify, giving it both a public live demo and a source-code repository.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:4px;">
+          <a class="btn btn--primary btn--sm" href="https://leads-tracker-app-gokul.netlify.app/" target="_blank" rel="noopener noreferrer">Open Live Website</a>
+          <a class="btn btn--primary btn--sm" href="https://github.com/gokulgpn/leads-tracker-app" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+        </div>
+
+        <h2>What I Learned</h2>
+        <p>
+          This project was my introduction to JavaScript and browser extension development. Key concepts covered:
+          working with the Chrome Extensions API, persisting data with localStorage, event-driven programming,
+          and building a small but fully functional browser tool from scratch.
+        </p>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Gokul Gopan</span>
+        <span class="muted">GIS Analyst · Munich</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

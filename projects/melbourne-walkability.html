@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melbourne Walkability — Intersection Density Analysis · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/melbourne_walkability.png" alt="Melbourne Walkability" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Melbourne Walkability — Intersection Density Analysis</h1>
+          <div class="proj-detail__tags">
+            <span>Intersection density</span><span>Walkability</span><span>GIS</span><span>Urban planning</span><span>Melbourne</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>Inspired by the <strong>Johannesburg Spatial Planning Framework 2040</strong> and guidance from Spatial Thoughts, this project conducts an <strong>intersection density analysis</strong> for Melbourne as a measure of walkability. Intersection density — the number of street intersections within a given area — is a key indicator of pedestrian connectivity, directly shaping how people move through a city on foot.</p>
+
+        <h2>Why Intersection Density?</h2>
+        <ul>
+          <li><strong>Enhanced Connectivity</strong> — Higher intersection density allows shorter walking distances between destinations, creating a more connected community</li>
+          <li><strong>Safety and Comfort</strong> — Well-connected neighbourhoods with dense intersections provide safer and more comfortable pedestrian experiences</li>
+          <li><strong>Vibrant Street Life</strong> — Intersections serve as social hubs, fostering a livelier sense of community</li>
+        </ul>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step"><h3>Pedestrian Network Data</h3><p>Loaded Melbourne's pedestrian network GeoJSON from the Melbourne Open Data Platform to form the base street layer for intersection counting.</p></div>
+          <div class="step"><h3>Land Use Areas (CLUE)</h3><p>Integrated Small Areas for Census of Land Use and Employment (CLUE) GeoJSON data from Melbourne Open Data Platform to define the spatial units for density calculation.</p></div>
+          <div class="step"><h3>Intersection Density Calculation</h3><p>Calculated the number of street intersections per CLUE area using GIS spatial analysis, producing a density surface that reveals walkable and less walkable parts of Melbourne.</p></div>
+        </div>
+
+        <h2>Data Sources</h2>
+        <ul>
+          <li>Pedestrian Network GeoJSON — Melbourne Open Data Platform</li>
+          <li>CLUE (Small Areas for Census of Land Use and Employment) GeoJSON — Melbourne Open Data Platform</li>
+          <li>Methodology inspired by Spatial Thoughts and the Johannesburg Spatial Planning Framework 2040</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Produced an intersection density map for Melbourne that quantifies walkability across the city's land use areas, equipping urban planners and policymakers with spatial evidence for creating more pedestrian-friendly, liveable neighbourhoods.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_gis-urbanplanning-spatialanalysis-activity-7078975181028741120-pDS8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">View LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blackjack Game · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a><a href="../projects/" class="active">Projects</a><a href="../experience.html">Experience</a><a href="../certifications.html">Certifications</a><a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a><a href="../projects/" class="active">Projects</a><a href="../experience.html">Experience</a><a href="../certifications.html">Certifications</a><a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/blackjack_app.png" alt="Blackjack Game" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Blackjack Game</h1>
+          <div class="proj-detail__tags"><span>JavaScript</span><span>Game Logic</span><span>HTML</span><span>Netlify</span></div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>A browser-based Blackjack game built to practice JavaScript fundamentals through a small, playable interface.</p>
+        <h2>What I Built</h2>
+        <div class="steps">
+          <div class="step"><h3>Game Flow</h3><p>Implemented the start-game and draw-card flow, tracking the player's cards, score and round state.</p></div>
+          <div class="step"><h3>Scoring Logic</h3><p>Used JavaScript conditionals and functions to calculate card totals and show win, loss or continue messages.</p></div>
+          <div class="step"><h3>Live Deployment</h3><p>Published the project from GitHub to Netlify so it can be opened and played directly in the browser.</p></div>
+        </div>
+        <h2>Tools &amp; Technologies</h2>
+        <ul><li>JavaScript for game logic and DOM updates</li><li>HTML and CSS for the game interface</li><li>GitHub for source control</li><li>Netlify for live deployment</li></ul>
+        <h2>Links</h2>
+        <p>Open the live project or review the code repository:</p>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--primary btn--sm" href="https://blackjackgokul.netlify.app/" target="_blank" rel="noopener noreferrer">Open Live Website</a>
+          <a class="btn btn--primary btn--sm" href="https://github.com/gokulgpn/blackjack_game" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

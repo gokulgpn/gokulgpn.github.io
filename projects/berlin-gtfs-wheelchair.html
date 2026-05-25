@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berlin GTFS Wheelchair Accessibility · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/berlin_gtfs_wheelchair.jpeg" alt="Berlin GTFS Wheelchair Accessibility" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Berlin GTFS Wheelchair Accessibility</h1>
+          <div class="proj-detail__tags">
+            <span>GTFS</span><span>Accessibility</span><span>QGIS</span><span>Foursquare Studio</span><span>Berlin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>
+          This project explores Berlin public transport stop accessibility using GTFS data sourced from Daten Berlin.
+          The work focuses on visualising the distribution of all transit stops and highlighting where wheelchair-accessible stops are more concentrated or more limited.
+        </p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>GTFS Stop Data</h3>
+            <p>Used Berlin GTFS stop attributes to separate all transit stops from stops marked as wheelchair accessible.</p>
+          </div>
+          <div class="step">
+            <h3>Heatmap Visualisation</h3>
+            <p>Created QGIS heatmaps to show the wider distribution and density of Berlin's public transport stops.</p>
+          </div>
+          <div class="step">
+            <h3>Wheelchair Stop Clusters</h3>
+            <p>Built varying-size point clusters in QGIS where larger clusters indicate more wheelchair-friendly stops and smaller clusters point to areas with fewer accessible stops.</p>
+          </div>
+          <div class="step">
+            <h3>Foursquare Studio Mapping</h3>
+            <p>Enhanced the final accessibility visualisation in Foursquare Studio to communicate mobility gaps clearly for public transport planning.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>GTFS public transport stop data from Daten Berlin</li>
+          <li>QGIS for heatmaps and wheelchair-accessible stop clusters</li>
+          <li>Foursquare Studio for final visualisation</li>
+          <li>Accessibility-focused data visualisation for urban mobility planning</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>
+          The maps highlight where wheelchair-accessible transit stops are concentrated and where smaller clusters suggest potential priorities for infrastructure improvements.
+          The output supports planning discussions around more inclusive public transport systems where mobility is treated as a right for all.
+        </p>
+
+        <h2>Link</h2>
+        <p><a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_gtfs-qgis-qgis-activity-7122084229856800768-aj-A" target="_blank" rel="noopener">View LinkedIn Post</a></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Gokul Gopan</span>
+        <span class="muted">GIS Analyst · Munich</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

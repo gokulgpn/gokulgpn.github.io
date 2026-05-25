@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QGIS Geometry Generator — RegioStar · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero proj-detail__hero--split">
+        <div class="proj-detail__split-img" aria-label="QGIS Geometry Generator before and after">
+          <img src="../assets/images/qgis_geometry_generator_1.jpeg" alt="QGIS Geometry Generator expression" />
+          <span aria-hidden="true">→</span>
+          <img src="../assets/images/qgis_geometry_generator_2.jpeg" alt="QGIS Geometry Generator output" />
+        </div>
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>QGIS Geometry Generator — RegioStar</h1>
+          <div class="proj-detail__tags">
+            <span>QGIS</span><span>Geometry generator</span><span>Cartography</span><span>RegioStar</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>This project uses QGIS Geometry Generator expressions to create dynamic, data-driven cartographic visualisations of Germany's RegioStar regional classification system. Geometry generators allow complex visual representations to be computed on-the-fly without creating new datasets.</p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step"><h3>RegioStar Data Integration</h3><p>Imported RegioStar classification data and joined to NUTS/municipality boundaries in QGIS.</p></div>
+          <div class="step"><h3>Geometry Generator Expressions</h3><p>Wrote custom QGIS geometry generator expressions to create proportional symbol overlays and dynamic polygon transformations driven by classification values.</p></div>
+          <div class="step"><h3>Map Composition</h3><p>Composed final map layout using QGIS Print Layout with multiple geometry-generated layers for a clean, multi-dimensional visualisation.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>QGIS Geometry Generator (QGIS Expression Engine)</li>
+          <li>RegioStar classification data (BBSR)</li>
+          <li>QGIS Print Layout for cartographic output</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Produced a visually distinctive cartographic output that communicates regional classification hierarchies more effectively than standard choropleth mapping, demonstrating advanced QGIS symbology techniques.</p>
+
+        <h2>Link</h2>
+        <p><a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_qgisuc2024-qgis-activity-7245273484182900737-LVn4" target="_blank" rel="noopener">View LinkedIn Post</a></p>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

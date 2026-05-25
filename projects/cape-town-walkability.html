@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cape Town Walkability · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/capetown_walkability.png" alt="Cape Town Walkability" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Cape Town Walkability</h1>
+          <div class="proj-detail__tags">
+            <span>Walkability Index</span><span>QGIS</span><span>Mobility Research</span><span>Transport Modelling</span><span>Cape Town</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>
+          This project was developed as part of the Mobility Research and Transport Modelling course at RWTH Aachen, focusing on walkability patterns across Cape Town.
+          A walkability index was computed and mapped in QGIS using core built-environment indicators including street connectivity, land use mix and dwelling density.
+        </p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step"><h3>Street Connectivity</h3><p>Analysed how connected the street network is across Cape Town neighbourhoods, highlighting areas with more direct and walkable movement options.</p></div>
+          <div class="step"><h3>Land Use Mix</h3><p>Evaluated the spatial mix of land-use categories to identify areas where everyday destinations are more likely to be reachable on foot.</p></div>
+          <div class="step"><h3>Dwelling Density</h3><p>Included dwelling density as a built-environment indicator linked to local activity, compactness and walkable neighbourhood structure.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>QGIS for spatial processing, walkability index calculation and map design</li>
+          <li>Course project for Mobility Research and Transport Modelling at RWTH Aachen</li>
+          <li>Street connectivity, land use mix and dwelling density indicators</li>
+          <li>Cartographic visualisation of walkability patterns across Cape Town</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>
+          The final map communicates differences in pedestrian-friendly urban form across Cape Town and demonstrates how QGIS can support walkability analysis for transport planning and mobility research.
+        </p>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

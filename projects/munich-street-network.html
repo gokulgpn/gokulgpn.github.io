@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Munich Minimalist Street Network · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/map_challenge_goat.jpeg" alt="Munich Minimalist Street Network Map" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Munich — Minimalist Street Network</h1>
+          <div class="proj-detail__tags">
+            <span>30DayMapChallenge</span><span>Day 14 · OpenStreetMap</span><span>GOAT</span><span>Munich</span><span>Minimalist</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>
+          A minimalist street network map of Munich created for <strong>Day 14 of the #30DayMapChallenge</strong>
+          on the theme of <em>OpenStreetMap</em>. The map strips away all labels, annotations and decorative
+          elements — leaving only the clean form of the city as defined by its road infrastructure.
+        </p>
+        <p style="font-style:italic; color:var(--muted);">
+          "I have always wanted to create a minimalist map, and today I finally made my first one using the
+          street network of Munich."
+        </p>
+
+        <h2>Concept</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Reduce to Essentials</h3>
+            <p>All labels, POIs and background layers removed. Only the street geometry remains — letting the urban form speak for itself without visual noise.</p>
+          </div>
+          <div class="step">
+            <h3>OpenStreetMap Data</h3>
+            <p>Road network extracted directly from OpenStreetMap via GOAT, covering Munich's full street hierarchy from motorways to pedestrian paths.</p>
+          </div>
+          <div class="step">
+            <h3>Urban Form Reading</h3>
+            <p>The resulting map reveals Munich's structure — the radial ring road system, the density gradient from inner city to suburbs, and how major corridors shape the city's skeleton.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Data</h2>
+        <ul>
+          <li>GOAT (Plan4Better) for street network extraction and visualisation</li>
+          <li>OpenStreetMap road network data</li>
+          <li>Minimalist cartographic styling — no labels, no fill, geometry only</li>
+        </ul>
+
+        <h2>Interactive Map</h2>
+        <p>Explore the live interactive version on the GOAT platform:</p>
+        <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/68f6a75b-1f23-480a-818f-601511a926e0" target="_blank" rel="noopener">Open Interactive Map</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Gokul Gopan</span>
+        <span class="muted">GIS Analyst · Munich</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

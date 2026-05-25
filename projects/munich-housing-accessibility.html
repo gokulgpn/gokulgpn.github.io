@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Affordable Housing Near Munich U-Bahn Stations · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/munich_accessibility_rent_dashboard.jpeg" alt="Affordable housing and U-Bahn accessibility dashboard in GOAT" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Affordable Housing Near Munich U-Bahn Stations</h1>
+          <div class="proj-detail__tags">
+            <span>GOAT</span><span>Workflows</span><span>Accessibility</span><span>Housing</span><span>Munich</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>
+          This project explores where relatively affordable rental areas in Munich overlap with 15-minute walking access to U-Bahn stations.
+          It was developed in GOAT using the Workflows feature, creating a browser-based spatial analysis and dashboard without relying on a traditional desktop GIS workflow.
+        </p>
+
+        <p>
+          The aim was to support a practical urban planning question: which areas of Munich offer a better combination of rental affordability and public transport accessibility?
+          The final dashboard allows users to explore rent levels, district patterns, and walking access to U-Bahn stations in one interactive map-based view.
+        </p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Data Preparation</h3>
+            <p>
+              Prepared Munich U-Bahn station data, postcode and district boundaries, and Zensus 2022 average cold rent grid data for spatial analysis inside GOAT.
+            </p>
+          </div>
+          <div class="step">
+            <h3>Accessibility Analysis</h3>
+            <p>
+              Created 15-minute walking isochrones around Munich U-Bahn stations using GOAT routing to identify areas within practical walking access of the metro network.
+            </p>
+          </div>
+          <div class="step">
+            <h3>Workflow Automation &amp; Dashboard</h3>
+            <p>
+              Built reproducible GOAT Workflows to clip, process, and join the spatial layers, then visualised the final results in an interactive dashboard with district and rent-budget filtering.
+            </p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>GOAT Workflows for browser-based spatial analysis automation</li>
+          <li>GOAT routing for 15-minute walking isochrones</li>
+          <li>GOAT dashboard tools for interactive map-based visualisation</li>
+          <li>Munich U-Bahn station data</li>
+          <li>Zensus 2022 average cold rent grid data</li>
+          <li>Postcode and district boundary layers</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>
+          The final dashboard shows where lower-rent areas intersect with strong U-Bahn walking accessibility in Munich.
+          It provides a clear spatial evidence base for discussions around housing affordability, public transport access, and integrated urban planning.
+        </p>
+
+        <h2>Interactive Dashboard</h2>
+        <p>Explore the live interactive version of this dashboard on the GOAT platform:</p>
+        <a class="btn btn--primary btn--sm" href="https://lnkd.in/eCgXCFg9" target="_blank" rel="noopener noreferrer">Open Interactive Dashboard</a>
+        
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Gokul Gopan</span>
+        <span class="muted">GIS Analyst · Munich</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

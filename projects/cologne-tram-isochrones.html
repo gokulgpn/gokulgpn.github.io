@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cologne Tram Isochrones · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/cologne_tram_isochrone.jpeg" alt="Cologne Tram Isochrones" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Cologne Tram Isochrones</h1>
+          <div class="proj-detail__tags">
+            <span>Isochrones</span><span>Network analysis</span><span>QGIS</span><span>Cartography</span><span>Cologne</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>As part of exploring QGIS for railway and transit projects — including analysing rail networks, optimising routes and mapping railway infrastructure — this project uses the <strong>OpenRouteService plugin in QGIS</strong> to generate isochrones showing the <strong>10-minute walking distance</strong> catchment of Cologne's tram network.</p>
+        <p>Isochrones offer valuable insights into travel times and accessibility, showing exactly which areas can be reached from tram stops within a given time — far more informative than simple circular buffers.</p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step"><h3>Railway Network Data</h3><p>Loaded Cologne's tram network data from <strong>Geofabrik</strong>, preparing stop locations as origin points for the service area analysis.</p></div>
+          <div class="step"><h3>Isochrone Generation</h3><p>Used the <strong>OpenRouteService plugin in QGIS</strong> to generate 10-minute walking isochrones from tram stops, based on the real pedestrian road network rather than straight-line distances.</p></div>
+          <div class="step"><h3>Accessibility Visualisation</h3><p>Mapped the resulting isochrones across Cologne to reveal which areas are within a 10-minute walk of the tram network and highlight connectivity gaps.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>QGIS with OpenRouteService plugin — isochrone / service area generation</li>
+          <li>Geofabrik — detailed railway and tram network data</li>
+          <li>Methodology based on Spatial Thoughts Service Area Analysis documentation</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Produced a visualisation of the areas within 10 minutes' walk of Cologne's tram network, demonstrating how isochrones can reveal real accessibility patterns and support decisions around urban mobility and transit planning.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_qgis-railways-geospatialanalysis-activity-7066405205377986561-1baU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">View LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scoreboard · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav"><a href="../index.html" class="nav-link">Home</a><a href="../projects/" class="active">Projects</a><a href="../experience.html">Experience</a><a href="../certifications.html">Certifications</a><a href="../contact.html">Contact</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a></nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden><nav class="drawer__nav"><a href="../index.html">Home</a><a href="../projects/" class="active">Projects</a><a href="../experience.html">Experience</a><a href="../certifications.html">Certifications</a><a href="../contact.html">Contact</a><a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a></nav></div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero"><img src="../assets/images/scoreboard_app.png" alt="Scoreboard App" /><div class="proj-detail__hero-overlay"></div><div class="proj-detail__hero-meta"><h1>Scoreboard</h1><div class="proj-detail__tags"><span>JavaScript</span><span>Web App</span><span>HTML/CSS</span><span>Netlify</span></div></div></div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>A compact scoreboard app built to practice JavaScript event handling, numeric state updates and simple interactive UI controls.</p>
+        <h2>What I Built</h2>
+        <div class="steps">
+          <div class="step"><h3>Score Controls</h3><p>Created controls for increasing scores and updating the displayed values immediately in the interface.</p></div>
+          <div class="step"><h3>UI State</h3><p>Used JavaScript variables and DOM rendering to keep the visual scoreboard aligned with the current score state.</p></div>
+          <div class="step"><h3>Deployment</h3><p>Connected the GitHub project to Netlify so every version can be published as a live web app.</p></div>
+        </div>
+        <h2>Tools &amp; Technologies</h2>
+        <ul><li>JavaScript for score logic</li><li>HTML and CSS for layout and styling</li><li>GitHub for version control</li><li>Netlify for hosting</li></ul>
+        <h2>Links</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;"><a class="btn btn--primary btn--sm" href="https://scoreboardgkl.netlify.app/" target="_blank" rel="noopener noreferrer">Open Live Website</a><a class="btn btn--primary btn--sm" href="https://github.com/gokulgpn/scoreboard" target="_blank" rel="noopener noreferrer">View GitHub Repository</a></div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

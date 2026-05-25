@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GTFS Analysis — Duisburg to Aachen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/gtfs_duisburg_aachen.png" alt="GTFS Duisburg to Aachen" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>GTFS Analysis — Duisburg to Aachen</h1>
+          <div class="proj-detail__tags">
+            <span>GTFS</span><span>Python</span><span>Public transport</span><span>NRW</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>An exploration into the world of GTFS as a newcomer to the format — experimenting with QGIS and the <strong>GTFS-GO plugin</strong> to load, render, and visualise transit routes and stops innovatively on a map. The centrepiece is a shortest-path analysis between <strong>Duisburg Hbf</strong> and <strong>Aachen Hbf</strong> using the NRW/AVV open GTFS feed.</p>
+        <p>Note: the visualisation represents the geometric shortest path only. It does not account for buffer time, dwell time, passenger waiting, or scheduled timetable — all labels are in German, reflecting the source data.</p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step"><h3>GTFS-GO Plugin</h3><p>Used the QGIS GTFS-GO plugin to import the AVV/NRW GTFS feed directly, rendering transit routes and stop points as styled vector layers in QGIS.</p></div>
+          <div class="step"><h3>Shortest Path Analysis</h3><p>Applied QGIS's built-in network analysis via <code>processing.run("native:shortestpathpointtopoint", {...})</code> to compute and visualise the shortest path from Duisburg Hbf to Aachen Hbf across the stop network.</p></div>
+          <div class="step"><h3>Cartographic Output</h3><p>Styled the resulting path layer against the full route network to clearly highlight the corridor, with stop labels retained in German as per the source data.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>QGIS with GTFS-GO plugin for feed import and rendering</li>
+          <li>QGIS Network Analysis — <code>native:shortestpathpointtopoint</code></li>
+          <li>AVV / NRW open GTFS data</li>
+        </ul>
+
+        <h2>Data Sources</h2>
+        <ul>
+          <li>AVV (Aachener Verkehrsverbund) GTFS open data</li>
+          <li>NRW regional GTFS feed</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Successfully rendered and visualised transit routes and stops from the NRW GTFS feed, and produced a clear shortest-path result between the two major hubs — a strong first step into GTFS-based spatial analysis in QGIS.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_datavisualization-mapping-avv-activity-7114368389678018560-0ntr" target="_blank" rel="noopener">View LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
