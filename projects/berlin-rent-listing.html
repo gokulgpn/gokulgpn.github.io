@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berlin Rental Listings — Accessibility &amp; Environmental Scoring · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/berlin_rent_listing.jpeg" alt="Berlin Rental Listings Accessibility and Environmental Scoring Map" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Berlin Rental Listings — Accessibility &amp; Environmental Scoring</h1>
+          <div class="proj-detail__tags">
+            <span>GOAT</span><span>Berlin</span><span>Accessibility</span><span>Real Estate</span><span>Environmental data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>A GOAT-based experiment that goes beyond the standard rental listing data — rent, size, rooms, energy class — to answer what living in a place will actually feel like. Around <strong>1,000 synthetic Berlin rental listings</strong> were enriched with two additional layers: a walkability-based <strong>accessibility score</strong> and <strong>environmental quality data</strong>, giving a more complete picture of each location's liveability.</p>
+        <p>The live interactive map lets you click any listing and immediately see not just the price, but how walkable the surroundings are and what the air and noise conditions look like.</p>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Accessibility Score — Gravity Model</h3>
+            <p>Computed a 15-minute walking catchment for each listing using GOAT's real pedestrian network. A <strong>gravity model</strong> weighted six POI categories by their importance to daily life:</p>
+            <ul style="margin-top:8px;">
+              <li><strong>Shopping</strong> (supermarkets, bakeries, groceries) — 25%</li>
+              <li><strong>Gastronomy</strong> (restaurants, cafés, bars) — 20%</li>
+              <li><strong>Health</strong> (pharmacies, GPs, hospitals) — 20%</li>
+              <li><strong>Services</strong> (post, bank, ATMs) — 15%</li>
+              <li><strong>Schools</strong> — 10%</li>
+              <li><strong>Kitas</strong> (daycare) — 10%</li>
+            </ul>
+          </div>
+          <div class="step">
+            <h3>Environmental Data Layer</h3>
+            <p>Added official environmental indicators per listing from Berlin's open data sources: <strong>NO₂</strong>, <strong>PM10</strong> and <strong>PM2.5</strong> concentrations from Berlin's air quality grid, and <strong>24-hour noise levels</strong> from the 2022 Berlin noise maps.</p>
+          </div>
+          <div class="step">
+            <h3>Interactive Map — GOAT</h3>
+            <p>Combined both layers into a single interactive GOAT map. Each listing is clickable and shows its accessibility score alongside environmental indicators — making the full liveability context visible at a glance.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — gravity model accessibility, pedestrian network, interactive map</li>
+          <li>Berlin official air quality grid — NO₂, PM10, PM2.5</li>
+          <li>Berlin noise maps 2022 — 24h noise levels</li>
+          <li>OpenStreetMap — POI data for accessibility scoring</li>
+          <li>Claude — visual design and map layout</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Demonstrated how open geodata and network-based accessibility tools can move rental decision-making beyond price and size — surfacing the environmental and walkability context that listings typically omit. A practical example of how GOAT can be applied outside traditional planning workflows.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/5e504010-b8f9-4312-b245-58b64635aa45" target="_blank" rel="noopener">Open Live Map</a>
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_realestate-gis-berlin-activity-7465658369245306880-iqoM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">View LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
