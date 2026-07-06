@@ -205,6 +205,22 @@ strong{font-weight:800}
   color: var(--ink);
 }
 
+.lang-toggle {
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  padding: 4px 10px !important;
+  border-radius: 20px !important;
+  border: 1.5px solid rgba(15,118,110,0.45) !important;
+  color: var(--teal) !important;
+  letter-spacing: 0.06em;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.lang-toggle:hover {
+  background: var(--teal) !important;
+  color: #fff !important;
+  border-color: var(--teal) !important;
+}
+
 .menu{
   display:none;
   background:transparent;

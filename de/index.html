@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gokul Gopan · GIS-Analyst</title>
+  <meta name="description" content="GIS-Analyst mit Schwerpunkt räumliche Datenverarbeitung, GTFS-Analyse, Geodatenpipelines und Mobilitätsanalytik mit QGIS, PostGIS, Python und GDAL." />
+  <meta name="theme-color" content="#0b1220"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="top">
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Startseite">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Gokul Gopan</span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="nav-link active">Startseite</a>
+        <a href="projekte/" class="nav-link">Projekte</a>
+        <a href="erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../contact.html" class="nav-link">Kontakt</a>
+        <a href="../index.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+        <a class="btn btn--primary btn--sm" href="#cv">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav" aria-label="Mobile Navigation">
+        <a href="index.html" class="active">Startseite</a>
+        <a href="projekte/">Projekte</a>
+        <a href="erfahrung.html">Erfahrung</a>
+        <a href="zertifikate.html">Zertifikate</a>
+        <a href="../contact.html">Kontakt</a>
+        <a href="../index.html">EN</a>
+        <a href="#cv" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker glass">GIS-Analyst · Geodaten &amp; Mobilität · München</p>
+          <h1>Geodatenverarbeitung, <span class="grad">räumliche Analyse</span> und reproduzierbare GIS-Workflows.</h1>
+          <p class="lede">
+            Ich erstelle Erreichbarkeits- und Fußgänglichkeitsanalysen, verarbeite GTFS- und offene Geodaten und entwickle
+            netzwerkbasierte Indikatoren sowie Geoprozessierungspipelines mit <strong>QGIS</strong>, <strong>GOAT</strong>, <strong>PostGIS</strong>, <strong>Python</strong> und <strong>GDAL</strong> —
+            und übersetze komplexe Geodaten in verständliche Karten und Berichte für Mobilitäts- und Planungsprojekte.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="../assets/GOKUL-CV-DE.pdf" target="_blank" rel="noopener">
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3v10m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 15v4h14v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              Lebenslauf (DE)
+            </a>
+            <a class="btn btn--primary" href="../assets/GOKUL-CV.pdf" target="_blank" rel="noopener">
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3v10m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 15v4h14v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              CV (EN)
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/gokulgpn" target="_blank" rel="noopener">
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.77.6-3.35-1.17-3.35-1.17-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.64-1.34-2.21-.25-4.53-1.1-4.53-4.92 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.32 4.67-4.54 4.92.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+              </span>
+              GitHub
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/gopangokul" target="_blank" rel="noopener">
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.42v1.56h.05c.48-.9 1.66-1.86 3.41-1.86 3.65 0 4.32 2.4 4.32 5.52v6.23ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm-1.78 13.02h3.56V9H3.56v11.45Z"/></svg>
+              </span>
+              LinkedIn
+            </a>
+          </div>
+          <div class="metrics">
+            <div class="metric glass">
+              <div class="metric__value">Plan4Better</div>
+              <div class="metric__label">GIS-Analyst (2024–heute)</div>
+            </div>
+            <div class="metric glass">
+              <div class="metric__value">QGIS · PostGIS</div>
+              <div class="metric__label">Räumliche Workflows &amp; Datenbanken</div>
+            </div>
+            <div class="metric glass">
+              <div class="metric__value">Python · GDAL</div>
+              <div class="metric__label">Automatisierung &amp; Analyse</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card glass">
+          <div class="profile">
+            <img src="../assets/images/profile.jpeg" alt="Porträt von Gokul Gopan" class="profile__img" />
+            <div class="profile__meta">
+              <div class="profile__name">Gokul Gopan</div>
+              <div class="profile__role">GIS-Analyst · Geodaten &amp; Mobilität</div>
+            </div>
+          </div>
+          <div class="quick glass">
+            <div class="quick__item">
+              <span class="quick__k">Standort</span>
+              <span class="quick__v">München</span>
+            </div>
+            <div class="quick__item">
+              <span class="quick__k">E-Mail</span>
+              <a class="quick__v link" href="mailto:gokulgpn70@gmail.com">gokulgpn70@gmail.com</a>
+            </div>
+            <div class="quick__item">
+              <span class="quick__k">Schwerpunkt</span>
+              <span class="quick__v">Geodatenanalyse · Erreichbarkeit · Geoprozessierung · Mobilitätsplanung</span>
+            </div>
+          </div>
+          <a class="btn btn--block" href="projekte/">
+            Projekte ansehen
+            <span class="btn__icon btn__icon--right" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Über mich -->
+    <section class="section">
+      <div class="container grid2">
+        <div>
+          <h2>Über mich</h2>
+          <p>
+            Ich bin GIS-Analyst in München mit Erfahrung in räumlicher Datenverarbeitung, Kartografie, GTFS-Analyse sowie Erreichbarkeits- und Mobilitätsstudien.
+            Derzeit arbeite ich bei der Plan4Better GmbH, wo ich Mobilitäts- und Planungsprojekte mit netzwerkbasierten Indikatoren,
+            Isochronen, Einzugsbereichen und Geodatenpipelines unterstütze.
+          </p>
+          <p>
+            Meine technische Arbeit umfasst QGIS, PostgreSQL/PostGIS, GDAL/OGR und Python-basierte Geoprozessierung (GeoPandas, Pandas, Shapely, Folium),
+            einschließlich GTFS-Feed-Verarbeitung, API-basierter Datenerhebung, Standortoptimierungsmodellierung und reproduzierbarer Raumanalyse-Workflows.
+            Parallel dazu absolviere ich meinen Master in Verkehrsingenieurwesen und Mobilität an der RWTH Aachen.
+          </p>
+        </div>
+        <aside class="panel glass">
+          <div class="panel__title">Auf einen Blick</div>
+          <ul class="list">
+            <li><strong>Kernkompetenzen:</strong> QGIS, PostGIS/PostgreSQL, Python (GeoPandas, Pandas, Folium), GDAL/OGR</li>
+            <li><strong>Tätigkeiten:</strong> GTFS-Verarbeitung, Geoprozessierungspipelines, Netzwerkanalyse, Erreichbarkeitsindikatoren</li>
+            <li><strong>Studium:</strong> MSc Verkehrsingenieurwesen &amp; Mobilität — RWTH Aachen</li>
+            <li><strong>Sprachen:</strong> Deutsch (Gut), Englisch (Fließend), Malayalam (Muttersprache)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Kenntnisse -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head"><h2>Fachliche Kenntnisse</h2></div>
+        <div class="skillgrid">
+          <div class="skill glass">
+            <h3>GIS &amp; Räumliche Analyse</h3>
+            <p>QGIS, Kartografie, Raumanalyse, Georeferenzierung, Digitalisierung, Verschneidungen &amp; Geoprozessierung; Isochronen, Einzugsbereiche und Erreichbarkeitsindikatoren.</p>
+          </div>
+          <div class="skill glass">
+            <h3>Geodatenbanken</h3>
+            <p>PostgreSQL/PostGIS; räumliche Datenvorbereitung, Integration, Qualitätsprüfung und reproduzierbare Geodatenpipelines.</p>
+          </div>
+          <div class="skill glass">
+            <h3>Python &amp; Geoprozessierung</h3>
+            <p>Python für räumliche Analysen und Automatisierung — GeoPandas, Pandas, Shapely und GDAL/OGR für Datenverarbeitung und Reporting.</p>
+          </div>
+          <div class="skill glass">
+            <h3>GTFS &amp; ÖPNV-Daten</h3>
+            <p>Verarbeitung von GTFS-Feeds, Visualisierung von Haltestellen, Taktanalysen, kürzeste-Wege-Routing und Barrierefreiheitskartierung.</p>
+          </div>
+          <div class="skill glass">
+            <h3>Mobilität &amp; Erreichbarkeit</h3>
+            <p>Fußgänglichkeit, Kreuzungsdichte und Erreichbarkeitsanalyse, netzwerkbasierte Mobilitätsindikatoren, Isochronen und ÖPNV-Abdeckung.</p>
+          </div>
+          <div class="skill glass">
+            <h3>Kartografie &amp; Berichtswesen</h3>
+            <p>Kartenproduktion für Planungsstudien, technisches Berichtswesen, Kommunikation mit kommunalen und regionalen Stakeholdern.</p>
+          </div>
+          <div class="skill glass">
+            <h3>Frontend &amp; Deployment</h3>
+            <p>HTML, CSS und JavaScript-Projekte, veröffentlicht über GitHub und Netlify als Live-Web-Demos.</p>
+          </div>
+          <div class="skill glass">
+            <h3>Zertifikate</h3>
+            <p>Einführung in QGIS, Advanced QGIS, PyQGIS Masterclass, Python für Raumanalyse, Mastering GDAL Tools — alle via Spatial Thoughts.</p>
+          </div>
+        </div>
+        <div class="chips" style="margin-top:14px;">
+          <span class="glass">QGIS</span>
+          <span class="glass">PostGIS</span>
+          <span class="glass">PostgreSQL</span>
+          <span class="glass">Python</span>
+          <span class="glass">GeoPandas</span>
+          <span class="glass">Shapely</span>
+          <span class="glass">GDAL/OGR</span>
+          <span class="glass">GOAT</span>
+          <span class="glass">GTFS</span>
+          <span class="glass">Folium</span>
+          <span class="glass">Erreichbarkeitsanalyse</span>
+          <span class="glass">Isochronen</span>
+          <span class="glass">Netzwerkanalyse</span>
+          <span class="glass">Standortoptimierung</span>
+          <span class="glass">Technisches Schreiben</span>
+          <span class="glass">JavaScript</span>
+          <span class="glass">HTML/CSS</span>
+          <span class="glass">GitHub</span>
+          <span class="glass">Netlify</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ausgewählte Projekte -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Ausgewählte Projekte</h2>
+          <a href="projekte/" class="btn btn--sm btn--ghost">Alle Projekte ansehen →</a>
+        </div>
+        <div class="cards">
+          <a href="../projects/rheinbach-waermeplanung.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>Rheinbach Kommunale Wärmeplanung</h3>
+              <span class="pill glass">Rheinbach · 2026</span>
+            </div>
+            <p>GOAT-Dashboard für die kommunale Wärmeplanung in Rheinbach, NRW — gebäudegenaue Wärmebedarfsanalyse, Gasabhängigkeit und Wärmepumpeneignung auf Basis von LANUV-Offendaten.</p>
+            <ul class="tags">
+              <li class="glass">Wärmeplanung</li><li class="glass">GOAT</li><li class="glass">NRW</li><li class="glass">Plan4Better</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/hannover-ev-charging.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>Hannover — Erreichbarkeit von Ladesäulen</h3>
+              <span class="pill glass">Hannover · 2026</span>
+            </div>
+            <p>Gebäudegenaue Fußweganalyse zu 1.049 öffentlichen Ladesäulen in Hannover — 92 % der Wohngebäude innerhalb von 10 Gehminuten, 6.686 ohne Fußwegverbindung.</p>
+            <ul class="tags">
+              <li class="glass">Ladeinfrastruktur</li><li class="glass">GOAT</li><li class="glass">Hannover</li><li class="glass">Erreichbarkeit</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/munich-drinking-fountains.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>München — Erreichbarkeit von Trinkbrunnen</h3>
+              <span class="pill glass">München · 2026</span>
+            </div>
+            <p>Netzwerkbasierte Fußwegeinzugsbereiche, Landoberflächentemperatur und Bevölkerungsdaten in GOAT kombiniert — 299 Prioritätszonen für neue Trinkwasserinfrastruktur identifiziert.</p>
+            <ul class="tags">
+              <li class="glass">Erreichbarkeit</li><li class="glass">GOAT</li><li class="glass">München</li><li class="glass">Hitze</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/schwabach-farmland.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>322 ha bebaubare Ackerflächen um Schwabach</h3>
+              <span class="pill glass">Schwabach · 2026</span>
+            </div>
+            <p>Multikriterielle Raumanalyse zur Identifikation ÖPNV-erschlossener, wohnraumnaher Ackerflächen in Schwabach — auf Basis von ALKIS, GTFS und OSM in GOAT.</p>
+            <ul class="tags">
+              <li class="glass">Flächennutzung</li><li class="glass">GOAT</li><li class="glass">Bayern</li><li class="glass">Wohnungsbau</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/munich-housing-accessibility.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>Münchner Wohnstandorterreichbarkeit</h3>
+              <span class="pill glass">München · 2024</span>
+            </div>
+            <p>Dashboard zur Verknüpfung von Mietpreisindikatoren mit ÖPNV-Erreichbarkeitsdaten für Münchner Stadtgebiete.</p>
+            <ul class="tags">
+              <li class="glass">Erreichbarkeit</li><li class="glass">Dashboard</li><li class="glass">GOAT</li><li class="glass">Plan4Better</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/cologne-accessibility-dashboard.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>Köln — Supermarkterreichbarkeit</h3>
+              <span class="pill glass">Köln · 2024</span>
+            </div>
+            <p>H3-Hexagongitter-Karte der Fußwegerreichbarkeit zu Supermärkten in Köln mit dem Closest-Average-Indikator in GOAT.</p>
+            <ul class="tags">
+              <li class="glass">Erreichbarkeit</li><li class="glass">Hexagone</li><li class="glass">GOAT</li><li class="glass">Plan4Better</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/rhein-neckar-charging.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>Rhein-Neckar — Ladeinfrastruktur</h3>
+              <span class="pill glass">Rhein-Neckar · 2024</span>
+            </div>
+            <p>Interaktives GOAT-Dashboard zur Fußwegerreichbarkeit öffentlicher Ladesäulen im Rhein-Neckar-Kreis — differenziert nach Ladetyp und Gebäudetyp (MFH/EFH).</p>
+            <ul class="tags">
+              <li class="glass">Ladeinfrastruktur</li><li class="glass">Erreichbarkeit</li><li class="glass">GOAT</li><li class="glass">Dashboard</li>
+            </ul>
+          </article>
+          </a>
+          <a href="../projects/cape-town-walkability.html" style="text-decoration:none; color:inherit;">
+          <article class="card glass">
+            <div class="card__top">
+              <h3>Kapstadt — Walkability-Index</h3>
+              <span class="pill glass">Kapstadt · 2023</span>
+            </div>
+            <p>QGIS-basierter Walkability-Index für Kapstadt, entwickelt im Rahmen des Kurses Mobilitätsforschung und Verkehrsmodellierung an der RWTH Aachen.</p>
+            <ul class="tags">
+              <li class="glass">Walkability</li><li class="glass">QGIS</li><li class="glass">RWTH Aachen</li><li class="glass">Raumanalyse</li>
+            </ul>
+          </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section section--alt">
+      <div class="container grid2">
+        <div class="panel glass">
+          <div class="panel__title">Kontakt</div>
+          <p>Für Stellen und Kooperationen im Bereich GIS, Mobilitätsanalytik und Planungsunterstützung.</p>
+          <div class="contact">
+            <a class="contact__row glass" href="mailto:gokulgpn70@gmail.com">
+              <span class="icon glass" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>gokulgpn70@gmail.com</span>
+            </a>
+            <a class="contact__row glass" href="https://www.linkedin.com/in/gopangokul/" target="_blank" rel="noopener">
+              <span class="icon glass" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.42v1.56h.05c.48-.9 1.66-1.86 3.41-1.86 3.65 0 4.32 2.4 4.32 5.52v6.23ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm-1.78 13.02h3.56V9H3.56v11.45Z"/></svg>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="contact__row glass" href="https://github.com/gokulgpn" target="_blank" rel="noopener">
+              <span class="icon glass" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.77.6-3.35-1.17-3.35-1.17-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.64-1.34-2.21-.25-4.53-1.1-4.53-4.92 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.32 4.67-4.54 4.92.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <aside id="cv" class="panel panel--accent glass">
+          <div class="panel__title">Lebenslauf</div>
+          <p>Lebenslauf als PDF — auf Deutsch und Englisch verfügbar.</p>
+          <a class="btn btn--primary btn--block" href="../assets/GOKUL-CV-DE.pdf" target="_blank" rel="noopener">Lebenslauf herunterladen — Deutsch</a>
+          <a class="btn btn--primary btn--block" href="../assets/GOKUL-CV.pdf" target="_blank" rel="noopener" style="margin-top:8px;">Download CV — English</a>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Gokul Gopan</span>
+        <span class="muted">GIS-Analyst · München</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
