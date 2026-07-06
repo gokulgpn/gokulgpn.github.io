@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hannover EV Charging Accessibility · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/ev_infrastruktur_hannover.jpeg" alt="Hannover EV Charging Accessibility Dashboard" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Hannover EV Charging Accessibility</h1>
+          <div class="proj-detail__tags">
+            <span>EV Charging</span><span>GOAT</span><span>Hannover</span><span>Accessibility</span><span>Plan4Better</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>How far do residents actually walk to reach a public EV charger in <strong>Hannover</strong>? This GOAT dashboard answers that at building level — mapping walking-distance access to every public charging station across the entire city, from every residential building.</p>
+        <p>The analysis uses the official <strong>Ladesäulenregister</strong> from Bundesnetzagentur (April 2026) for charger locations and covers both AC and DC, Normalladung and Schnellladung. But the actual point of this project is the <strong>workflow</strong>: the routing, isochrone generation, residential building intersection, and SQL queries are built once in GOAT and are immediately replicable for any German city — the workflow is the reproducible unit, not the city.</p>
+
+        <h2>Key Numbers</h2>
+        <ul>
+          <li><strong>86,112</strong> residential buildings (Wohngebäude) analysed</li>
+          <li><strong>1,049</strong> public charging stations — Ladesäulenregister, Bundesnetzagentur, April 2026</li>
+          <li><strong>92 %</strong> of residential buildings within a 10-minute walk of a charger</li>
+          <li><strong>65 %</strong> within a 6-minute walk</li>
+          <li><strong>6,686</strong> buildings with no charger within walking range</li>
+        </ul>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Charging Station Data — Ladesäulenregister</h3>
+            <p>Loaded all <strong>1,049 public charging stations</strong> in Hannover from the Bundesnetzagentur Ladesäulenregister (April 2026), covering both AC and DC stations, and both Normalladung (standard) and Schnellladung (fast charging) types.</p>
+          </div>
+          <div class="step">
+            <h3>Network-Based Walking Isochrones</h3>
+            <p>Generated network-based walking catchments for each charging station in GOAT — using actual street routing rather than straight-line buffers — to produce accurate walking-time zones at 6 and 10 minutes.</p>
+          </div>
+          <div class="step">
+            <h3>Building-Level Intersection</h3>
+            <p>Intersected the isochrones with <strong>86,112 residential buildings</strong> (Wohngebäude) to determine, at building level, which residents are within 6 minutes, within 10 minutes, or outside walking range entirely — giving a granular picture of coverage gaps across Hannover.</p>
+          </div>
+          <div class="step">
+            <h3>Replicable Workflow</h3>
+            <p>The entire pipeline — routing, isochrone generation, building intersection, SQL queries — is one workflow in GOAT. No rebuilding from scratch. Point it at a different city and the results update. The workflow is the reproducible unit.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — network routing, isochrone generation, building intersection, dashboard</li>
+          <li>Ladesäulenregister, Bundesnetzagentur — public EV charger locations (April 2026)</li>
+          <li>Wohngebäude dataset — residential building footprints for Hannover</li>
+          <li>SQL — queries tying the routing and intersection results together</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Delivered a building-level EV charging accessibility dashboard for Hannover showing that while 92 % of residential buildings are within a 10-minute walk of a public charger, 6,686 buildings remain entirely outside walking range — and pinpointing exactly where those gaps are. The workflow is fully replicable for any German city using the same open data sources.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/f5f6c641-7296-4025-b344-2b5bb0d19173" target="_blank" rel="noopener">Open Live Dashboard</a>
+          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_hannover-hannover-goat-share-7479808271785066496-e4_b/" target="_blank" rel="noopener">LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

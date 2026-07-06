@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Munich Drinking Fountain Accessibility · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/drinking_fountain_accessibility.png" alt="Munich Drinking Fountain Accessibility Dashboard" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Munich Drinking Fountain Accessibility</h1>
+          <div class="proj-detail__tags">
+            <span>Accessibility</span><span>GOAT</span><span>Munich</span><span>Heat</span><span>Plan4Better</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>With summer temperatures rising across Europe, this project explores a practical urban planning question: <strong>where should new public drinking water fountains be located?</strong> Using <strong>GOAT (Plan4Better)</strong>, I combined open data on Munich's existing 116 public drinking water fountains with network-based walking catchments, population data, and 2025 satellite-derived land surface temperatures to identify where infrastructure gaps have the greatest impact on residents.</p>
+
+        <h2>Key Numbers</h2>
+        <ul>
+          <li><strong>116</strong> existing public drinking water fountains in Munich (Landeshauptstadt München)</li>
+          <li><strong>44 %</strong> of Munich's population within a 10-minute walking catchment of a fountain</li>
+          <li><strong>299</strong> priority zones identified for new infrastructure</li>
+          <li><strong>172,465 residents</strong> in priority zones with combined heat exposure and accessibility gaps</li>
+        </ul>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Existing Fountain Network</h3>
+            <p>Loaded the official dataset of <strong>116 public drinking water fountains</strong> from Landeshauptstadt München as the baseline layer, providing a current picture of where infrastructure already exists across the city.</p>
+          </div>
+          <div class="step">
+            <h3>Network-Based Walking Catchments</h3>
+            <p>Generated <strong>10-minute walking catchments</strong> for each fountain using GOAT's network-based accessibility analysis — revealing that only <strong>44 % of Munich's population</strong> currently lives within walking reach of a public fountain.</p>
+          </div>
+          <div class="step">
+            <h3>Heat Exposure Layer</h3>
+            <p>Integrated <strong>2025 land surface temperature (LST)</strong> data derived from satellite imagery to identify areas where outdoor heat exposure is highest, flagging zones where a fountain would have the greatest public health benefit.</p>
+          </div>
+          <div class="step">
+            <h3>Priority Zone Identification</h3>
+            <p>Combined population density, heat exposure (LST &gt; 30 °C), and accessibility gaps to identify <strong>299 priority zones</strong> — areas where new drinking water infrastructure would serve the most heat-exposed residents currently outside any walking catchment.</p>
+          </div>
+        </div>
+
+        <div class="analysis-transition" aria-label="From raw fountain locations to accessibility and heat analysis">
+          <figure>
+            <img src="../assets/images/drinking_fountain_accessibility_02.jpeg" alt="Existing public drinking water fountains in Munich" />
+            <figcaption>Raw fountain locations</figcaption>
+          </figure>
+          <span aria-hidden="true">↓</span>
+          <figure>
+            <img src="../assets/images/drinking_fountain_accessibility.png" alt="Munich drinking fountain accessibility, heat exposure and priority zones" />
+            <figcaption>Accessibility, heat and priority zones</figcaption>
+          </figure>
+        </div>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — network-based accessibility analysis, interactive dashboard</li>
+          <li>Landeshauptstadt München open data — public drinking fountain locations</li>
+          <li>Land Surface Temperature (LST) 2025 — satellite-derived heat exposure</li>
+          <li>Population density data — for prioritisation of underserved zones</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>Transformed raw open data into a planning tool that shows not just where fountains exist, but where they are missing the most — combining heat stress and population density to give city planners a clear, evidence-based picture of where new drinking water infrastructure would have the greatest impact on residents' quality of life during hot summers.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="http://goat.plan4better.de/map/public/f3a0288a-caea-4252-a188-a8c30b5e1ac6" target="_blank" rel="noopener">Open Live Dashboard</a>
+          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_gis-urbanplanning-opendata-activity-7475412424020504577-drm1" target="_blank" rel="noopener">LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

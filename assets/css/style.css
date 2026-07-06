@@ -932,6 +932,44 @@ strong{font-weight:800}
   margin: 16px 0;
 }
 
+.analysis-transition {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 12px;
+  margin: 32px 0;
+}
+.analysis-transition figure {
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}
+.analysis-transition img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  background: rgba(15,23,42,.04);
+  margin: 0;
+}
+.analysis-transition span {
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(47,107,79,.96), rgba(15,118,110,.92));
+  font-weight: 900;
+  box-shadow: var(--shadow2);
+}
+.analysis-transition figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
 /* Timeline steps inside project detail */
 .steps { display: grid; gap: 14px; margin: 14px 0; }
 .step {
