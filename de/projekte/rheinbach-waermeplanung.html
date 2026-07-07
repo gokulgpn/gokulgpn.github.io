@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rheinbach Kommunale Wärmeplanung · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/rheinbach-waermeplanung.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/rheinbach-waermeplanung.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/waermebedarf_rheinbach.jpeg" alt="Rheinbach Kommunale Wärmeplanung Dashboard" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Rheinbach Kommunale Wärmeplanung</h1>
+          <div class="proj-detail__tags">
+            <span>Wärmeplanung</span><span>GOAT</span><span>NRW</span><span>Open Data</span><span>Plan4Better</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Ein interaktives <strong>GOAT-Dashboard</strong> für die kommunale Wärmeplanung in <strong>Rheinbach, NRW</strong>, aufgebaut auf offenen Daten der <strong>LANUV Wärmestudie NRW</strong>. Das Ziel war es, gebäudegenaue Wärmebedarfsdaten für kommunale Planer wirklich nutzbar zu machen — nicht nur auf einer Karte darzustellen, sondern die relevanten Indikatoren in einer übersichtlichen, klickbaren Oberfläche zugänglich zu machen.</p>
+        <p>Nutzer können auf jedes Gebäude klicken und sehen sofort die wichtigsten Wärmeplanungs-Indikatoren in einem benutzerdefinierten HTML-Popup — wodurch die Daten für Nicht-GIS-Beteiligte erheblich leichter kommunizierbar sind als eine Standard-Attributtabelle. Der Workflow basiert vollständig auf offenen Daten und kann für jede NRW-Gemeinde durch Anpassung des AGS-Codes repliziert werden.</p>
+
+        <h2>Wichtige Zahlen</h2>
+        <ul>
+          <li><strong>14.961</strong> beheizte Wohngebäude analysiert</li>
+          <li><strong>922</strong> Stadtblöcke mit Wärmebedarfsdaten</li>
+          <li><strong>38,7 %</strong> der Stadtblöcke überwiegend mit Gas beheizt</li>
+          <li><strong>18.635 kWh/a</strong> durchschnittlicher Wärmebedarf pro Gebäude</li>
+        </ul>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Datenquelle — LANUV Wärmestudie NRW</h3>
+            <p>Laden der gebäudegenauen Wärmebedarfsdaten aus dem offenen Datensatz der <strong>LANUV Wärmestudie NRW</strong>. Die Daten umfassen beheizte Wohngebäude in ganz NRW mit Raumgeometrie, Energiebedarf und Gebäudeeigenschaften — per AGS-Code abrufbar und damit auf andere Gemeinden übertragbar.</p>
+          </div>
+          <div class="step">
+            <h3>Gebäudegenaue Indikatoren</h3>
+            <p>Für jedes Gebäude zeigt das Dashboard: <strong>Gesamtwärmebedarf</strong>, Aufteilung in <strong>Raumwärme</strong> und <strong>Warmwasser</strong>, <strong>Nutzfläche</strong>, <strong>Gebäudehöhe</strong>, <strong>Sanierungsklasse</strong>, <strong>Wärmepumpen-Eignung</strong> sowie <strong>JAZ-Werte</strong> für Luft-Wärmepumpe und Geo-Wärmepumpe — auf einen Klick das vollständige Bild.</p>
+          </div>
+          <div class="step">
+            <h3>Benutzerdefiniertes HTML-Popup</h3>
+            <p>Das GOAT-Feature-Info-Popup wurde mit HTML individuell gestaltet, sodass das Layout strukturiert und lesbar ist — eher einem Planungsbericht als einem rohen GIS-Attributausgabe ähnelnd. Das erleichtert die Kommunikation erheblich, wenn kommunale Kunden keine GIS-Anwender sind.</p>
+          </div>
+          <div class="step">
+            <h3>Stadtblock-Aggregation</h3>
+            <p>Aggregation der Gebäudedaten zu <strong>922 Stadtblöcken</strong> für die quartiersbezogene Wärmebedarfskartierung und Identifikation der Blöcke mit der höchsten Gasabhängigkeit — als Grundlage für die Priorisierung von Sanierungsmaßnahmen und Wärmenetzplanung.</p>
+          </div>
+        </div>
+
+        <h2>Dashboard-Funktionen</h2>
+        <ul>
+          <li>Klick auf jedes Gebäude zeigt alle Wärmeplanungs-Indikatoren in einem übersichtlichen Popup</li>
+          <li>Gesamtwärmebedarf, Raumwärme und Warmwasser-Aufteilung pro Gebäude</li>
+          <li>Nutzfläche, Gebäudehöhe und Sanierungsklasse auf einen Blick</li>
+          <li>Wärmepumpen-Eignung mit JAZ-Werten für Luft-WP und Geo-WP</li>
+          <li>Stadtblock-Ebene zur Darstellung der Gasabhängigkeitsverteilung in Rheinbach</li>
+          <li>Replizierbar für jede NRW-Gemeinde durch Anpassung des AGS-Codes</li>
+        </ul>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — Dashboard, Kartenvisualisierung und benutzerdefiniertes Popup-Design</li>
+          <li>LANUV Wärmestudie NRW — offene Datenquelle für gebäudegenauen Wärmebedarf</li>
+          <li>HTML — individuelles Popup-Layout für die Kommunikation mit Nicht-GIS-Beteiligten</li>
+          <li>AGS-basierter Workflow für die Übertragbarkeit auf NRW-Gemeinden</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Geliefert wurde ein vollständig interaktives kommunales Wärmeplanungs-Dashboard für Rheinbach, das LANUV-Offendaten in ein Planungswerkzeug übersetzt — mit gebäudegenauer Detailtiefe, lesbaren Popups und Stadtblock-Aggregationen, die kommunalen Planern ein klares Bild von Wärmebedarf, Gasabhängigkeit und Wärmepumpeneignung in der gesamten Stadt vermitteln.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/20206faa-a2a8-4ebb-9941-74c6715b1d8d" target="_blank" rel="noopener">Live-Dashboard öffnen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

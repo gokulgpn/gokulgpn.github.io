@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melbourne Walkability — Kreuzungsdichte-Analyse · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/melbourne-walkability.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/melbourne-walkability.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/melbourne_walkability.png" alt="Melbourne Walkability" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Melbourne Walkability — Kreuzungsdichte-Analyse</h1>
+          <div class="proj-detail__tags">
+            <span>Kreuzungsdichte</span><span>Walkability</span><span>GIS</span><span>Stadtplanung</span><span>Melbourne</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Inspiriert vom <strong>Johannesburg Spatial Planning Framework 2040</strong> und Leitlinien von Spatial Thoughts führt dieses Projekt eine <strong>Kreuzungsdichte-Analyse</strong> für Melbourne als Maß für Walkability durch. Die Kreuzungsdichte — die Anzahl der Straßenkreuzungen in einem bestimmten Gebiet — ist ein Schlüsselindikator für Fußgängerverbindungen und prägt direkt, wie Menschen eine Stadt zu Fuß durchqueren.</p>
+
+        <h2>Warum Kreuzungsdichte?</h2>
+        <ul>
+          <li><strong>Verbesserte Konnektivität</strong> — Höhere Kreuzungsdichte ermöglicht kürzere Gehwege zwischen Zielen und schafft eine stärker vernetzte Gemeinschaft</li>
+          <li><strong>Sicherheit und Komfort</strong> — Gut vernetzte Stadtteile mit dichten Kreuzungen bieten sicherere und komfortablere Fußgängererlebnisse</li>
+          <li><strong>Lebendiges Straßenleben</strong> — Kreuzungen dienen als soziale Knotenpunkte und fördern ein lebendigeres Gemeinschaftsgefühl</li>
+        </ul>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>Fußgängernetz-Daten</h3><p>Laden des Fußgängernetz-GeoJSON von Melbournes offener Datenplattform als Basis-Straßenlayer für die Kreuzungszählung.</p></div>
+          <div class="step"><h3>Flächennutzungsgebiete (CLUE)</h3><p>Integration von Small-Areas-GeoJSON-Daten der Census of Land Use and Employment (CLUE) von Melbournes offener Datenplattform zur Definition der räumlichen Einheiten für die Dichteberechnung.</p></div>
+          <div class="step"><h3>Kreuzungsdichte-Berechnung</h3><p>Berechnung der Anzahl von Straßenkreuzungen pro CLUE-Gebiet mittels GIS-Raumanalyse, wodurch eine Dichtefläche entsteht, die walkable und weniger walkable Bereiche Melbournes aufzeigt.</p></div>
+        </div>
+
+        <h2>Datenquellen</h2>
+        <ul>
+          <li>Fußgängernetz-GeoJSON — Melbourne Open Data Platform</li>
+          <li>CLUE (Small Areas for Census of Land Use and Employment) GeoJSON — Melbourne Open Data Platform</li>
+          <li>Methodik inspiriert von Spatial Thoughts und dem Johannesburg Spatial Planning Framework 2040</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erstellung einer Kreuzungsdichtekarte für Melbourne, die Walkability über die Flächennutzungsgebiete der Stadt quantifiziert und Stadtplanern sowie politischen Entscheidungsträgern räumliche Belege für die Schaffung fußgängerfreundlicherer, lebenswerterer Stadtteile liefert.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_gis-urbanplanning-spatialanalysis-activity-7078975181028741120-pDS8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

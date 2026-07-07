@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Köln — Supermarkterreichbarkeit · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/cologne-accessibility-dashboard.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/cologne-accessibility-dashboard.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/cologne_accessibility_dashboard.jpeg" alt="Köln Supermarkterreichbarkeit Hexagonkarte" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Köln — Supermarkterreichbarkeit</h1>
+          <div class="proj-detail__tags">
+            <span>Erreichbarkeit</span><span>Hexagongitter</span><span>GOAT</span><span>30DayMapChallenge</span><span>Köln</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Eine hexagonale Gitterkarte zur Visualisierung der Fußwegerreichbarkeit zu Supermärkten in Köln, erstellt für den <strong>#30DayMapChallenge</strong>. Jede H3-Hexagonzelle zeigt einen Erreichbarkeitswert, der angibt, wie leicht Einwohner ihre drei nächsten Supermärkte innerhalb von 10 Gehminuten erreichen können — dabei werden Gradienten sichtbar, die Verwaltungsgrenzen verbergen würden.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Erreichbarkeitsindikator</h3>
+            <p>Verwendung des <strong>Closest-Average</strong>-Indikators in GOAT (Plan4Better-Plattform) — misst die durchschnittliche Reisezeit zu den drei nächstgelegenen Supermärkten innerhalb eines 10-Minuten-Fußwegeinzugsbereichs.</p>
+          </div>
+          <div class="step">
+            <h3>H3-Hexagongitter</h3>
+            <p>Ergebnisse wurden auf ein H3-Hexagongitter statt auf Verwaltungseinheiten aggregiert. Hexagone bieten eine einheitliche Zellgröße und vermeiden die Richtungsverzerrung von Quadratgittern, wodurch Erreichbarkeitsgradienten räumlich leichter ablesbar sind.</p>
+          </div>
+          <div class="step">
+            <h3>Räumliche Musteranalyse</h3>
+            <p>Identifikation hoher Erreichbarkeitskonzentrationen rund um Ehrenfeld sowie niedrigerer Werte in Gebieten, in denen Supermärkte verstreut sind oder wo Hauptverkehrsstraßen, Bahntrassen und größere Blockstrukturen die Fußgängerfreundlichkeit einschränken.</p>
+          </div>
+        </div>
+
+        <h2>Wichtige Erkenntnisse</h2>
+        <ul>
+          <li>Höchste Erreichbarkeitswerte in Ehrenfeld und innerstädtischen Quartieren mit dichtem Einzelhandel</li>
+          <li>Niedrigere Werte in Bereichen, in denen große Infrastruktur (Straßen, Bahnlinien) das Fußwegenetz fragmentiert</li>
+          <li>Das Hexagongitter zeigt Erreichbarkeitsgradienten mit feiner räumlicher Auflösung ohne Grenzartefakte</li>
+        </ul>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — Closest-Average-Erreichbarkeitsindikator</li>
+          <li>H3-Hexagonraster für räumliche Aggregation</li>
+          <li>QGIS für kartografische Gestaltung und Ausgabe</li>
+          <li>OpenStreetMap-Fußwegenetzwerk</li>
+        </ul>
+
+        <h2>Kontext</h2>
+        <p>Diese Karte wurde im Rahmen des <strong>#30DayMapChallenge</strong> zum Thema <em>Hexagone</em> erstellt. Sie greift direkt auf Erreichbarkeitsanalysemethoden zurück, die in der professionellen Planungsarbeit bei Plan4Better eingesetzt werden, und wendet diese auf einen öffentlichen Datensatz für eine kreative Kartografieübung an.</p>
+
+        <h2>Interaktive Karte</h2>
+        <p>Die interaktive Live-Version dieser Karte auf der GOAT-Plattform erkunden:</p>
+        <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/e8a39a0a-fb4b-493f-adb7-1eadf70d8fcc" target="_blank" rel="noopener">Interaktives Dashboard öffnen</a>
+      </div>
+    </div>
+
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

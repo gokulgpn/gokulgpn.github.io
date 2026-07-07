@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Einbruchsrate in Gauteng · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/gauteng-burglary.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/gauteng-burglary.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/gauteng_burglary.png" alt="Einbruchsrate in Gauteng" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Einbruchsrate in Gauteng</h1>
+          <div class="proj-detail__tags">
+            <span>Kriminalitätskartierung</span><span>QGIS</span><span>Zonenstatistik</span><span>Plotly</span><span>Südafrika</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Räumliche Analyse der Einbruchsraten in Gauteng, Südafrika, normiert auf je 10.000 Einwohner. Das Projekt kombiniert Kriminalitätsstatistiken, Polizeistationsgrenzen und Bevölkerungsdaten zur Visualisierung, wo Einbruchsraten in der Provinz konzentrierter auftreten.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>Kriminalität und Grenzen verknüpfen</h3><p>Verknüpfung von SAPS-Kriminalitätsstatistiken mit Stationsgrenzen und Punktdaten in QGIS — Einbruchsanzahlen ihren räumlichen Meldebereichen zuordnen.</p></div>
+          <div class="step"><h3>Bevölkerungsnormierung</h3><p>Verwendung von AfriPop-2015-Bevölkerungszahlen mit Rasteranalyse und Zonenstatistik zur Berechnung der Einbruchsrate je 10.000 Einwohner.</p></div>
+          <div class="step"><h3>Kartierung und Zeitreihe</h3><p>Erstellung der abschließenden Choroplethenkarte in QGIS und Nutzung des Plotly-Plugins zur Zeitreihenvisualisierung von Einbruchsmustern.</p></div>
+          <div class="step"><h3>Interpretation</h3><p>Vektoranalyse zur Identifikation von Bereichen, in denen Einbruchsraten für städtische Sicherheitsplanung, Bewusstseinsbildung in der Gemeinschaft und politische Diskussionen relevant sein könnten.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>QGIS 3.28.8 Firenze</li>
+          <li>Tabellenverknüpfungen, Rasteranalyse und Zonenstatistik</li>
+          <li>Plotly-Plugin für Zeitreihenvisualisierung</li>
+          <li>Vektoranalyse für räumliche Interpretation</li>
+        </ul>
+
+        <h2>Datenquellen</h2>
+        <ul>
+          <li>SAPS-Stationsgrenzen und -punkte</li>
+          <li>Kriminalstatistiken der Republik Südafrika</li>
+          <li>AfriPop-Bevölkerungszahlen 2015</li>
+          <li>Methodische Orientierung und Inspiration durch Spatial Thoughts-Artikel</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erstellung einer Einbruchsratenkarte für Gauteng, die Diskussionen rund um öffentliche Sicherheit, Smart-City-Planung, gemeinschaftsgetriebene Sicherheitsinitiativen und zukünftige Prognosen potenzieller Einbruchs-Brennpunkte unterstützt.</p>
+
+        <h2>Link</h2>
+        <p><a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_spatialanalysis-gis-qgis-activity-7111952513418813440-SVBg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a></p>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

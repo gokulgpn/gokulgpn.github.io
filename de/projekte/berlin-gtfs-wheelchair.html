@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berlin GTFS — Rollstuhlgerechtigkeit im ÖPNV · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/berlin-gtfs-wheelchair.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/berlin-gtfs-wheelchair.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/berlin_gtfs_wheelchair.jpeg" alt="Berlin GTFS Rollstuhlgerechtigkeit im ÖPNV" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Berlin GTFS — Rollstuhlgerechtigkeit im ÖPNV</h1>
+          <div class="proj-detail__tags">
+            <span>GTFS</span><span>Barrierefreiheit</span><span>QGIS</span><span>Foursquare Studio</span><span>Berlin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Dieses Projekt untersucht die Barrierefreiheit von Berliner ÖPNV-Haltestellen anhand von GTFS-Daten aus Daten Berlin. Im Mittelpunkt steht die Visualisierung der Verteilung aller Haltestellen sowie die Hervorhebung, wo rollstuhlgerechte Haltestellen konzentriert oder weniger vorhanden sind.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>GTFS-Haltestellendaten</h3>
+            <p>Verwendung der Berliner GTFS-Haltestellenattribute zur Unterscheidung aller Haltestellen von rollstuhlgerechten Haltestellen.</p>
+          </div>
+          <div class="step">
+            <h3>Heatmap-Visualisierung</h3>
+            <p>Erstellung von QGIS-Heatmaps zur Darstellung der räumlichen Verteilung und Dichte der Berliner ÖPNV-Haltestellen.</p>
+          </div>
+          <div class="step">
+            <h3>Rollstuhlgerechte Haltestellencluster</h3>
+            <p>Aufbau größenvarianter Punktcluster in QGIS — größere Cluster zeigen mehr rollstuhlgerechte Haltestellen an, kleinere Cluster weisen auf Bereiche mit weniger barrierefreien Haltestellen hin.</p>
+          </div>
+          <div class="step">
+            <h3>Foursquare Studio-Kartierung</h3>
+            <p>Verbesserung der finalen Barrierefreiheits-Visualisierung in Foursquare Studio für eine klare Kommunikation von Mobilitätslücken in der ÖPNV-Planung.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GTFS-ÖPNV-Haltestellendaten von Daten Berlin</li>
+          <li>QGIS für Heatmaps und rollstuhlgerechte Haltestellencluster</li>
+          <li>Foursquare Studio für die finale Visualisierung</li>
+          <li>Barrierefreiheitsorientierte Datenvisualisierung für die städtische Mobilitätsplanung</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Die Karten zeigen, wo rollstuhlgerechte ÖPNV-Haltestellen konzentriert sind und wo kleinere Cluster auf potenzielle Prioritäten für Infrastrukturverbesserungen hindeuten. Die Ergebnisse unterstützen Planungsdiskussionen für ein inklusiveres ÖPNV-System, in dem Mobilität als Recht für alle verstanden wird.</p>
+
+        <h2>Link</h2>
+        <p><a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_gtfs-qgis-qgis-activity-7122084229856800768-aj-A" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a></p>
+      </div>
+    </div>
+
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>München — Erreichbarkeit von Trinkbrunnen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/munich-drinking-fountains.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/munich-drinking-fountains.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/drinking_fountain_accessibility.png" alt="München Trinkbrunnen Erreichbarkeit Dashboard" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>München — Erreichbarkeit von Trinkbrunnen</h1>
+          <div class="proj-detail__tags">
+            <span>Erreichbarkeit</span><span>GOAT</span><span>München</span><span>Hitze</span><span>Plan4Better</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Da die Sommertemperaturen in Europa steigen, untersucht dieses Projekt eine praxisrelevante stadtplanerische Frage: <strong>Wo sollten neue öffentliche Trinkbrunnen errichtet werden?</strong> Mit <strong>GOAT (Plan4Better)</strong> habe ich offene Daten zu Münchens 116 bestehenden öffentlichen Trinkbrunnen mit netzwerkbasierten Fußwegeinzugsbereichen, Bevölkerungsdaten und satellitengestützten Landoberflächentemperaturen 2025 kombiniert, um Infrastrukturlücken mit dem größten Einfluss auf die Bevölkerung zu identifizieren.</p>
+
+        <h2>Wichtige Zahlen</h2>
+        <ul>
+          <li><strong>116</strong> bestehende öffentliche Trinkbrunnen in München (Landeshauptstadt München)</li>
+          <li><strong>44 %</strong> der Münchner Bevölkerung innerhalb eines 10-Minuten-Fußwegeinzugsbereichs eines Brunnens</li>
+          <li><strong>299</strong> Prioritätszonen für neue Infrastruktur identifiziert</li>
+          <li><strong>172.465 Einwohner</strong> in Prioritätszonen mit kombinierter Hitzebelastung und Erreichbarkeitslücken</li>
+        </ul>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Bestandsnetz der Trinkbrunnen</h3>
+            <p>Laden des offiziellen Datensatzes der <strong>116 öffentlichen Trinkbrunnen</strong> der Landeshauptstadt München als Ausgangslage — ein aktuelles Bild der bestehenden Infrastruktur in der Stadt.</p>
+          </div>
+          <div class="step">
+            <h3>Netzwerkbasierte Fußwegeinzugsbereiche</h3>
+            <p>Generierung von <strong>10-Minuten-Fußwegeinzugsbereichen</strong> für jeden Brunnen über GOATs netzwerkbasierte Erreichbarkeitsanalyse — mit dem Ergebnis, dass nur <strong>44 % der Münchner Bevölkerung</strong> fußläufig einen öffentlichen Brunnen erreichen kann.</p>
+          </div>
+          <div class="step">
+            <h3>Hitzebelastungsebene</h3>
+            <p>Integration von <strong>Landoberflächentemperatur-Daten (LST) 2025</strong> aus Satellitenbildern zur Identifikation von Bereichen mit der höchsten Hitzeexposition im Freien — als Flagging-Grundlage für Zonen, in denen ein Trinkbrunnen den größten Nutzen für die öffentliche Gesundheit hätte.</p>
+          </div>
+          <div class="step">
+            <h3>Identifikation der Prioritätszonen</h3>
+            <p>Kombination von Bevölkerungsdichte, Hitzebelastung (LST &gt; 30 °C) und Erreichbarkeitslücken zur Identifikation von <strong>299 Prioritätszonen</strong> — Bereiche, in denen neue Trinkwasserinfrastruktur die meisten hitzegefährdeten Einwohner außerhalb bestehender Einzugsbereiche versorgen würde.</p>
+          </div>
+        </div>
+
+        <div class="analysis-transition" aria-label="Von rohen Brunnenstandorten zur Erreichbarkeits- und Hitzeanalyse">
+          <figure>
+            <img src="../../assets/images/drinking_fountain_accessibility_02.jpeg" alt="Bestehende öffentliche Trinkbrunnen in München" />
+            <figcaption>Rohe Brunnenstandorte</figcaption>
+          </figure>
+          <span aria-hidden="true">↓</span>
+          <figure>
+            <img src="../../assets/images/drinking_fountain_accessibility.png" alt="Münchner Trinkbrunnen — Erreichbarkeit, Hitze und Prioritätszonen" />
+            <figcaption>Erreichbarkeit, Hitze und Prioritätszonen</figcaption>
+          </figure>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — netzwerkbasierte Erreichbarkeitsanalyse, interaktives Dashboard</li>
+          <li>Landeshauptstadt München Open Data — Standorte öffentlicher Trinkbrunnen</li>
+          <li>Landoberflächentemperatur (LST) 2025 — satellitengestützte Hitzebelastung</li>
+          <li>Bevölkerungsdichte — zur Priorisierung unterversorgter Zonen</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Rohe offene Daten wurden in ein Planungswerkzeug verwandelt, das nicht nur zeigt, wo Trinkbrunnen existieren, sondern wo sie am dringendsten fehlen — durch Kombination von Hitzestress und Bevölkerungsdichte entsteht ein klares, evidenzbasiertes Bild davon, wo neue Trinkwasserinfrastruktur den größten Einfluss auf die Lebensqualität der Bewohner in heißen Sommern hätte.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="http://goat.plan4better.de/map/public/f3a0288a-caea-4252-a188-a8c30b5e1ac6" target="_blank" rel="noopener">Live-Dashboard öffnen</a>
+          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_gis-urbanplanning-opendata-activity-7475412424020504577-drm1" target="_blank" rel="noopener">LinkedIn-Beitrag</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hannover — Erreichbarkeit von Ladesäulen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/hannover-ev-charging.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/hannover-ev-charging.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/ev_infrastruktur_hannover.jpeg" alt="Hannover Ladeinfrastruktur Erreichbarkeit Dashboard" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Hannover — Erreichbarkeit von Ladesäulen</h1>
+          <div class="proj-detail__tags">
+            <span>Ladeinfrastruktur</span><span>GOAT</span><span>Hannover</span><span>Erreichbarkeit</span><span>Plan4Better</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Wie weit laufen Einwohner in <strong>Hannover</strong> tatsächlich zu einer öffentlichen Ladesäule? Dieses GOAT-Dashboard beantwortet diese Frage auf Gebäudeebene — es kartiert die Fußwegerreichbarkeit zu jeder öffentlichen Ladestation in der gesamten Stadt, ausgehend von jedem Wohngebäude.</p>
+        <p>Die Analyse verwendet das offizielle <strong>Ladesäulenregister</strong> der Bundesnetzagentur (April 2026) für Ladestandorte und umfasst sowohl AC- als auch DC-Ladung, Normalladung und Schnellladung. Der eigentliche Mehrwert dieses Projekts liegt jedoch im <strong>Workflow</strong>: Die Routenplanung, Isochronengenerierung, Wohngebäudeverschneidung und SQL-Abfragen wurden einmalig in GOAT aufgebaut und sind sofort auf jede deutsche Stadt übertragbar — der Workflow ist die reproduzierbare Einheit, nicht die Stadt.</p>
+
+        <h2>Wichtige Zahlen</h2>
+        <ul>
+          <li><strong>86.112</strong> Wohngebäude analysiert</li>
+          <li><strong>1.049</strong> öffentliche Ladesäulen — Ladesäulenregister, Bundesnetzagentur, April 2026</li>
+          <li><strong>92 %</strong> der Wohngebäude innerhalb von 10 Gehminuten einer Ladesäule</li>
+          <li><strong>65 %</strong> innerhalb von 6 Gehminuten</li>
+          <li><strong>6.686</strong> Gebäude ohne Ladesäule im Fußwegbereich</li>
+        </ul>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Ladestationsdaten — Ladesäulenregister</h3>
+            <p>Laden aller <strong>1.049 öffentlichen Ladesäulen</strong> in Hannover aus dem Ladesäulenregister der Bundesnetzagentur (April 2026) — mit AC- und DC-Stationen sowie Normalladung und Schnellladung.</p>
+          </div>
+          <div class="step">
+            <h3>Netzwerkbasierte Fußweg-Isochronen</h3>
+            <p>Generierung netzwerkbasierter Fußwegeinzugsbereiche für jede Ladestation in GOAT — unter Verwendung tatsächlicher Straßenrouten statt geradliniger Puffer — für präzise Fußweg-Zeitzonen bei 6 und 10 Minuten.</p>
+          </div>
+          <div class="step">
+            <h3>Gebäudegenaue Verschneidung</h3>
+            <p>Verschneidung der Isochronen mit <strong>86.112 Wohngebäuden</strong>, um auf Gebäudeebene festzustellen, welche Bewohner innerhalb von 6 Minuten, innerhalb von 10 Minuten oder außerhalb des Fußwegbereichs liegen — ein detailliertes Bild der Versorgungslücken in Hannover.</p>
+          </div>
+          <div class="step">
+            <h3>Reproduzierbarer Workflow</h3>
+            <p>Die gesamte Pipeline — Routing, Isochronengenerierung, Gebäudeverschneidung, SQL-Abfragen — ist ein Workflow in GOAT. Kein Neuaufbau notwendig. Auf eine andere Stadt gerichtet, aktualisieren sich die Ergebnisse automatisch. Der Workflow ist die reproduzierbare Einheit.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — Netzwerkrouting, Isochronengenerierung, Gebäudeverschneidung, Dashboard</li>
+          <li>Ladesäulenregister, Bundesnetzagentur — öffentliche EV-Ladestandorte (April 2026)</li>
+          <li>Wohngebäude-Datensatz — Gebäudegrundrisse für Hannover</li>
+          <li>SQL — Abfragen zur Verknüpfung von Routing- und Verschneidungsergebnissen</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Geliefert wurde ein gebäudegenaues EV-Ladeerreichbarkeits-Dashboard für Hannover, das zeigt: Zwar liegen 92 % der Wohngebäude innerhalb von 10 Gehminuten einer öffentlichen Ladesäule, jedoch bleiben 6.686 Gebäude vollständig außerhalb des Fußwegbereichs — mit genauer räumlicher Verortung dieser Lücken. Der Workflow ist vollständig reproduzierbar für jede deutsche Stadt mit denselben offenen Datenquellen.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/f5f6c641-7296-4025-b344-2b5bb0d19173" target="_blank" rel="noopener">Live-Dashboard öffnen</a>
+          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_hannover-hannover-goat-share-7479808271785066496-e4_b/" target="_blank" rel="noopener">LinkedIn-Beitrag</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

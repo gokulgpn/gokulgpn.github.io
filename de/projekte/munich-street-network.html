@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>München — Minimalistisches Straßennetz · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/munich-street-network.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/munich-street-network.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/map_challenge_goat.jpeg" alt="München Minimalistisches Straßennetz Karte" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>München — Minimalistisches Straßennetz</h1>
+          <div class="proj-detail__tags">
+            <span>30DayMapChallenge</span><span>Tag 14 · OpenStreetMap</span><span>GOAT</span><span>München</span><span>Minimalistisch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Eine minimalistische Straßennetzwerkarte von München, erstellt für <strong>Tag 14 des #30DayMapChallenge</strong> zum Thema <em>OpenStreetMap</em>. Die Karte verzichtet auf alle Beschriftungen, Anmerkungen und dekorativen Elemente — und lässt nur die klare Form der Stadt, wie sie durch ihre Straßeninfrastruktur definiert wird, stehen.</p>
+        <p style="font-style:italic; color:var(--muted);">„Ich wollte schon immer eine minimalistische Karte erstellen, und heute habe ich endlich meine erste gemacht — das Straßennetz von München."</p>
+
+        <h2>Konzept</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Auf das Wesentliche reduzieren</h3>
+            <p>Alle Beschriftungen, POIs und Hintergrundebenen entfernt. Nur die Straßengeometrie bleibt — lässt die Stadtstruktur für sich selbst sprechen, ohne visuelles Rauschen.</p>
+          </div>
+          <div class="step">
+            <h3>OpenStreetMap-Daten</h3>
+            <p>Straßennetzwerk direkt aus OpenStreetMap über GOAT extrahiert — deckt Münchens vollständige Straßenhierarchie von Autobahnen bis zu Fußwegen ab.</p>
+          </div>
+          <div class="step">
+            <h3>Stadtstruktur lesbar machen</h3>
+            <p>Die resultierende Karte offenbart Münchens Struktur — das radiale Ringsystem, den Dichtegradient von der Innenstadt zu den Vororten und wie Hauptkorridore das Skelett der Stadt prägen.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Daten</h2>
+        <ul>
+          <li>GOAT (Plan4Better) für Straßennetzwerkextraktion und Visualisierung</li>
+          <li>OpenStreetMap-Straßennetzwerkdaten</li>
+          <li>Minimalistische kartografische Gestaltung — keine Beschriftungen, keine Füllung, nur Geometrie</li>
+        </ul>
+
+        <h2>Interaktive Karte</h2>
+        <p>Die interaktive Live-Version auf der GOAT-Plattform erkunden:</p>
+        <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/68f6a75b-1f23-480a-818f-601511a926e0" target="_blank" rel="noopener">Interaktive Karte öffnen</a>
+      </div>
+    </div>
+
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

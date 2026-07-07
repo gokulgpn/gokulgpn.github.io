@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berlin Mietmarkt — Erreichbarkeit &amp; Umweltbewertung · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/berlin-rent-listing.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/berlin-rent-listing.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/berlin_rent_listing.jpeg" alt="Berlin Mietmarkt Erreichbarkeit und Umweltbewertung" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Berlin Mietmarkt — Erreichbarkeit &amp; Umweltbewertung</h1>
+          <div class="proj-detail__tags">
+            <span>GOAT</span><span>Berlin</span><span>Erreichbarkeit</span><span>Immobilien</span><span>Umweltdaten</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Ein GOAT-basiertes Experiment, das über die üblichen Mietinserat-Daten — Miete, Größe, Zimmer, Energieklasse — hinausgeht und beantwortet, wie sich das Wohnen an einem Ort wirklich anfühlt. Rund <strong>1.000 synthetische Berliner Mietinserate</strong> wurden mit zwei zusätzlichen Ebenen angereichert: einem fußwegbasierten <strong>Erreichbarkeits-Score</strong> und <strong>Umweltqualitätsdaten</strong> — für ein vollständigeres Bild der Wohnqualität jedes Standorts.</p>
+        <p>Die interaktive Live-Karte ermöglicht es, auf jedes Inserat zu klicken und sofort nicht nur den Preis, sondern auch die Fußgängerfreundlichkeit der Umgebung und die Luft- und Lärmverhältnisse zu sehen.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Erreichbarkeits-Score — Gravitationsmodell</h3>
+            <p>Berechnung eines 15-Minuten-Fußwegeinzugsbereichs für jedes Inserat über GOATs reales Fußgängernetzwerk. Ein <strong>Gravitationsmodell</strong> gewichtete sechs POI-Kategorien nach ihrer Bedeutung für den Alltag:</p>
+            <ul style="margin-top:8px;">
+              <li><strong>Einkaufen</strong> (Supermärkte, Bäckereien, Lebensmittelläden) — 25 %</li>
+              <li><strong>Gastronomie</strong> (Restaurants, Cafés, Bars) — 20 %</li>
+              <li><strong>Gesundheit</strong> (Apotheken, Hausärzte, Krankenhäuser) — 20 %</li>
+              <li><strong>Dienstleistungen</strong> (Post, Bank, Geldautomaten) — 15 %</li>
+              <li><strong>Schulen</strong> — 10 %</li>
+              <li><strong>Kitas</strong> — 10 %</li>
+            </ul>
+          </div>
+          <div class="step">
+            <h3>Umweltdatenebene</h3>
+            <p>Ergänzung der Inserate um offizielle Umweltindikatoren aus Berlins offenen Datenquellen: <strong>NO₂</strong>, <strong>PM10</strong> und <strong>PM2,5</strong>-Konzentrationen aus Berlins Luftqualitätsraster sowie <strong>24-Stunden-Lärmpegel</strong> aus den Berliner Lärmkarten 2022.</p>
+          </div>
+          <div class="step">
+            <h3>Interaktive Karte — GOAT</h3>
+            <p>Zusammenführung beider Ebenen in einer einzigen interaktiven GOAT-Karte. Jedes Inserat ist anklickbar und zeigt seinen Erreichbarkeits-Score gemeinsam mit Umweltindikatoren — vollständiger Wohnqualitätskontext auf einen Blick.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GOAT (Plan4Better) — Gravitationsmodell-Erreichbarkeit, Fußgängernetzwerk, interaktive Karte</li>
+          <li>Berliner amtliches Luftqualitätsraster — NO₂, PM10, PM2,5</li>
+          <li>Berliner Lärmkarten 2022 — 24h-Lärmpegel</li>
+          <li>OpenStreetMap — POI-Daten für die Erreichbarkeitsbewertung</li>
+          <li>Claude — visuelles Design und Kartenlayout</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Demonstriert, wie offene Geodaten und netzwerkbasierte Erreichbarkeitstools Mietentscheidungen über Preis und Größe hinaus bereichern können — indem der Umwelt- und Fußgängerfreundlichkeitskontext sichtbar wird, den Inserate typischerweise auslassen. Ein praktisches Beispiel dafür, wie GOAT außerhalb klassischer Planungs-Workflows eingesetzt werden kann.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/5e504010-b8f9-4312-b245-58b64635aa45" target="_blank" rel="noopener">Live-Karte öffnen</a>
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_realestate-gis-berlin-activity-7465658369245306880-iqoM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Python Raumanalyse — Bushaltestellen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/python-bus-stops.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/python-bus-stops.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/python_busstop_analysis_3.jpeg" alt="Python Bushaltestellen-Analyse — ChatGPT interaktive Karte" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Python Raumanalyse — Bushaltestellen</h1>
+          <div class="proj-detail__tags">
+            <span>Python</span><span>GeoPandas</span><span>Folium</span><span>Google Colab</span><span>Raumanalyse</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Eine praktische Demonstration, wie Python die Lücke zwischen Rohdaten und räumlichen Erkenntnissen schließen kann — ohne tiefgehende GIS-Kenntnisse vorauszusetzen. Ausgehend von einem öffentlichen Verkehrsdatensatz neuer Bushaltestellen visualisiert dieses Projekt deren Verteilung und bewertet ihre strategische Platzierung über einen zugänglichen Python-Raumanalyse-Workflow.</p>
+        <p>Die interaktive Karte wurde mit Unterstützung von <strong>ChatGPT</strong> erstellt — ein Beispiel dafür, wie KI-Tools räumliche Workflows für Datenanalysten beschleunigen können.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>Datenvorbereitung</h3><p>Laden und Bereinigen des Haltestellendatensatzes mit <strong>Pandas</strong> — Strukturierung der tabellarischen Rohdaten für die räumliche Verarbeitung.</p></div>
+          <div class="step"><h3>Räumliche Datenverarbeitung</h3><p>Verwendung von <strong>GeoPandas</strong> zur Umwandlung des Datensatzes in räumliche Features — für geografische Operationen und Verteilungsanalyse.</p></div>
+          <div class="step"><h3>Interaktive Kartierung</h3><p>Erstellung einer interaktiven Karte mit <strong>Folium</strong> zur Visualisierung der Haltestellenverteilung und Bewertung der strategischen Platzierung der Haltestellen im Untersuchungsgebiet.</p></div>
+          <div class="step"><h3>Zusammenarbeit &amp; Teilen</h3><p>Ausführung des vollständigen Workflows in <strong>Google Colab</strong> für nahtlose Ausführung und einfaches Teilen ohne lokale Umgebungseinrichtung.</p></div>
+        </div>
+
+        <img src="../../assets/images/python_busstop_analysis_1.jpeg" alt="Python Bushaltestellen-Analyse Ergebnis 1" />
+        <img src="../../assets/images/python_busstop_analysis_2.jpeg" alt="Python Bushaltestellen-Analyse Ergebnis 2" style="margin-top:1rem;" />
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>Python — Pandas, GeoPandas, Folium</li>
+          <li>Google Colab — kollaborative Notebook-Umgebung</li>
+          <li>ChatGPT — Unterstützung bei der interaktiven Kartengenerierung</li>
+          <li>Spatial Thoughts — Tutorials und Methodik-Orientierung</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Umwandlung eines rohen Haltestellendatensatzes in eine interaktive räumliche Visualisierung — zeigt, wie grundlegende Python-Tools umsetzbare geografische Erkenntnisse erschließen können, auch ohne tiefgehende räumliche Fachkenntnisse.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_dataanalysis-spatialanalysis-python-activity-7177922252267495424-02jF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

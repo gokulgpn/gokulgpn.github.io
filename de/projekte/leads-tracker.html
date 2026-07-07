@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leads Tracker Chrome-Erweiterung · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/leads-tracker.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/leads-tracker.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/leads_tracker.jpeg" alt="Leads Tracker Chrome-Erweiterung" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Leads Tracker — Chrome-Erweiterung</h1>
+          <div class="proj-detail__tags">
+            <span>JavaScript</span><span>Chrome-Erweiterung</span><span>Webentwicklung</span><span>Open Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Eine Chrome-Erweiterung zum Speichern und Organisieren nützlicher Datensatz-URLs bei der Recherche europäischer offener Datensätze. Das Projekt entstand im Rahmen des JavaScript-Lernens über Scrimba — Kombination aus Kursinhalten und einem praktischen Anwendungsfall: öffentlich lernen und bauen.</p>
+
+        <h2>Motivation</h2>
+        <p>Bei der Erkundung europäischer offener Datenquellen für GIS- und Raumanalysearbeit wurde die Verwaltung Dutzender nützlicher Datensatz-URLs über Tabs hinweg mühsam. Der Leads Tracker löst dieses Problem, indem URLs direkt aus der Browser-Symbolleiste gespeichert, angezeigt und verwaltet werden können — kein App-Wechsel nötig.</p>
+
+        <h2>Funktionsweise</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Aktuellen Tab speichern</h3>
+            <p>Klick auf das Erweiterungs-Symbol speichert die URL des aktiven Tabs mit einem Klick. URLs werden in Chromes lokalem Speicher abgelegt, sodass sie sitzungsübergreifend erhalten bleiben.</p>
+          </div>
+          <div class="step">
+            <h3>Manuelle Eingabe</h3>
+            <p>Beliebige URLs in das Eingabefeld eingeben oder einfügen — zum Speichern von Links aus Dokumenten, E-Mails oder Notizen außerhalb des Browsers.</p>
+          </div>
+          <div class="step">
+            <h3>Anzeigen &amp; Löschen</h3>
+            <p>Alle gespeicherten URLs werden als klickbare Links aufgelistet. Doppelklick auf den Löschen-Button leert die gesamte Liste.</p>
+          </div>
+        </div>
+
+        <h2>Technologien</h2>
+        <ul>
+          <li>JavaScript (ES6) — Kernlogik und DOM-Manipulation</li>
+          <li>Chrome Extensions API — <code>chrome.tabs</code> und <code>chrome.storage.local</code></li>
+          <li>HTML &amp; CSS — Popup-UI der Erweiterung</li>
+          <li>Scrimba-JavaScript-Kurs — Lernrahmen</li>
+        </ul>
+
+        <h2>Projektrepository</h2>
+        <p>Das Projekt wurde auf GitHub gepusht und über Netlify bereitgestellt — mit einem öffentlichen Live-Demo und einem Quellcode-Repository.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:4px;">
+          <a class="btn btn--primary btn--sm" href="https://leads-tracker-app-gokul.netlify.app/" target="_blank" rel="noopener noreferrer">Live-Website öffnen</a>
+          <a class="btn btn--primary btn--sm" href="https://github.com/gokulgpn/leads-tracker-app" target="_blank" rel="noopener noreferrer">GitHub-Repository ansehen</a>
+        </div>
+
+        <h2>Was ich gelernt habe</h2>
+        <p>Dieses Projekt war meine Einführung in JavaScript und die Entwicklung von Browser-Erweiterungen. Wichtige behandelte Konzepte: Arbeit mit der Chrome Extensions API, Datenpersistenz mit localStorage, ereignisgesteuertes Programmieren und der Aufbau eines kleinen, aber vollständig funktionsfähigen Browser-Tools von Grund auf.</p>
+      </div>
+    </div>
+
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

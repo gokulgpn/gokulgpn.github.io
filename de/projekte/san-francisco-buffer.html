@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stadtplanung Pufferanalyse — San Francisco · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/san-francisco-buffer.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/san-francisco-buffer.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/san_francisco_buffer_1.png" alt="San Francisco Pufferanalyse" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Stadtplanung Pufferanalyse — San Francisco</h1>
+          <div class="proj-detail__tags">
+            <span>Pufferanalyse</span><span>GeoPandas</span><span>Stadtplanung</span><span>San Francisco</span><span>Foursquare Studio</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Inspiriert von einem Blogbeitrag von Spatial Thoughts repliziert und erweitert dieses Projekt eine Pufferanalyse des städtischen Layouts von San Francisco. Mit <strong>GeoPandas</strong> zur Datenmanipulation und <strong>Matplotlib</strong> zur Visualisierung werden Pufferzonen um <strong>institutionelle Flächennutzungsbereiche</strong> erstellt — um aufzuzeigen, wie Städte rund um Schlüsseleinrichtungen strukturiert sind und wie diese Informationen bessere stadtplanerische Entscheidungen unterstützen können.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>Flächennutzungsdaten</h3><p>Laden der institutionellen Flächennutzungsebene von San Francisco und Aufbereitung mit GeoPandas — Bereinigung und Projektion für eine genaue entfernungsbasierte Analyse.</p></div>
+          <div class="step"><h3>Pufferzonenerstellung</h3><p>Erstellung strategischer Pufferzonen um institutionelle Flächennutzungsbereiche mit GeoPandas — Erfassung des umgebenden städtischen Gewebes unter Berücksichtigung von Faktoren wie Lärm und Verkehr.</p></div>
+          <div class="step"><h3>Visualisierung &amp; interaktive Karte</h3><p>Visualisierung der Ergebnisse mit Matplotlib und Veröffentlichung einer interaktiven Version auf <strong>Foursquare Studio</strong> zur explorativen Nutzung.</p></div>
+        </div>
+
+        <img src="../../assets/images/san_francisco_buffer_2.png" alt="San Francisco Stadtplanung Pufferanalyse Ergebnis 2" />
+
+        <h2>Stadtplanerische Anwendungen</h2>
+        <ul>
+          <li><strong>Verkehrsmanagement</strong> — Pufferanalyse optimiert den Verkehrsfluss an belebten Kreuzungen und informiert Ampelsteuerung und Straßenplanung</li>
+          <li><strong>ÖPNV-Erreichbarkeit</strong> — Planung rund um Haltestellen wird effizienter und fördert die ÖPNV-Nutzung</li>
+          <li><strong>Fußgängersicherheit</strong> — Pufferzonen helfen, Bereiche für sicherere Übergänge und fußgängerfreundliche Infrastruktur zu identifizieren</li>
+        </ul>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GeoPandas — Datenmanipulation und Pufferberechnung</li>
+          <li>Matplotlib — räumliche Visualisierung</li>
+          <li>Foursquare Studio — Veröffentlichung der interaktiven Karte</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erstellung einer städtischen Pufferanalyse der institutionellen Flächennutzung in San Francisco — zeigt, wie Pufferzonen Stadtplaner mit Erkenntnissen zur Verbesserung des städtischen Lebens ausstatten können, von Verkehrsmanagement bis hin zu Fußgängersicherheit und ÖPNV-Erreichbarkeit.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_gis-urbanplanning-sanfrancisco-activity-7093330095720779777-ItV5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

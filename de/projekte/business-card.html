@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digitale Visitenkarte · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/business-card.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/business-card.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/business_card.png" alt="Digitale Visitenkarte" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Digitale Visitenkarte</h1>
+          <div class="proj-detail__tags"><span>HTML</span><span>CSS</span><span>Responsives Design</span><span>Netlify</span></div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Eine kompakte persönliche Visitenkarten-Website, entwickelt zum Üben von HTML/CSS-Layout, visueller Hierarchie und einfacher responsiver Darstellung.</p>
+        <h2>Was ich gebaut habe</h2>
+        <div class="steps">
+          <div class="step"><h3>Karten-Layout</h3><p>Gestaltung einer fokussierten Ein-Karten-Oberfläche, die ein Profilbild, Berufsbezeichnung, Standort und wichtige Kontaktaktionen präsentiert.</p></div>
+          <div class="step"><h3>Responsives Styling</h3><p>Übung in Abstands-, Typografie-, Farb- und Größengestaltung, damit die Karte über alle Browser-Breiten hinweg sauber funktioniert.</p></div>
+          <div class="step"><h3>Öffentliches Deployment</h3><p>Veröffentlichung der statischen Website über Netlify aus einem GitHub-Repository, um das Projekt leicht teilbar zu machen.</p></div>
+        </div>
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>HTML für die Struktur</li>
+          <li>CSS für Layout und visuelle Gestaltung</li>
+          <li>GitHub für das Repository-Hosting</li>
+          <li>Netlify für das Live-Deployment</li>
+        </ul>
+        <h2>Links</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--primary btn--sm" href="https://funny-stroopwafel-ae02d4.netlify.app/" target="_blank" rel="noopener noreferrer">Live-Website öffnen</a>
+          <a class="btn btn--primary btn--sm" href="https://github.com/gokulgpn/business_card" target="_blank" rel="noopener noreferrer">GitHub-Repository ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

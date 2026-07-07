@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>30DayMapChallenge Tag 7 — Berlin ÖPNV-Erreichbarkeit · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/berlin-tram-accessibility.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/berlin-tram-accessibility.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/berlin_tram_accessibility.png" alt="Berlin Straßenbahn Erreichbarkeit" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Berlin ÖPNV-Erreichbarkeit — #30DayMapChallenge Tag 7</h1>
+          <div class="proj-detail__tags">
+            <span>30DayMapChallenge</span><span>Navigation</span><span>GTFS</span><span>Erreichbarkeit</span><span>QGIS</span><span>Berlin</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Tag 7 des <strong>#30DayMapChallenge</strong> — Thema: <em>Navigation</em>. Mit GTFS-Daten aus Berlin führt dieses Projekt eine ÖPNV-Erreichbarkeitsanalyse durch, um zu verstehen, wie gut die wichtigsten Stadtbereiche an das öffentliche Verkehrsnetz angebunden sind.</p>
+        <p>Ziel ist es, Bereiche hervorzuheben, die innerhalb einer zumutbaren Pendelentfernung von wichtigen ÖPNV-Knotenpunkten erreichbar sind — nützlich für Stadtplanung, Verkehrsoptimierung und die Verbesserung der Erreichbarkeit für Einwohner.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>GTFS-Haltestellenextraktion</h3><p>Laden des Berliner GTFS-Feeds zur Extraktion von Haltestellenstandorten — Identifikation wichtiger ÖPNV-Knotenpunkte in der gesamten Stadt als Ausgangspunkte für die Erreichbarkeitsanalyse.</p></div>
+          <div class="step"><h3>1-km-Puffer via OpenRouteService</h3><p>Anwendung des <strong>OpenRouteService-QGIS-Plugins</strong> zur Generierung von 1-km-Isochronenpuffern um wichtige ÖPNV-Knotenpunkte — erfasst den Bereich, der innerhalb einer zumutbaren Pendelentfernung erreichbar ist.</p></div>
+          <div class="step"><h3>Erreichbarkeitsvisualisierung</h3><p>Gestaltung und Überlagerung der Pufferbereiche auf der Basiskarte — klare kartografische Ausgabe zur Hervorhebung gut versorgter Zonen versus unterversorgter Berliner Stadtbereiche.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>QGIS mit OpenRouteService-Plugin für die Isochronengenerierung</li>
+          <li>Berliner Open-GTFS-Daten für Haltestellenstandorte</li>
+          <li>1-km-Puffer-/Isochronenanalyse</li>
+        </ul>
+
+        <h2>Anwendungen</h2>
+        <ul>
+          <li>Stadtplanung und Infrastrukturinvestitionen</li>
+          <li>Optimierung des Verkehrsnetzes</li>
+          <li>Verbesserung der Erreichbarkeit für Einwohner in unterversorgten Gebieten</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erstellung einer klaren navigationsthematischen Erreichbarkeitskarte für Berlin, die den Pendelentfernungsbereich rund um wichtige ÖPNV-Knotenpunkte zeigt — praktische Anwendung von GTFS-Daten und OpenRouteService-Puffern für die städtische Mobilitätsanalyse.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_30daymapchallenge-openrouteservice-activity-7127784632493686784-7ojD" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

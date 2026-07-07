@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QGIS Geometry Generator — RegioStar · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/qgis-geometry-generator.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/qgis-geometry-generator.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero proj-detail__hero--split">
+        <div class="proj-detail__split-img" aria-label="QGIS Geometry Generator vorher und nachher">
+          <img src="../../assets/images/qgis_geometry_generator_1.jpeg" alt="QGIS Geometry Generator Ausdruck" />
+          <span aria-hidden="true">→</span>
+          <img src="../../assets/images/qgis_geometry_generator_2.jpeg" alt="QGIS Geometry Generator Ergebnis" />
+        </div>
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>QGIS Geometry Generator — RegioStar</h1>
+          <div class="proj-detail__tags">
+            <span>QGIS</span><span>Geometry Generator</span><span>Kartografie</span><span>RegioStar</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Dieses Projekt verwendet QGIS-Geometry-Generator-Ausdrücke zur Erstellung dynamischer, datengetriebener kartografischer Visualisierungen des deutschen RegioStar-Regionalklassifizierungssystems. Geometry-Generatoren ermöglichen komplexe visuelle Darstellungen, die spontan berechnet werden, ohne neue Datensätze erstellen zu müssen.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>RegioStar-Datenintegration</h3><p>Import von RegioStar-Klassifizierungsdaten und Verknüpfung mit NUTS-/Gemeindegrenzen in QGIS.</p></div>
+          <div class="step"><h3>Geometry-Generator-Ausdrücke</h3><p>Schreiben benutzerdefinierter QGIS-Geometry-Generator-Ausdrücke zur Erstellung proportionaler Symbolüberlagerungen und dynamischer Polygontransformationen, die durch Klassifizierungswerte gesteuert werden.</p></div>
+          <div class="step"><h3>Kartenzusammenstellung</h3><p>Komposition des abschließenden Kartenlayouts mit dem QGIS-Drucklayout mit mehreren geometry-generierten Ebenen für eine saubere, mehrdimensionale Visualisierung.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>QGIS Geometry Generator (QGIS-Ausdrucks-Engine)</li>
+          <li>RegioStar-Klassifizierungsdaten (BBSR)</li>
+          <li>QGIS-Drucklayout für kartografische Ausgabe</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erstellung einer visuell markanten kartografischen Ausgabe, die Regionalklassifizierungshierarchien effektiver kommuniziert als Standard-Choroplethenkartierung — demonstriert fortgeschrittene QGIS-Symbologietechniken.</p>
+
+        <h2>Link</h2>
+        <p><a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_qgisuc2024-qgis-activity-7245273484182900737-LVn4" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a></p>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

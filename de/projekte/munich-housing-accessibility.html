@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erschwingliche Wohnlagen in der Nähe von Münchner U-Bahn-Stationen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/munich-housing-accessibility.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/munich-housing-accessibility.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/munich_accessibility_rent_dashboard.jpeg" alt="Erschwingliche Wohnlagen und U-Bahn-Erreichbarkeit Dashboard in GOAT" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Erschwingliche Wohnlagen in der Nähe von Münchner U-Bahn-Stationen</h1>
+          <div class="proj-detail__tags">
+            <span>GOAT</span><span>Workflows</span><span>Erreichbarkeit</span><span>Wohnungsbau</span><span>München</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Dieses Projekt untersucht, wo sich vergleichsweise günstige Mietgebiete in München mit einem 15-Minuten-Fußwegzugang zu U-Bahn-Stationen überschneiden. Es wurde in GOAT mit der Workflows-Funktion entwickelt — eine browserbasierte Raumanalyse und Dashboard-Erstellung ohne klassischen Desktop-GIS-Workflow.</p>
+        <p>Ziel war es, eine praxisrelevante stadtplanerische Frage zu beantworten: Welche Münchner Stadtgebiete bieten eine bessere Kombination aus Mietpreisniveau und ÖPNV-Erreichbarkeit? Das fertige Dashboard ermöglicht es, Mietpreise, Stadtteilmuster und Fußwegzugang zu U-Bahn-Stationen in einer interaktiven kartenbasierten Ansicht zu erkunden.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Datenvorbereitung</h3>
+            <p>Aufbereitung der Münchner U-Bahn-Stationsdaten, Postleitzahl- und Stadtteilgrenzen sowie der Zensus-2022-Durchschnitts-Kaltmietrasterdaten für die Raumanalyse in GOAT.</p>
+          </div>
+          <div class="step">
+            <h3>Erreichbarkeitsanalyse</h3>
+            <p>Erstellung von 15-Minuten-Fußweg-Isochronen um Münchner U-Bahn-Stationen mit GOAT-Routing, um Gebiete innerhalb praktischer Fußwegdistanz zum U-Bahn-Netz zu identifizieren.</p>
+          </div>
+          <div class="step">
+            <h3>Workflow-Automatisierung &amp; Dashboard</h3>
+            <p>Aufbau reproduzierbarer GOAT-Workflows zum Zuschneiden, Verarbeiten und Verknüpfen der Raumebenen, anschließend Visualisierung der Ergebnisse in einem interaktiven Dashboard mit Stadtteil- und Mietbudget-Filterung.</p>
+          </div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>GOAT-Workflows für browserbasierte Raumanalyse-Automatisierung</li>
+          <li>GOAT-Routing für 15-Minuten-Fußweg-Isochronen</li>
+          <li>GOAT-Dashboard-Tools für interaktive kartenbasierte Visualisierung</li>
+          <li>Münchner U-Bahn-Stationsdaten</li>
+          <li>Zensus 2022 Durchschnitts-Kaltmietraster</li>
+          <li>Postleitzahl- und Stadtteilgrenzebenen</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Das fertige Dashboard zeigt, wo günstigere Mietgebiete mit guter U-Bahn-Fußwegerreichbarkeit in München zusammentreffen. Es liefert eine klare räumliche Evidenzbasis für Diskussionen rund um Wohnkostenentlastung, ÖPNV-Erschließung und integrierte Stadtplanung.</p>
+
+        <h2>Interaktives Dashboard</h2>
+        <p>Die interaktive Live-Version dieses Dashboards auf der GOAT-Plattform erkunden:</p>
+        <a class="btn btn--primary btn--sm" href="https://lnkd.in/eCgXCFg9" target="_blank" rel="noopener noreferrer">Interaktives Dashboard öffnen</a>
+      </div>
+    </div>
+
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

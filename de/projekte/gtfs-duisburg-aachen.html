@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GTFS-Analyse — Duisburg nach Aachen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/gtfs-duisburg-aachen.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/gtfs-duisburg-aachen.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/gtfs_duisburg_aachen.png" alt="GTFS Duisburg nach Aachen" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>GTFS-Analyse — Duisburg nach Aachen</h1>
+          <div class="proj-detail__tags">
+            <span>GTFS</span><span>Python</span><span>ÖPNV</span><span>NRW</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Eine Erkundung der GTFS-Welt als Neuling im Format — Experimentieren mit QGIS und dem <strong>GTFS-GO-Plugin</strong> zum Laden, Rendern und innovativen Visualisieren von Transitrouten und Haltestellen auf einer Karte. Kernstück ist eine Kürzeste-Pfad-Analyse zwischen <strong>Duisburg Hbf</strong> und <strong>Aachen Hbf</strong> mithilfe des offenen GTFS-Feeds NRW/AVV.</p>
+        <p>Hinweis: Die Visualisierung stellt nur den geometrisch kürzesten Pfad dar. Sie berücksichtigt keine Pufferzeiten, Standzeiten, Fahrgastwartezeiten oder den geplanten Fahrplan — alle Beschriftungen sind auf Deutsch, entsprechend den Quelldaten.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>GTFS-GO-Plugin</h3><p>Verwendung des QGIS-GTFS-GO-Plugins zum direkten Import des AVV/NRW-GTFS-Feeds — Rendering von Transitrouten und Haltepunkten als gestylte Vektorebenen in QGIS.</p></div>
+          <div class="step"><h3>Kürzeste-Pfad-Analyse</h3><p>Anwendung der integrierten QGIS-Netzwerkanalyse über <code>processing.run("native:shortestpathpointtopoint", {...})</code> zur Berechnung und Visualisierung des kürzesten Pfads von Duisburg Hbf nach Aachen Hbf über das Haltestellennetz.</p></div>
+          <div class="step"><h3>Kartografische Ausgabe</h3><p>Gestaltung der resultierenden Pfadebene gegen das vollständige Routennetz zur klaren Hervorhebung des Korridors, mit Haltestellenbeschriftungen auf Deutsch gemäß Quelldaten.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>QGIS mit GTFS-GO-Plugin für Feed-Import und Rendering</li>
+          <li>QGIS Netzwerkanalyse — <code>native:shortestpathpointtopoint</code></li>
+          <li>AVV / NRW offene GTFS-Daten</li>
+        </ul>
+
+        <h2>Datenquellen</h2>
+        <ul>
+          <li>AVV (Aachener Verkehrsverbund) GTFS-Offendaten</li>
+          <li>NRW-Regionalfeed GTFS</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erfolgreiche Darstellung und Visualisierung von Transitrouten und Haltestellen aus dem NRW-GTFS-Feed sowie ein klares Kürzeste-Pfad-Ergebnis zwischen den beiden großen Knotenpunkten — ein starker erster Schritt in die GTFS-basierte Raumanalyse in QGIS.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_datavisualization-mapping-avv-activity-7114368389678018560-0ntr" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

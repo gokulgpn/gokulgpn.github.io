@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Köln — Straßenbahn-Isochronen · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../../de/index.html" class="nav-link">Startseite</a>
+        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
+        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
+        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
+        <a href="../../contact.html" class="nav-link">Kontakt</a>
+        <a href="../../projects/cologne-tram-isochrones.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
+        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../../de/index.html">Startseite</a>
+        <a href="../../de/projekte/" class="active">Projekte</a>
+        <a href="../../de/erfahrung.html">Erfahrung</a>
+        <a href="../../de/zertifikate.html">Zertifikate</a>
+        <a href="../../contact.html">Kontakt</a>
+        <a href="../../projects/cologne-tram-isochrones.html">🇬🇧 EN</a>
+        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="../">← Zurück zu Projekten</a>
+      <div class="proj-detail__hero">
+        <img src="../../assets/images/cologne_tram_isochrone.jpeg" alt="Köln Straßenbahn Isochronen" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Köln — Straßenbahn-Isochronen</h1>
+          <div class="proj-detail__tags">
+            <span>Isochronen</span><span>Netzwerkanalyse</span><span>QGIS</span><span>Kartografie</span><span>Köln</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-detail__body">
+        <h2>Überblick</h2>
+        <p>Im Rahmen der Erkundung von QGIS für Bahn- und ÖPNV-Projekte — einschließlich der Analyse von Schienennetzen, Routenoptimierung und Kartierung von Bahninfrastruktur — verwendet dieses Projekt das <strong>OpenRouteService-Plugin in QGIS</strong>, um Isochronen zu generieren, die den <strong>10-Minuten-Fußwegeinzugsbereich</strong> des Kölner Straßenbahnnetzes zeigen.</p>
+        <p>Isochronen bieten wertvolle Einblicke in Reisezeiten und Erreichbarkeit und zeigen genau, welche Gebiete von Straßenbahnhaltestellen innerhalb einer gegebenen Zeit erreichbar sind — weitaus informativer als einfache Kreispuffer.</p>
+
+        <h2>Methodik</h2>
+        <div class="steps">
+          <div class="step"><h3>Schienennetzwerkdaten</h3><p>Laden der Kölner Straßenbahnnetzwerkdaten von <strong>Geofabrik</strong>, Aufbereitung der Haltestellenstandorte als Ursprungspunkte für die Einzugsbereichsanalyse.</p></div>
+          <div class="step"><h3>Isochronengenerierung</h3><p>Verwendung des <strong>OpenRouteService-Plugins in QGIS</strong> zur Generierung von 10-Minuten-Fußweg-Isochronen an Straßenbahnhaltestellen — basierend auf dem realen Fußgängerstraßennetz statt auf geradlinigen Entfernungen.</p></div>
+          <div class="step"><h3>Erreichbarkeitsvisualisierung</h3><p>Kartierung der resultierenden Isochronen über Köln, um zu zeigen, welche Gebiete innerhalb von 10 Fußgeh-Minuten des Straßenbahnnetzes liegen, und um Konnektivitätslücken hervorzuheben.</p></div>
+        </div>
+
+        <h2>Tools &amp; Technologien</h2>
+        <ul>
+          <li>QGIS mit OpenRouteService-Plugin — Isochronen-/Einzugsbereichsgenerierung</li>
+          <li>Geofabrik — detaillierte Schienen- und Straßenbahnnetzwerkdaten</li>
+          <li>Methodik basierend auf der Einzugsbereichsanalyse-Dokumentation von Spatial Thoughts</li>
+        </ul>
+
+        <h2>Ergebnis</h2>
+        <p>Erstellung einer Visualisierung der Gebiete innerhalb von 10 Fußgehminuten des Kölner Straßenbahnnetzes — demonstriert, wie Isochronen reale Erreichbarkeitsmuster aufzeigen und Entscheidungen rund um städtische Mobilität und ÖPNV-Planung unterstützen können.</p>
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_qgis-railways-geospatialanalysis-activity-7066405205377986561-1baU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
+  </main>
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>
