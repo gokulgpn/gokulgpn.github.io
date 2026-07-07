@@ -48,6 +48,7 @@ body{
   line-height:1.65;
   position:relative;
   background: var(--bg);
+  overflow-x: hidden;
 }
 
 /* Global map background behind everything */
@@ -506,7 +507,7 @@ strong{font-weight:800}
 /* Cards grid */
 .cards{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap:14px;
 }
 
@@ -816,7 +817,7 @@ strong{font-weight:800}
 
 /* Compact map gallery for the 30 Day Map Challenge page */
 .map-gallery {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 18px;
   align-items: start;
 }
@@ -943,6 +944,7 @@ strong{font-weight:800}
   color: rgba(15,23,42,.82);
   line-height: 1.72;
   font-size: 15px;
+  overflow-wrap: anywhere;
 }
 .proj-detail__body ul { padding-left: 18px; margin: 6px 0 12px; }
 .proj-detail__body img {
@@ -1040,7 +1042,7 @@ strong{font-weight:800}
 /* ---- CERTIFICATIONS GRID ---- */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 18px;
 }
 .cert-card {
@@ -1064,4 +1066,31 @@ strong{font-weight:800}
   text-align: left;
 }
 .page-hero h1 { font-size: clamp(28px,3.5vw,44px); margin: 0 0 8px; }
-.page-hero p  { color: var(--muted); font-size: 16px; max-width: 60ch; margin: 0; }
+.page-hero p  { color: var(--muted); font-size: 16px; max-width: 60ch; margin: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 640px) {
+  .container{padding:0 16px;}
+  .section__head{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .card__top,
+  .titem__head{
+    flex-direction:column;
+  }
+  .pill{
+    max-width:100%;
+  }
+  .proj-detail__hero-meta{
+    left:16px;
+    right:16px;
+    bottom:16px;
+  }
+  .proj-detail__hero-meta h1{
+    overflow-wrap:anywhere;
+  }
+  .proj-detail__tags span{
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+}
