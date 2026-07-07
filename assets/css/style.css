@@ -650,8 +650,33 @@ strong{font-weight:800}
   .grid2{grid-template-columns: 1fr;}
   .skillgrid{grid-template-columns: 1fr;}
 
-  .profile{align-items:flex-start}
-  .profile__img{width:150px; height:150px}
+  .profile{
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+  }
+  .profile__img{
+    width:min(150px, 54vw);
+    height:min(150px, 54vw);
+    margin-inline:auto;
+  }
+  .profile__meta{
+    align-items:center;
+    min-width:0;
+    width:100%;
+  }
+  .profile__role{
+    overflow-wrap:anywhere;
+  }
+  .quick__item{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:2px;
+  }
+  .quick__v{
+    overflow-wrap:anywhere;
+    text-align:left;
+  }
 }
 
 @media (prefers-reduced-motion: reduce){
