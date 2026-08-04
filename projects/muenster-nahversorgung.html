@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Münster Nahversorgung Accessibility · Gokul Gopan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../de/projekte/muenster-nahversorgung.html" class="lang-toggle" aria-label="Zur deutschen Version">🇩🇪 DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden>
+      <nav class="drawer__nav">
+        <a href="../index.html">Home</a>
+        <a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../certifications.html">Certifications</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../de/projekte/muenster-nahversorgung.html">🇩🇪 DE</a><a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+
+      <div class="proj-detail__hero">
+        <img src="../assets/images/muenster_nahversorgung.jpeg" alt="Münster Nahversorgung Accessibility Dashboard" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Münster Nahversorgung Accessibility</h1>
+          <div class="proj-detail__tags">
+            <span>Accessibility</span><span>GOAT</span><span>Münster</span><span>Nahversorgung</span><span>Plan4Better</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <h2>Overview</h2>
+        <p>Can you reach a <strong>Kita</strong>, a <strong>supermarket</strong> and a <strong>pharmacy</strong> within a 10-minute walk? That's the standard set by the <strong>BBSR Nahversorgungs-Erreichbarkeit</strong> methodology for every residential area in Münster, and the question this dashboard answers block by block.</p>
+        <p>Built entirely in the <strong>GOAT Workflow</strong> (Plan4Better) — an isochrone tool plus a SQL editor, with no local processing step anywhere in the pipeline. Catchment areas for all three facility types are computed directly in GOAT and combined with a single SQL query to score every residential area from 0 to 3 depending on how many of the three it can reach on foot.</p>
+        <p>Data sources: <strong>ALKIS-Flächennutzung</strong>, <strong>OpenStreetMap</strong>, and <strong>Stadt Münster Open Data</strong>.</p>
+
+        <h2>Results</h2>
+        <ul>
+          <li><strong>63.3%</strong> of the population is fully served — all three facility types reachable within 10 minutes</li>
+          <li><strong>5%</strong> sit in an actual <em>Erschließungslücke</em> — none of the three reachable on foot</li>
+          <li><strong>14,251 residents</strong> without walkable access to basic supply</li>
+        </ul>
+
+        <h2>Methodology</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>BBSR Nahversorgungs-Erreichbarkeit Standard</h3>
+            <p>Applied the <strong>BBSR</strong> methodology for basic-supply accessibility: a residential area counts as fully served only when a Kita, a supermarket and a pharmacy are all reachable within a 10-minute walk.</p>
+          </div>
+          <div class="step">
+            <h3>Three Catchment Areas, One Workflow</h3>
+            <p>Computed walking catchments for Kita, Supermarkt and Apotheke directly as live datasets inside GOAT — no shapefiles, no local import, nothing pre-processed on the desktop.</p>
+          </div>
+          <div class="step">
+            <h3>Custom SQL Scoring</h3>
+            <p>A single SQL query overlays all three catchment areas and scores every residential area from 0 to 3 based on how many facility types it can reach — written, run and saved directly in the browser.</p>
+          </div>
+          <div class="step">
+            <h3>Result Saved as a New Dataset</h3>
+            <p>The scored output is saved straight back into the project as a new dataset, ready to style and wire into the dashboard — no export, no re-import, no format conversion.</p>
+          </div>
+        </div>
+
+        <h2>Dashboard Features</h2>
+        <ul>
+          <li>Four-class accessibility layer: Erschließungslücke, eingeschränkt erschlossen, gut erschlossen, vollständig erschlossen</li>
+          <li>Population layer for converting area classes into resident counts</li>
+          <li>Stadtbezirke boundaries for orientation across Münster</li>
+          <li>Donut chart summarising the population share per accessibility class</li>
+        </ul>
+
+        <h2>Tools &amp; Technologies</h2>
+        <ul>
+          <li>GOAT (Plan4Better) Workflows — catchment areas, custom SQL, dashboard</li>
+          <li>ALKIS-Flächennutzung — building and land-use base data</li>
+          <li>OpenStreetMap — pedestrian network and facility locations</li>
+          <li>Stadt Münster Open Data — supplementary municipal datasets</li>
+          <li>BBSR Nahversorgungs-Erreichbarkeit — accessibility methodology</li>
+        </ul>
+
+        <h2>An Honest Caveat</h2>
+        <p>This analysis covers <strong>97.6%</strong> of Münster's population. The remaining <strong>2.4%</strong>, about <strong>7,030 residents</strong> in the <em>Außenbereich</em>, aren't included — the ALKIS-based method only resolves accessibility within built-up residential areas.</p>
+
+        <h2>Outcome</h2>
+        <p>A fully interactive Nahversorgung accessibility dashboard for Münster, built without a single local processing step — from catchment areas to scoring to final map, everything runs inside GOAT. It gives planners a block-level view of where basic supply access already works, where it's merely adequate, and where a genuine Erschließungslücke leaves residents without a walkable Kita, supermarket or pharmacy.</p>
+
+        <h2>Workflow</h2>
+        <p>The entire scoring pipeline lives inside a single GOAT workflow — three catchment areas feeding one custom SQL step, saved directly as a new dataset. No local GIS software, no export/import round-trips.</p>
+        <img src="../assets/images/muenster_nahversorhung_02.jpeg" alt="GOAT Workflow for Münster Nahversorgung scoring — catchment areas, custom SQL, result dataset" style="width:100%; border-radius:12px; margin-top:1rem;" />
+
+        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/a557b266-5694-4df4-a2fc-328e35b1fad7" target="_blank" rel="noopener">Open Live Dashboard</a>
+          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_nahversorgung-erreichbarkeit-gis-activity-7490270348253474816-xsDE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
