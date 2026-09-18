@@ -1698,12 +1698,16 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .hero-map .map-caption:hover { background: #214b3b; }
 .signal-board { display: flex; align-items: center; justify-content: space-between; position: relative; height: 108px; padding: 16px 36px; overflow: hidden; }
 .signal-paths { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; }
-.signal-track { stroke: #88c6a2; stroke-width: 1; stroke-dasharray: 3 6; animation: signal-travel 4s linear 1; animation-play-state: paused; }
+.signal-track { stroke: #88c6a2; stroke-width: 1; stroke-dasharray: 3 6; animation: signal-travel 4s linear infinite; animation-play-state: paused; }
 .signal-track.secondary { stroke: #6d9d80; opacity: .45; animation-direction: reverse; }
 .signal-node { position: relative; display: grid; justify-items: center; gap: 8px; color: #bcd1c2; font-size: 8px; letter-spacing: .12em; background: #173d30; padding: 0 8px; }
 .signal-glyph { display: grid; place-items: center; color: #cae2ce; width: 36px; height: 36px; border: 1px solid #5b8269; border-radius: 9px; background: #214e39; }
 .signal-node--core .signal-glyph { background: #c8e6af; color: #173d30; border-color: #c8e6af; box-shadow: 0 0 25px #b4e28b18; }
 .signal-board.is-visible .signal-track { animation-play-state: running; }
+.signal-dot { position: absolute; z-index: 1; top: 63px; width: 5px; height: 5px; border-radius: 50%; background: #c6ecac; box-shadow: 0 0 8px #c6ecac; opacity: 0; animation: signal-dot-one 2.8s ease-in-out infinite; animation-play-state: paused; }
+.signal-dot--one { left: 16%; }
+.signal-dot--two { left: 53%; animation-name: signal-dot-two; animation-delay: 1.15s; }
+.signal-board.is-visible .signal-dot { animation-play-state: running; }
 
 /* Connected process diagrams with controllable, viewport-aware motion. */
 .workflow-section { background: #153b2e; border: 0; color: #f0f5eb; position: relative; }
@@ -1739,6 +1743,8 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .flow-node .graph-connection i { background: #397849; box-shadow: 0 0 7px #5f9b66; }
 .motion-paused *, .motion-paused *:before, .motion-paused *:after { animation-play-state: paused !important; }
 @keyframes signal-travel { to { stroke-dashoffset: -90; } }
+@keyframes signal-dot-one { 0% { left: 16%; opacity: 0; } 12%, 82% { opacity: 1; } 100% { left: 46%; opacity: 0; } }
+@keyframes signal-dot-two { 0% { left: 53%; opacity: 0; } 12%, 82% { opacity: 1; } 100% { left: 83%; opacity: 0; } }
 @keyframes dot-travel { 0% { transform: translateX(0); opacity: 0; } 15%,85% { opacity: 1; } 100% { transform: translateX(28px); opacity: 0; } }
 @keyframes dot-travel-down { 0% { transform: translateY(0); opacity: 0; } 15%,85% { opacity: 1; } 100% { transform: translateY(28px); opacity: 0; } }
 
@@ -1858,7 +1864,7 @@ html.viewer-open { overflow: hidden; }
   .flow-node > .graph-connection i { left: -2px; top: 0; animation-name: dot-travel-down; }
 }
 @media(prefers-reduced-motion: reduce) {
-  .signal-track, .graph-connection i { animation: none !important; }
+  .signal-track, .signal-dot, .graph-connection i { animation: none !important; }
   .graph-connection i { opacity: 1; }
 }
 
