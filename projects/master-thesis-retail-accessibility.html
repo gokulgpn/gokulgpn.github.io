@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Master's Thesis: Retail Accessibility · Gokul Gopan</title>
+  <meta name="description" content="Master's thesis on mode-specific retail accessibility across five cities in western Germany using r5py, PostGIS, Python and QGIS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="header glass">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a><a href="../projects/" class="active">Projects</a>
+        <a href="../experience.html">Experience</a><a href="../certifications.html">Certifications</a><a href="../contact.html">Contact</a>
+        <a href="../de/projekte/masterarbeit-einzelhandelserreichbarkeit.html" class="lang-toggle" aria-label="Zur deutschen Version">🇩🇪 DE</a>
+        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+    <div id="drawer" class="drawer glass" hidden><nav class="drawer__nav">
+      <a href="../index.html">Home</a><a href="../projects/" class="active">Projects</a><a href="../experience.html">Experience</a>
+      <a href="../certifications.html">Certifications</a><a href="../contact.html">Contact</a><a href="../de/projekte/masterarbeit-einzelhandelserreichbarkeit.html">🇩🇪 DE</a>
+      <a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
+    </nav></div>
+  </header>
+
+  <main>
+    <div class="container" style="padding-top:36px; padding-bottom:60px;">
+      <a class="back-link" href="index.html">← Back to Projects</a>
+      <div class="proj-detail__hero">
+        <img src="../assets/images/thesis-walking-accessibility.jpg" alt="Walking accessibility to non-durable retail across five study cities" />
+        <div class="proj-detail__hero-overlay"></div>
+        <div class="proj-detail__hero-meta">
+          <h1>Mode-Specific Retail Accessibility</h1>
+          <div class="proj-detail__tags"><span>Master's thesis</span><span>r5py</span><span>PostGIS</span><span>QGIS</span><span>Transport planning</span></div>
+        </div>
+      </div>
+
+      <div class="proj-detail__body">
+        <p style="color:var(--muted); font-size:14px; margin-bottom:4px;">RWTH Aachen University · completed July 2026 · thesis grade 1.3</p>
+        <p style="color:var(--muted); font-size:13px;">Evaluation of Mode-Specific Retail Accessibility in Selected German Cities</p>
+
+        <p class="lede">I evaluated how many retail destinations residents can reach by walking, cycling, public transport and car, and how those patterns overlap with socioeconomic structure.</p>
+
+        <div class="metrics" style="margin:22px 0 28px;">
+          <div class="metric glass"><div class="metric__value">5 cities</div><div class="metric__label">Aachen, Düren, Eschweiler, Jülich and Stolberg</div></div>
+          <div class="metric glass"><div class="metric__value">4 modes</div><div class="metric__label">Walking, cycling, public transport and car</div></div>
+          <div class="metric glass"><div class="metric__value">44,961 POIs</div><div class="metric__label">Classified from OpenStreetMap</div></div>
+        </div>
+
+        <h2>Research question</h2>
+        <p>How is retail accessibility distributed across neighbourhoods and socioeconomic groups, and do systematic spatial inequalities appear when the same places are evaluated by different transport modes?</p>
+
+        <h2>Method</h2>
+        <ul>
+          <li>Used a cumulative-opportunity measure on the 100 m Zensus 2022 grid. The study area contains 51,062 cells, with 35,555 routable cells used consistently for cross-mode comparisons.</li>
+          <li>Classified 44,961 OpenStreetMap retail points into non-durable, semi-durable and durable goods: 15,480, 8,580 and 7,235 destinations respectively.</li>
+          <li>Computed travel-time matrices with <strong>r5py</strong> and the R5 routing engine. Public transport used the AVV GTFS feed alongside the OSM network.</li>
+          <li>Processed the data in PostgreSQL/PostGIS and Python, then used Spearman correlations and QGIS bivariate choropleths to examine socioeconomic patterns.</li>
+        </ul>
+
+        <figure id="workflow" style="margin:24px 0 30px;"><img src="../assets/images/thesis-workflow.jpg" alt="Thesis workflow from source data through r5py routing and PostGIS processing to maps and correlations" style="width:100%; border-radius:16px; border:1px solid rgba(15,23,42,.12); box-shadow:var(--shadow);" /><figcaption style="font-size:13px; color:var(--muted); margin-top:8px;">End-to-end workflow from source data and routing through accessibility scores, maps and statistical analysis.</figcaption></figure>
+
+        <h2>What the analysis shows</h2>
+        <div class="steps">
+          <div class="step"><h3>Walking access is centre-concentrated</h3><p>Across the five cities, 46 to 75% of routable cells have no non-durable retail destination within 15 minutes on foot. Population weighting narrows the gap, but 6.6% of Aachen residents and around 30% in the more dispersed smaller cities remain outside that modelled walking catchment.</p></div>
+          <div class="step"><h3>Cycling expands the catchment</h3><p>Cycling increases the share of residents with access to at least one non-durable store by 5.2 to 18.6 percentage points, with the largest gains in the smaller and more dispersed cities.</p></div>
+          <div class="step"><h3>Car access can hide spatial differences</h3><p>Car access to non-durable retail is available from 98 to 100% of routable cells under the modelled 15-minute threshold. That broad potential reach does not mean equal experienced access, because the model does not measure vehicle ownership or the ability to drive.</p></div>
+          <div class="step"><h3>Socioeconomic associations are mode-dependent</h3><p>Owner-occupier rate is negatively associated with accessibility in every city, retail category and mode. The association is generally weaker for car than for non-car modes. These are area-level spatial associations, not individual or causal effects.</p></div>
+        </div>
+
+        <h2>Selected maps</h2>
+        <div class="map-gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px;">
+          <figure class="proj-card" style="margin:0;"><img class="proj-card__img" src="../assets/images/thesis-study-area.jpg" alt="Study area map showing the five cities in western Germany" loading="lazy" /><figcaption class="proj-card__body"><strong>Study area</strong><br/><span style="color:var(--muted); font-size:13px;">Five case cities in the Aachen region.</span></figcaption></figure>
+          <figure class="proj-card" style="margin:0;"><img class="proj-card__img" src="../assets/images/thesis-cycling-gain.jpg" alt="Map of additional non-durable retail stores reachable by cycling compared with walking" loading="lazy" /><figcaption class="proj-card__body"><strong>Cycling gain over walking</strong><br/><span style="color:var(--muted); font-size:13px;">The largest gains occur in peri-urban transition zones.</span></figcaption></figure>
+          <figure class="proj-card" style="margin:0;"><img class="proj-card__img" src="../assets/images/thesis-bivariate-owner-occupier.jpg" alt="Bivariate map of walking retail accessibility and owner-occupier rate" loading="lazy" /><figcaption class="proj-card__body"><strong>Accessibility and housing structure</strong><br/><span style="color:var(--muted); font-size:13px;">High walking access overlaps with lower owner-occupier rates in dense centres.</span></figcaption></figure>
+        </div>
+
+        <h2>Technical stack</h2>
+        <div class="proj-card__tags" style="margin-top:8px;"><span>Python</span><span>r5py / R5</span><span>PostgreSQL / PostGIS</span><span>osm2pgsql</span><span>AVV GTFS</span><span>QGIS</span><span>Spearman correlation</span><span>Bivariate choropleths</span></div>
+        <p style="font-size:13px; color:var(--muted); margin-top:24px;">Client project maps are not shown here. The figures on this page are thesis maps created for this academic project.</p>
+      </div>
+    </div>
+    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  </main>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
