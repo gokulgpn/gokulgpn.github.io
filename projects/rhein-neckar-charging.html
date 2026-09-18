@@ -1,103 +1,76 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rhein-Neckar EV Charging Accessibility · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Rhein-Neckar EV Charging Accessibility · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/rhein-neckar-charging.html" class="lang-toggle" aria-label="Zur deutschen Version">🇩🇪 DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../index.html">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/rhein-neckar-charging.html">🇩🇪 DE</a><a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="index.html">← Back to Projects</a>
-
-      <div class="proj-detail__hero">
-        <img src="../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png" alt="Rhein-Neckar EV Charging Accessibility Dashboard" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>Rhein-Neckar EV Charging Accessibility Dashboard</h1>
-          <div class="proj-detail__tags">
-            <span>EV Charging</span><span>Accessibility</span><span>GOAT</span><span>Dashboard</span><span>Rhein-Neckar</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <h2>Overview</h2>
-        <p>An interactive GOAT dashboard analysing the accessibility of <strong>public EV charging infrastructure</strong> across the entire <strong>Rhein-Neckar-Kreis</strong> region. The analysis evaluates walking-time catchments from both standard (<em>Normalladeeinrichtung</em>) and fast (<em>Schnellladeeinrichtung</em>) charging stations, and breaks down the population reached by housing type — multi-family homes (MFH) and single-family homes (EFH) — for each municipality.</p>
-        <p>The dashboard enables planners to identify municipalities with low charging coverage and understand which residential areas are most underserved by the current charging network.</p>
-
-        <h2>Methodology</h2>
-        <div class="steps">
-          <div class="step">
-            <h3>Charging Station Data</h3>
-            <p>Loaded all public charging station locations in the Rhein-Neckar-Kreis, classified by type: <strong>Normalladeeinrichtung</strong> (standard AC charging) and <strong>Schnellladeeinrichtung</strong> (fast DC charging).</p>
-          </div>
-          <div class="step">
-            <h3>Walking-Time Accessibility</h3>
-            <p>Generated walking-time catchments at 2, 4, 6, 8 and 10 minute intervals from each charging station using the GOAT platform's network-based accessibility engine, identifying the population reachable at each threshold.</p>
-          </div>
-          <div class="step">
-            <h3>Population Segmentation by Housing Type</h3>
-            <p>Overlaid population data differentiated by <strong>MFH</strong> (Mehrfamilienhaus / multi-family) and <strong>EFH</strong> (Einfamilienhaus / single-family) housing type, to understand whether charging access differs across residential contexts.</p>
-          </div>
-          <div class="step">
-            <h3>Municipality-Level Dashboard</h3>
-            <p>Built an interactive GOAT dashboard with a <em>Kommune Auswählen</em> filter and per-municipality table showing total charging stations, standard chargers, fast chargers, total residents and residents by housing type — enabling targeted comparison across all municipalities in the district.</p>
-          </div>
-        </div>
-
-        <h2>Dashboard Features</h2>
-        <ul>
-          <li>Filter by municipality (<em>Kommune Auswählen</em>) to focus the map and statistics</li>
-          <li>Filter by charger type — standard vs fast charging</li>
-          <li><em>Bevölkerung nach Gehzeit</em> — population reached at each walking-time threshold</li>
-          <li><em>Erschlossene Bevölkerung [%]</em> — percentage of population covered, shown as a choropleth per municipality</li>
-          <li>Per-municipality table: <em>Erschließung je Kommune differenziert nach Wohngebiettyp und Ladetechnologie</em></li>
-          <li>Heatmap layer showing supply–demand balance (charging stations vs population)</li>
-        </ul>
-
-        <h2>Tools &amp; Technologies</h2>
-        <ul>
-          <li>GOAT (Plan4Better) — accessibility engine, dashboard and visualisation</li>
-          <li>Walking-time catchments (2–10 minutes) for network-based coverage analysis</li>
-          <li>Population data segmented by housing type (MFH / EFH)</li>
-          <li>Public EV charging station data for Rhein-Neckar-Kreis</li>
-        </ul>
-
-        <h2>Outcome</h2>
-        <p>Delivered a fully interactive accessibility dashboard for the Rhein-Neckar-Kreis that gives planners and policymakers a clear, municipality-level picture of where public EV charging is well-served and where investment is most needed — differentiated by charger type and housing context.</p>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
-  </main>
-  <script src="../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Skip to content</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a aria-label="Zur deutschen Version" class="lang-toggle" href="../de/projekte/rhein-neckar-charging.html">DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+<a aria-label="Email Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Contact</a><button aria-controls="drawer" aria-expanded="false" aria-label="Open menu" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a href="../de/projekte/rhein-neckar-charging.html">🇩🇪 DE</a><a class="btn btn--primary btn--block" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="index.html">← Back to Projects</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Enlarge image: Rhein-Neckar EV Charging Accessibility Dashboard" class="image-preview" data-image-viewer="" href="../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png"><img alt="Rhein-Neckar EV Charging Accessibility Dashboard" height="1574" loading="eager" src="../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png" width="2880"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>Rhein-Neckar EV Charging Accessibility Dashboard</h1>
+<div class="proj-detail__tags">
+<span>EV Charging</span><span>Accessibility</span><span>GOAT</span><span>Dashboard</span><span>Rhein-Neckar</span>
+</div>
+</div>
+</div>
+<div class="case-layout"><nav aria-label="On this page" class="case-nav"><p class="eyebrow">IN THIS PROJECT</p><a href="#project-visual">Map / visual preview ↗</a><a href="#case-section-1">Overview</a><a href="#case-section-2">Workflow</a><a href="#case-section-3">Dashboard Features</a><a href="#case-section-4">Tools &amp; Technologies</a><a href="#case-section-5">Outcome</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Overview</h2>
+<p>An interactive GOAT dashboard analysing the accessibility of <strong>public EV charging infrastructure</strong> across the entire <strong>Rhein-Neckar-Kreis</strong> region. The analysis evaluates walking-time catchments from both standard (<em>Normalladeeinrichtung</em>) and fast (<em>Schnellladeeinrichtung</em>) charging stations, and breaks down the population reached by housing type — multi-family homes (MFH) and single-family homes (EFH) — for each municipality.</p>
+<p>The dashboard enables planners to identify municipalities with low charging coverage and understand which residential areas are most underserved by the current charging network.</p>
+</section><section class="case-section" id="case-section-2"><h2>Workflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Pause animation</button><p class="flow-hint">Follow the process. Expand a step for the details.</p><ol aria-label="Project workflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">Charging Station Data</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Loaded all public charging station locations in the Rhein-Neckar-Kreis, classified by type: <strong>Normalladeeinrichtung</strong> (standard AC charging) and <strong>Schnellladeeinrichtung</strong> (fast DC charging).</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Walking-Time Accessibility</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Generated walking-time catchments at 2, 4, 6, 8 and 10 minute intervals from each charging station using the GOAT platform's network-based accessibility engine, identifying the population reachable at each threshold.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Population Segmentation by Housing Type</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Overlaid population data differentiated by <strong>MFH</strong> (Mehrfamilienhaus / multi-family) and <strong>EFH</strong> (Einfamilienhaus / single-family) housing type, to understand whether charging access differs across residential contexts.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">Municipality-Level Dashboard</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Built an interactive GOAT dashboard with a <em>Kommune Auswählen</em> filter and per-municipality table showing total charging stations, standard chargers, fast chargers, total residents and residents by housing type — enabling targeted comparison across all municipalities in the district.</p></div></details></li></ol></div>
+</section><section class="case-section" id="case-section-3"><h2>Dashboard Features</h2>
+<ul>
+<li>Filter by municipality (<em>Kommune Auswählen</em>) to focus the map and statistics</li>
+<li>Filter by charger type — standard vs fast charging</li>
+<li><em>Bevölkerung nach Gehzeit</em> — population reached at each walking-time threshold</li>
+<li><em>Erschlossene Bevölkerung [%]</em> — percentage of population covered, shown as a choropleth per municipality</li>
+<li>Per-municipality table: <em>Erschließung je Kommune differenziert nach Wohngebiettyp und Ladetechnologie</em></li>
+<li>Heatmap layer showing supply–demand balance (charging stations vs population)</li>
+</ul>
+</section><section class="case-section case-reference" id="case-section-4"><h2>Tools &amp; Technologies</h2>
+<ul>
+<li>GOAT (Plan4Better) — accessibility engine, dashboard and visualisation</li>
+<li>Walking-time catchments (2–10 minutes) for network-based coverage analysis</li>
+<li>Population data segmented by housing type (MFH / EFH)</li>
+<li>Public EV charging station data for Rhein-Neckar-Kreis</li>
+</ul>
+</section><section class="case-section case-results" id="case-section-5"><h2>Outcome</h2>
+<p>Delivered a fully interactive accessibility dashboard for the Rhein-Neckar-Kreis that gives planners and policymakers a clear, municipality-level picture of where public EV charging is well-served and where investment is most needed — differentiated by charger type and housing context.</p>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← All projects</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span><a href="../certifications.html">Certifications</a></div></footer>
+</main>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/image-viewer.js"></script></body>
 </html>

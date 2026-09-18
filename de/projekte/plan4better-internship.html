@@ -1,105 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plan4Better Praktikum · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Plan4Better Praktikum · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../../de/index.html" class="nav-link">Startseite</a>
-        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
-        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
-        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="../kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../../projects/plan4better-internship.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../../de/index.html">Startseite</a>
-        <a href="../../de/projekte/" class="active">Projekte</a>
-        <a href="../../de/erfahrung.html">Erfahrung</a>
-        <a href="../../de/zertifikate.html">Zertifikate</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="../../projects/plan4better-internship.html">🇬🇧 EN</a>
-        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="../">← Zurück zu Projekten</a>
-      <div class="proj-detail__hero">
-        <img src="../../assets/images/goat_platform.png" alt="Plan4Better GOAT Plattform" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>GIS-Praktikum — Plan4Better GmbH</h1>
-          <div class="proj-detail__tags">
-            <span>Praktikum</span><span>Erreichbarkeit</span><span>Isochronen</span><span>PostGIS</span><span>GOAT</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <p style="color:var(--muted); font-size:14px; margin-bottom:4px;">Plan4Better GmbH · München, Deutschland · Januar 2024 – September 2024</p>
-        <p style="color:var(--muted); font-size:13px;">Pflichtpraktikum (MSc) — RWTH Aachen University<br/>Betreut von Dr.-Ing. Andreas Witte &amp; Prof. Dr.-Ing. Tobias Kuhnimhof</p>
-
-        <h2>Über Plan4Better &amp; GOAT</h2>
-        <p>Plan4Better ist ein Münchner Unternehmen, das sich auf datengetriebene Planungstools für nachhaltige Mobilität und Stadtplanung spezialisiert hat. Das Flaggschiffprodukt <strong>GOAT</strong> ist eine Open-Source-WebGIS-Plattform für integrierte Stadt- und Verkehrsplanung.</p>
-        <p>GOAT bietet Isochron- und Multi-Isochron-Generierung, ÖV-Güteklassen, Walkability-Index-Berechnung, lokale Erreichbarkeits-Heatmaps, aktives Mobilitäts-Routing und durchschnittliche Abfahrtsfrequenzen für ÖPNV-Haltestellen.</p>
-
-        <h2>Durchgeführte Projekte</h2>
-        <p style="font-size:13px; color:var(--muted); font-style:italic;">Spezifische Analyseergebnisse und Kundenkarten werden aus Gründen der Vertraulichkeit nicht gezeigt.</p>
-
-        <div class="steps">
-          <div class="step">
-            <h3>Erreichbarkeits- &amp; Walkability-Analyse — Augsburg</h3>
-            <p>Bevölkerungsdichteanalyse, Bewertung der ÖV-Güteklassen, POI-Erreichbarkeitsanalyse und Heatmaps sowie Walkability-Index-Berechnung im Untersuchungsgebiet. Ergebnis: umsetzbare räumliche Erkenntnisse für den Mobilitätsplan der Stadt.</p>
-          </div>
-          <div class="step">
-            <h3>Erreichbarkeit von Parkhäusern — Amberg Innenstadt</h3>
-            <p>Berechnung von Einzugsbereichen per Pkw- und Fußwegzeiten, Erreichbarkeitsanalyse von Parkhäusern zu wichtigen POIs und isochrosenbasierte Lückenidentifikation. Ergebnis: Empfehlungen zur Optimierung von Parkstandorten.</p>
-          </div>
-          <div class="step">
-            <h3>Ergänzende Parkplatzanalyse — POI-zu-Parkhaus-Fußwegdistanzen, Amberg</h3>
-            <p>Digitalisierung von Parkstandorten aus einem PDF-Dokument in QGIS, eigenständige Fußwegdistanzanalyse von POIs zu Parkhäusern, Isochronen für mehrere Gehzeitintervalle. Ergebnis: Erkenntnisse zur Übereinstimmung von Parkraumangebot und städtischen Mobilitätsbedürfnissen.</p>
-          </div>
-          <div class="step">
-            <h3>Mobilitätsanalyse — Hassels &amp; Reisholz, Düsseldorf</h3>
-            <p>Flächeneignungsanalyse für Shared-Mobility-Stationen, ÖPNV-Qualitäts- und Erreichbarkeitsbewertung sowie Szenarioanalyse für neue Mobilitätshubs. Ergebnis: Evidenzbasis für die Ausweitung von E-Scooter- und E-Bike-Angeboten.</p>
-          </div>
-          <div class="step">
-            <h3>Fußgängernetzwerk-Isochronen vs. Kreispuffer — Augsburg</h3>
-            <p>Modifikation von SQL-Skripten zur Implementierung von Fußgängernetzwerk-Isochronen im GOAT-Backend, Vergleich der Erreichbarkeitsergebnisse unter beiden Ansätzen und Nachweis messbarer Unterschiede zwischen euklidischen und netzwerkbasierten Einzugsbereichen. Ergebnis: Präzisere Erreichbarkeitsmessungen für die Verkehrsplanung.</p>
-          </div>
-        </div>
-
-        <h2>Eingesetzte technische Fähigkeiten</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;">
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">PostgreSQL</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">PostGIS</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Python</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">QGIS</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">GOAT</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Isochronen</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">ÖV-Güteklassen</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Walkability-Index</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Erreichbarkeitsanalyse</span>
-          <span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Mobilitätsplanung</span>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
-  </main>
-  <script src="../../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../../de/index.html">Startseite</a>
+<a class="nav-link active" href="../../de/projekte/index.html">Projekte</a>
+<a class="nav-link" href="../../de/erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="../kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../../projects/plan4better-internship.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../../de/index.html">Startseite</a>
+<a class="active" href="../../de/projekte/index.html">Projekte</a>
+<a href="../../de/erfahrung.html">Erfahrung</a>
+<a href="../kontakt.html">Kontakt</a>
+<a href="../../projects/plan4better-internship.html">🇬🇧 EN</a>
+<a class="btn btn--primary btn--block" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="../index.html">← Zurück zu Projekten</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Bild vergrößern: Plan4Better GOAT Plattform" class="image-preview" data-image-viewer="" href="../../assets/images/goat_platform.png"><img alt="Plan4Better GOAT Plattform" height="749" loading="eager" src="../../assets/images/goat_platform.png" width="1000"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>GIS-Praktikum — Plan4Better GmbH</h1>
+<div class="proj-detail__tags">
+<span>Praktikum</span><span>Erreichbarkeit</span><span>Isochronen</span><span>PostGIS</span><span>GOAT</span>
+</div>
+<div aria-label="Verwendete Werkzeuge" class="case-brands"><a aria-label="QGIS — official website" class="tool-brand" href="https://qgis.org/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../../assets/logos/qgis.svg" width="76"/><span>QGIS</span></a><a aria-label="Python — official website" class="tool-brand" href="https://www.python.org/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../../assets/logos/python.svg" width="76"/><span>Python</span></a><a aria-label="PostGIS — official website" class="tool-brand" href="https://postgis.net/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../../assets/logos/postgis.svg" width="76"/><span>PostGIS</span></a><a aria-label="PostgreSQL — official website" class="tool-brand" href="https://www.postgresql.org/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../../assets/logos/postgresql.svg" width="76"/><span>PostgreSQL</span></a></div></div>
+</div>
+<div class="case-layout"><nav aria-label="Auf dieser Seite" class="case-nav"><p class="eyebrow">PROJEKTÜBERSICHT</p><a href="#project-visual">Karte / Vorschau ↗</a><a href="#case-section-1">Über Plan4Better &amp; GOAT</a><a href="#case-section-2">Durchgeführte Projekte</a><a href="#case-section-3">Eingesetzte technische Fähigkeiten</a></nav><div class="proj-detail__body">
+<p style="color:var(--muted); font-size:14px; margin-bottom:4px;">Plan4Better GmbH · München, Deutschland · Januar 2024 – März 2024</p>
+<p style="color:var(--muted); font-size:13px;">Pflichtpraktikum (MSc) — RWTH Aachen University<br/>Betreut von Dr.-Ing. Andreas Witte &amp; Prof. Dr.-Ing. Tobias Kuhnimhof</p>
+<section class="case-section" id="case-section-1"><h2>Über Plan4Better &amp; GOAT</h2>
+<p>Plan4Better ist ein Münchner Unternehmen, das sich auf datengetriebene Planungstools für nachhaltige Mobilität und Stadtplanung spezialisiert hat. Das Flaggschiffprodukt <strong>GOAT</strong> ist eine Open-Source-WebGIS-Plattform für integrierte Stadt- und Verkehrsplanung.</p>
+<p>GOAT bietet Isochron- und Multi-Isochron-Generierung, ÖV-Güteklassen, Walkability-Index-Berechnung, lokale Erreichbarkeits-Heatmaps, aktives Mobilitäts-Routing und durchschnittliche Abfahrtsfrequenzen für ÖPNV-Haltestellen.</p>
+</section><section class="case-section" id="case-section-2"><h2>Durchgeführte Projekte</h2>
+<p style="font-size:13px; color:var(--muted); font-style:italic;">Spezifische Analyseergebnisse und Kundenkarten werden aus Gründen der Vertraulichkeit nicht gezeigt.</p>
+<div class="steps">
+<div class="step">
+<h3>Erreichbarkeits- &amp; Walkability-Analyse — Augsburg</h3>
+<p>Bevölkerungsdichteanalyse, Bewertung der ÖV-Güteklassen, POI-Erreichbarkeitsanalyse und Heatmaps sowie Walkability-Index-Berechnung im Untersuchungsgebiet. Ergebnis: umsetzbare räumliche Erkenntnisse für den Mobilitätsplan der Stadt.</p>
+</div>
+<div class="step">
+<h3>Erreichbarkeit von Parkhäusern — Amberg Innenstadt</h3>
+<p>Berechnung von Einzugsbereichen per Pkw- und Fußwegzeiten, Erreichbarkeitsanalyse von Parkhäusern zu wichtigen POIs und isochrosenbasierte Lückenidentifikation. Ergebnis: Empfehlungen zur Optimierung von Parkstandorten.</p>
+</div>
+<div class="step">
+<h3>Ergänzende Parkplatzanalyse — POI-zu-Parkhaus-Fußwegdistanzen, Amberg</h3>
+<p>Digitalisierung von Parkstandorten aus einem PDF-Dokument in QGIS, eigenständige Fußwegdistanzanalyse von POIs zu Parkhäusern, Isochronen für mehrere Gehzeitintervalle. Ergebnis: Erkenntnisse zur Übereinstimmung von Parkraumangebot und städtischen Mobilitätsbedürfnissen.</p>
+</div>
+<div class="step">
+<h3>Mobilitätsanalyse — Hassels &amp; Reisholz, Düsseldorf</h3>
+<p>Flächeneignungsanalyse für Shared-Mobility-Stationen, ÖPNV-Qualitäts- und Erreichbarkeitsbewertung sowie Szenarioanalyse für neue Mobilitätshubs. Ergebnis: Evidenzbasis für die Ausweitung von E-Scooter- und E-Bike-Angeboten.</p>
+</div>
+<div class="step">
+<h3>Fußgängernetzwerk-Isochronen vs. Kreispuffer — Augsburg</h3>
+<p>Modifikation von SQL-Skripten zur Implementierung von Fußgängernetzwerk-Isochronen im GOAT-Backend, Vergleich der Erreichbarkeitsergebnisse unter beiden Ansätzen und Nachweis messbarer Unterschiede zwischen euklidischen und netzwerkbasierten Einzugsbereichen. Ergebnis: Präzisere Erreichbarkeitsmessungen für die Verkehrsplanung.</p>
+</div>
+</div>
+</section><section class="case-section case-reference" id="case-section-3"><h2>Eingesetzte technische Fähigkeiten</h2>
+<div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;">
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">PostgreSQL</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">PostGIS</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Python</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">QGIS</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">GOAT</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Isochronen</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">ÖV-Güteklassen</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Walkability-Index</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Erreichbarkeitsanalyse</span>
+<span style="background:rgba(47,107,79,.10); border:1px solid rgba(47,107,79,.20); border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700;">Mobilitätsplanung</span>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← Alle Projekte</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span><a href="../zertifikate.html">Zertifikate</a></div></footer>
+</main>
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/image-viewer.js"></script></body>
 </html>

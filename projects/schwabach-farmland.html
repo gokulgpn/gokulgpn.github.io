@@ -1,115 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>322 Hectares of Buildable Farmland Around Schwabach · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>322 Hectares of Buildable Farmland Around Schwabach · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/schwabach-farmland.html" class="lang-toggle" aria-label="Zur deutschen Version">🇩🇪 DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../index.html">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/schwabach-farmland.html">🇩🇪 DE</a><a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="index.html">← Back to Projects</a>
-
-      <div class="proj-detail__hero">
-        <img src="../assets/images/schwabach_landuse.png" alt="322 Hectares of Buildable Farmland Around Schwabach" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>322 Hectares of Buildable Farmland Around Schwabach</h1>
-          <div class="proj-detail__tags">
-            <span>Land Use</span><span>GOAT</span><span>Bavaria</span><span>Housing</span><span>Plan4Better</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <h2>Overview</h2>
-        <p>A multicriteria spatial analysis identifying farmland parcels around <strong>Schwabach, Bavaria</strong> (population ~40,000) that could feasibly accommodate housing development. The work addresses the tension between housing demand and farmland preservation — mapping land that is transit-accessible, adjacent to existing residential areas, geometrically suitable, and not forested, using only open-source data.</p>
-        <p>The analysis was published as a <a href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" target="_blank" rel="noopener">Plan4Better blog post</a> and is fully replicable for any German municipality with ALKIS coverage and published GTFS feeds.</p>
-
-        <h2>Key Findings</h2>
-        <ul>
-          <li><strong>322 hectares</strong> of rail-priority buildable farmland identified</li>
-          <li><strong>842 hectares</strong> of bus-priority buildable farmland (upper-bound estimate)</li>
-          <li>All data sources open and publicly available — ALKIS, GTFS, OSM</li>
-          <li>Workflow replicable for any German municipality by adjusting AGS code and thresholds</li>
-        </ul>
-
-        <h2>Methodology</h2>
-        <div class="steps">
-          <div class="step">
-            <h3>Transit Accessibility Filter</h3>
-            <p>Applied <strong>800 m buffers</strong> around rail stations and <strong>500 m buffers</strong> around bus stops, following BBSR and VDV planning guidelines. Rail-adjacent sites were given higher priority, as rail infrastructure tends to be more durable than bus routes over planning horizons.</p>
-          </div>
-          <div class="step">
-            <h3>Housing Adjacency Filter</h3>
-            <p>Retained only parcels within <strong>100 m of existing residential areas</strong> to encourage infill development rather than greenfield sprawl at the urban fringe.</p>
-          </div>
-          <div class="step">
-            <h3>Parcel Geometry Filter</h3>
-            <p>Applied a <strong>minimum parcel size of 0.5 hectares</strong> and a <strong>Polsby-Popper compactness score above 0.3</strong> to exclude elongated or irregularly shaped slivers that would be impractical to develop.</p>
-          </div>
-          <div class="step">
-            <h3>Forest Exclusion</h3>
-            <p>Removed all forested areas in line with the <strong>Bundeswaldgesetz</strong>, ensuring only genuine farmland parcels remained in the output.</p>
-          </div>
-        </div>
-
-        <h2>Data Sources</h2>
-        <ul>
-          <li><strong>ALKIS</strong> land-use parcels — Bayern Geoportal</li>
-          <li><strong>GTFS</strong> transit stops — DELFI Germany</li>
-          <li><strong>OpenStreetMap</strong> rail lines</li>
-        </ul>
-
-        <h2>Tools &amp; Technologies</h2>
-        <ul>
-          <li>GOAT (Plan4Better) — spatial analysis, multicriteria filtering and map visualisation</li>
-          <li>ALKIS, GTFS (DELFI), OpenStreetMap — open data sources</li>
-          <li>Polsby-Popper compactness scoring for parcel geometry filtering</li>
-        </ul>
-
-        <h2>Limitations</h2>
-        <p>The analysis identifies spatial suitability only — land ownership and seller willingness remain major practical barriers in German land-use planning. Transit proximity uses straight-line buffering rather than actual walkable catchments shaped by street networks and topography. Bus-stop frequency data was not incorporated, making the 842 ha figure an upper-bound estimate.</p>
-
-        <h2>Outcome</h2>
-        <p>Delivered a transparent, open-data-based land suitability analysis that gives planners in Schwabach a clear spatial picture of where farmland could realistically support new housing — and a replicable workflow that can be adapted for other Bavarian and German municipalities.</p>
-
-        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn--primary btn--sm" href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" target="_blank" rel="noopener">Read Blog Post</a>
-          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/plan4better_urbanplanning-housing-gis-activity-7472634118581944321-MlfK" target="_blank" rel="noopener">LinkedIn Post</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
-  </main>
-  <script src="../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Skip to content</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a aria-label="Zur deutschen Version" class="lang-toggle" href="../de/projekte/schwabach-farmland.html">DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+<a aria-label="Email Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Contact</a><button aria-controls="drawer" aria-expanded="false" aria-label="Open menu" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a href="../de/projekte/schwabach-farmland.html">🇩🇪 DE</a><a class="btn btn--primary btn--block" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="index.html">← Back to Projects</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Enlarge image: 322 Hectares of Buildable Farmland Around Schwabach" class="image-preview" data-image-viewer="" href="../assets/images/schwabach_landuse.png"><img alt="322 Hectares of Buildable Farmland Around Schwabach" height="1568" loading="eager" src="../assets/images/schwabach_landuse.png" width="2376"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>322 Hectares of Buildable Farmland Around Schwabach</h1>
+<div class="proj-detail__tags">
+<span>Land Use</span><span>GOAT</span><span>Bavaria</span><span>Housing</span><span>Plan4Better</span>
+</div>
+</div>
+</div>
+<div class="case-layout"><nav aria-label="On this page" class="case-nav"><p class="eyebrow">IN THIS PROJECT</p><a href="#project-visual">Map / visual preview ↗</a><a href="#case-section-1">Overview</a><a href="#case-section-2">Key Findings</a><a href="#case-section-3">Workflow</a><a href="#case-section-4">Data Sources</a><a href="#case-section-5">Tools &amp; Technologies</a><a href="#case-section-6">Limitations</a><a href="#case-section-7">Outcome</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Overview</h2>
+<p>A multicriteria spatial analysis identifying farmland parcels around <strong>Schwabach, Bavaria</strong> (population ~40,000) that could feasibly accommodate housing development. The work addresses the tension between housing demand and farmland preservation — mapping land that is transit-accessible, adjacent to existing residential areas, geometrically suitable, and not forested, using only open-source data.</p>
+<p>The analysis was published as a <a href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" rel="noopener" target="_blank">Plan4Better blog post</a> and is fully replicable for any German municipality with ALKIS coverage and published GTFS feeds.</p>
+</section><section class="case-section case-results" id="case-section-2"><h2>Key Findings</h2>
+<ul>
+<li><strong>322 hectares</strong> of rail-priority buildable farmland identified</li>
+<li><strong>842 hectares</strong> of bus-priority buildable farmland (upper-bound estimate)</li>
+<li>All data sources open and publicly available — ALKIS, GTFS, OSM</li>
+<li>Workflow replicable for any German municipality by adjusting AGS code and thresholds</li>
+</ul>
+</section><section class="case-section" id="case-section-3"><h2>Workflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Pause animation</button><p class="flow-hint">Follow the process. Expand a step for the details.</p><ol aria-label="Project workflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">Transit Accessibility Filter</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Applied <strong>800 m buffers</strong> around rail stations and <strong>500 m buffers</strong> around bus stops, following BBSR and VDV planning guidelines. Rail-adjacent sites were given higher priority, as rail infrastructure tends to be more durable than bus routes over planning horizons.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Housing Adjacency Filter</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Retained only parcels within <strong>100 m of existing residential areas</strong> to encourage infill development rather than greenfield sprawl at the urban fringe.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Parcel Geometry Filter</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Applied a <strong>minimum parcel size of 0.5 hectares</strong> and a <strong>Polsby-Popper compactness score above 0.3</strong> to exclude elongated or irregularly shaped slivers that would be impractical to develop.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">Forest Exclusion</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Removed all forested areas in line with the <strong>Bundeswaldgesetz</strong>, ensuring only genuine farmland parcels remained in the output.</p></div></details></li></ol></div>
+</section><section class="case-section case-reference" id="case-section-4"><h2>Data Sources</h2>
+<ul>
+<li><strong>ALKIS</strong> land-use parcels — Bayern Geoportal</li>
+<li><strong>GTFS</strong> transit stops — DELFI Germany</li>
+<li><strong>OpenStreetMap</strong> rail lines</li>
+</ul>
+</section><section class="case-section case-reference" id="case-section-5"><h2>Tools &amp; Technologies</h2>
+<ul>
+<li>GOAT (Plan4Better) — spatial analysis, multicriteria filtering and map visualisation</li>
+<li>ALKIS, GTFS (DELFI), OpenStreetMap — open data sources</li>
+<li>Polsby-Popper compactness scoring for parcel geometry filtering</li>
+</ul>
+</section><section class="case-section" id="case-section-6"><h2>Limitations</h2>
+<p>The analysis identifies spatial suitability only — land ownership and seller willingness remain major practical barriers in German land-use planning. Transit proximity uses straight-line buffering rather than actual walkable catchments shaped by street networks and topography. Bus-stop frequency data was not incorporated, making the 842 ha figure an upper-bound estimate.</p>
+</section><section class="case-section case-results" id="case-section-7"><h2>Outcome</h2>
+<p>Delivered a transparent, open-data-based land suitability analysis that gives planners in Schwabach a clear spatial picture of where farmland could realistically support new housing — and a replicable workflow that can be adapted for other Bavarian and German municipalities.</p>
+<div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+<a class="btn btn--primary btn--sm" href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" rel="noopener" target="_blank">Read Blog Post</a>
+<a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/plan4better_urbanplanning-housing-gis-activity-7472634118581944321-MlfK" rel="noopener" target="_blank">LinkedIn Post</a>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← All projects</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span><a href="../certifications.html">Certifications</a></div></footer>
+</main>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/image-viewer.js"></script></body>
 </html>

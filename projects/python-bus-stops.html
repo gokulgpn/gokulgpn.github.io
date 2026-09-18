@@ -1,85 +1,72 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Python Spatial Analysis — Bus Stops · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Python Spatial Analysis — Bus Stops · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/python-bus-stops.html" class="lang-toggle" aria-label="Zur deutschen Version">🇩🇪 DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/python-bus-stops.html">🇩🇪 DE</a><a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="index.html">← Back to Projects</a>
-      <div class="proj-detail__hero">
-        <img src="../assets/images/python_busstop_analysis_3.jpeg" alt="Python Bus Stop Analysis — ChatGPT interactive map" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>Python Spatial Analysis — Bus Stops</h1>
-          <div class="proj-detail__tags">
-            <span>Python</span><span>GeoPandas</span><span>Folium</span><span>Google Colab</span><span>Spatial analysis</span>
-          </div>
-        </div>
-      </div>
-      <div class="proj-detail__body">
-        <h2>Overview</h2>
-        <p>A practical demonstration of how Python can bridge the gap between raw data and spatial insights — no deep GIS expertise required. Starting from a public transportation dataset of new bus stops, this project visualises their distribution and evaluates their strategic placement using an accessible Python spatial analysis workflow.</p>
-        <p>The interactive map was generated with the help of <strong>ChatGPT</strong>, showcasing how AI tools can accelerate spatial workflows for data analysts.</p>
-
-        <h2>Methodology</h2>
-        <div class="steps">
-          <div class="step"><h3>Data Preparation</h3><p>Loaded and cleaned the bus stop dataset using <strong>Pandas</strong>, structuring the raw tabular data ready for spatial processing.</p></div>
-          <div class="step"><h3>Spatial Data Handling</h3><p>Used <strong>GeoPandas</strong> to convert the dataset into spatial features, enabling geographic operations and distribution analysis.</p></div>
-          <div class="step"><h3>Interactive Mapping</h3><p>Built an interactive map with <strong>Folium</strong> to visualise bus stop distribution and evaluate the strategic placement of stops across the study area.</p></div>
-          <div class="step"><h3>Collaboration &amp; Sharing</h3><p>Ran the full workflow in <strong>Google Colab</strong> for seamless execution and easy sharing without local environment setup.</p></div>
-        </div>
-
-        <img src="../assets/images/python_busstop_analysis_1.jpeg" alt="Python Bus Stop Analysis output 1" />
-        <img src="../assets/images/python_busstop_analysis_2.jpeg" alt="Python Bus Stop Analysis output 2" style="margin-top:1rem;" />
-
-        <h2>Tools &amp; Technologies</h2>
-        <ul>
-          <li>Python — Pandas, GeoPandas, Folium</li>
-          <li>Google Colab — collaborative notebook environment</li>
-          <li>ChatGPT — assisted with interactive map generation</li>
-          <li>Spatial Thoughts — tutorials and methodology guidance</li>
-        </ul>
-
-        <h2>Outcome</h2>
-        <p>Transformed a raw bus stop dataset into an interactive spatial visualisation, demonstrating how fundamental Python tools can unlock actionable geographic insights — even without deep spatial expertise.</p>
-
-        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_dataanalysis-spatialanalysis-python-activity-7177922252267495424-02jF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">View LinkedIn Post</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
-  </main>
-  <script src="../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Skip to content</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a aria-label="Zur deutschen Version" class="lang-toggle" href="../de/projekte/python-bus-stops.html">DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+<a aria-label="Email Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Contact</a><button aria-controls="drawer" aria-expanded="false" aria-label="Open menu" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a class="nav-link" href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a href="../de/projekte/python-bus-stops.html">🇩🇪 DE</a><a class="btn btn--primary btn--block" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="index.html">← Back to Projects</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Enlarge image: Python Bus Stop Analysis — ChatGPT interactive map" class="image-preview" data-image-viewer="" href="../assets/images/python_busstop_analysis_3.jpeg"><img alt="Python Bus Stop Analysis — ChatGPT interactive map" height="1126" loading="eager" src="../assets/images/python_busstop_analysis_3.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>Python Spatial Analysis — Bus Stops</h1>
+<div class="proj-detail__tags">
+<span>Python</span><span>GeoPandas</span><span>Folium</span><span>Google Colab</span><span>Spatial analysis</span>
+</div>
+<div aria-label="Tools used" class="case-brands"><a aria-label="Python — official website" class="tool-brand" href="https://www.python.org/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../assets/logos/python.svg" width="76"/><span>Python</span></a></div></div>
+</div>
+<div class="case-layout"><nav aria-label="On this page" class="case-nav"><p class="eyebrow">IN THIS PROJECT</p><a href="#project-visual">Map / visual preview ↗</a><a href="#case-section-1">Overview</a><a href="#case-section-2">Workflow</a><a href="#case-section-3">Tools &amp; Technologies</a><a href="#case-section-4">Outcome</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Overview</h2>
+<p>A practical demonstration of how Python can bridge the gap between raw data and spatial insights — no deep GIS expertise required. Starting from a public transportation dataset of new bus stops, this project visualises their distribution and evaluates their strategic placement using an accessible Python spatial analysis workflow.</p>
+<p>The interactive map was generated with the help of <strong>ChatGPT</strong>, showcasing how AI tools can accelerate spatial workflows for data analysts.</p>
+</section><section class="case-section" id="case-section-2"><h2>Workflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Pause animation</button><p class="flow-hint">Follow the process. Expand a step for the details.</p><ol aria-label="Project workflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">Data Preparation</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Loaded and cleaned the bus stop dataset using <strong>Pandas</strong>, structuring the raw tabular data ready for spatial processing.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Spatial Data Handling</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Used <strong>GeoPandas</strong> to convert the dataset into spatial features, enabling geographic operations and distribution analysis.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Interactive Mapping</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Built an interactive map with <strong>Folium</strong> to visualise bus stop distribution and evaluate the strategic placement of stops across the study area.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">Collaboration &amp; Sharing</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Ran the full workflow in <strong>Google Colab</strong> for seamless execution and easy sharing without local environment setup.</p></div></details></li></ol></div>
+<a aria-label="Enlarge image: Python Bus Stop Analysis output 1" class="image-preview" data-image-viewer="" href="../assets/images/python_busstop_analysis_1.jpeg"><img alt="Python Bus Stop Analysis output 1" height="1325" loading="lazy" src="../assets/images/python_busstop_analysis_1.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a aria-label="Enlarge image: Python Bus Stop Analysis output 2" class="image-preview" data-image-viewer="" href="../assets/images/python_busstop_analysis_2.jpeg"><img alt="Python Bus Stop Analysis output 2" height="440" loading="lazy" src="../assets/images/python_busstop_analysis_2.jpeg" style="margin-top:1rem;" width="800"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+</section><section class="case-section case-reference" id="case-section-3"><h2>Tools &amp; Technologies</h2>
+<ul>
+<li>Python — Pandas, GeoPandas, Folium</li>
+<li>Google Colab — collaborative notebook environment</li>
+<li>ChatGPT — assisted with interactive map generation</li>
+<li>Spatial Thoughts — tutorials and methodology guidance</li>
+</ul>
+</section><section class="case-section case-results" id="case-section-4"><h2>Outcome</h2>
+<p>Transformed a raw bus stop dataset into an interactive spatial visualisation, demonstrating how fundamental Python tools can unlock actionable geographic insights — even without deep spatial expertise.</p>
+<div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+<a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_dataanalysis-spatialanalysis-python-activity-7177922252267495424-02jF?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" rel="noopener" target="_blank">View LinkedIn Post</a>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← All projects</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span><a href="../certifications.html">Certifications</a></div></footer>
+</main>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/image-viewer.js"></script></body>
 </html>

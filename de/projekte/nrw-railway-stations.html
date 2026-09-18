@@ -1,88 +1,76 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NRW Bahnhöfe — Python &amp; Deutsche Bahn API · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>NRW Bahnhöfe — Python &amp; Deutsche Bahn API · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../../de/index.html" class="nav-link">Startseite</a>
-        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
-        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
-        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="../kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../../projects/nrw-railway-stations.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../../de/index.html">Startseite</a>
-        <a href="../../de/projekte/" class="active">Projekte</a>
-        <a href="../../de/erfahrung.html">Erfahrung</a>
-        <a href="../../de/zertifikate.html">Zertifikate</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="../../projects/nrw-railway-stations.html">🇬🇧 EN</a>
-        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="../">← Zurück zu Projekten</a>
-      <div class="proj-detail__hero">
-        <img src="../../assets/images/nrw_railway_1.jpg" alt="NRW Bahnhöfe Analyse" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>NRW Bahnhöfe — Python &amp; Deutsche Bahn API</h1>
-          <div class="proj-detail__tags">
-            <span>Python</span><span>GeoPandas</span><span>Deutsche Bahn API</span><span>Bahn</span><span>NRW</span>
-          </div>
-        </div>
-      </div>
-      <div class="proj-detail__body">
-        <h2>Überblick</h2>
-        <p>Dieses Projekt markiert einen Meilenstein auf dem persönlichen Weg von null Programmiererfahrung zur Python-Kompetenz in der Raumanalyse. Als Teil des Kurses von <strong>Ujaval Gandhi (Spatial Thoughts)</strong> visualisiert das Projekt <strong>Bahnhofsdaten entlang von Linien</strong> mithilfe der <strong>Deutsche Bahn WEB API</strong>, Python, GeoPandas und Pandas.</p>
-        <p>Die Entdeckung der Schnittstelle von Python, QGIS und Raumanalyse war transformativ — sie verbindet die Leidenschaft für raumbezogene Arbeit mit der Fähigkeit, Ideen in Code umzusetzen und Analysen automatisiert durchzuführen.</p>
-
-        <h2>Methodik</h2>
-        <div class="steps">
-          <div class="step"><h3>Deutsche Bahn WEB API</h3><p>Abruf aktueller Bahnhofsdaten entlang von Linien über die Deutsche Bahn WEB API — für einen stets aktuellen Datensatz des NRW-Stationsnetzes.</p></div>
-          <div class="step"><h3>Datenverarbeitung mit Python</h3><p>Bereinigung und Strukturierung der API-Antwortdaten mit <strong>Pandas</strong>; räumliche Operationen und Geometrieverarbeitung mit <strong>GeoPandas</strong>.</p></div>
-          <div class="step"><h3>Visualisierung</h3><p>Erstellung einer räumlichen Visualisierung der Bahnhofsdaten entlang von Linien — vollständige Pipeline von API-Abfrage bis zur kartografischen Ausgabe in Python.</p></div>
-        </div>
-
-        <h2>Tools &amp; Technologien</h2>
-        <ul>
-          <li>Python — GeoPandas, Pandas</li>
-          <li>Deutsche Bahn WEB API — Live-Bahnhofsdaten</li>
-          <li>Spatial Thoughts-Kurs — geleitet von Ujaval Gandhi</li>
-        </ul>
-
-        <h2>Danksagungen</h2>
-        <ul>
-          <li><strong>Ujaval Gandhi</strong> (Spatial Thoughts) — Kursleiter und Mentor, dessen interaktive Vorlesungen räumliches Python zugänglich gemacht haben</li>
-          <li><strong>Vigna Purohit</strong> — Tutorin, deren Unterstützung während des gesamten Lernwegs entscheidend war</li>
-        </ul>
-
-        <h2>Ergebnis</h2>
-        <p>Erfolgreiche Visualisierung der NRW-Bahnhofsdaten entlang von Linien über die Deutsche Bahn API mit Python — Abschluss eines anspruchsvollen Projekts, das den Übergang von keiner Programmiererfahrung zu sicherem räumlichem Python-Scripting markiert.</p>
-
-        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_pythonprogramming-spatialanalysis-pandas-activity-7085004644405366784-WofU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag ansehen</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
-  </main>
-  <script src="../../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../../de/index.html">Startseite</a>
+<a class="nav-link active" href="../../de/projekte/index.html">Projekte</a>
+<a class="nav-link" href="../../de/erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="../kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../../projects/nrw-railway-stations.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../../de/index.html">Startseite</a>
+<a class="active" href="../../de/projekte/index.html">Projekte</a>
+<a href="../../de/erfahrung.html">Erfahrung</a>
+<a href="../kontakt.html">Kontakt</a>
+<a href="../../projects/nrw-railway-stations.html">🇬🇧 EN</a>
+<a class="btn btn--primary btn--block" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="../index.html">← Zurück zu Projekten</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Bild vergrößern: NRW Bahnhöfe Analyse" class="image-preview" data-image-viewer="" href="../../assets/images/nrw_railway_1.jpg"><img alt="NRW Bahnhöfe Analyse" height="563" loading="eager" src="../../assets/images/nrw_railway_1.jpg" width="614"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>NRW Bahnhöfe — Python &amp; Deutsche Bahn API</h1>
+<div class="proj-detail__tags">
+<span>Python</span><span>GeoPandas</span><span>Deutsche Bahn API</span><span>Bahn</span><span>NRW</span>
+</div>
+<div aria-label="Verwendete Werkzeuge" class="case-brands"><a aria-label="QGIS — official website" class="tool-brand" href="https://qgis.org/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../../assets/logos/qgis.svg" width="76"/><span>QGIS</span></a><a aria-label="Python — official website" class="tool-brand" href="https://www.python.org/" rel="noopener" target="_blank"><img alt="" data-no-lightbox="" height="32" src="../../assets/logos/python.svg" width="76"/><span>Python</span></a></div></div>
+</div>
+<div class="case-layout"><nav aria-label="Auf dieser Seite" class="case-nav"><p class="eyebrow">PROJEKTÜBERSICHT</p><a href="#project-visual">Karte / Vorschau ↗</a><a href="#case-section-1">Überblick</a><a href="#case-section-2">Analyseworkflow</a><a href="#case-section-3">Tools &amp; Technologien</a><a href="#case-section-4">Danksagungen</a><a href="#case-section-5">Ergebnis</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Überblick</h2>
+<p>Dieses Projekt markiert einen Meilenstein auf dem persönlichen Weg von null Programmiererfahrung zur Python-Kompetenz in der Raumanalyse. Als Teil des Kurses von <strong>Ujaval Gandhi (Spatial Thoughts)</strong> visualisiert das Projekt <strong>Bahnhofsdaten entlang von Linien</strong> mithilfe der <strong>Deutsche Bahn WEB API</strong>, Python, GeoPandas und Pandas.</p>
+<p>Die Entdeckung der Schnittstelle von Python, QGIS und Raumanalyse war transformativ — sie verbindet die Leidenschaft für raumbezogene Arbeit mit der Fähigkeit, Ideen in Code umzusetzen und Analysen automatisiert durchzuführen.</p>
+</section><section class="case-section" id="case-section-2"><h2>Analyseworkflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Animation pausieren</button><p class="flow-hint">Schritte aufklappen, um die Details zu lesen.</p><ol aria-label="Projektworkflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">Deutsche Bahn WEB API</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Abruf aktueller Bahnhofsdaten entlang von Linien über die Deutsche Bahn WEB API — für einen stets aktuellen Datensatz des NRW-Stationsnetzes.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Datenverarbeitung mit Python</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Bereinigung und Strukturierung der API-Antwortdaten mit <strong>Pandas</strong>; räumliche Operationen und Geometrieverarbeitung mit <strong>GeoPandas</strong>.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Visualisierung</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Erstellung einer räumlichen Visualisierung der Bahnhofsdaten entlang von Linien — vollständige Pipeline von API-Abfrage bis zur kartografischen Ausgabe in Python.</p></div></details></li></ol></div>
+</section><section class="case-section case-reference" id="case-section-3"><h2>Tools &amp; Technologien</h2>
+<ul>
+<li>Python — GeoPandas, Pandas</li>
+<li>Deutsche Bahn WEB API — Live-Bahnhofsdaten</li>
+<li>Spatial Thoughts-Kurs — geleitet von Ujaval Gandhi</li>
+</ul>
+</section><section class="case-section" id="case-section-4"><h2>Danksagungen</h2>
+<ul>
+<li><strong>Ujaval Gandhi</strong> (Spatial Thoughts) — Kursleiter und Mentor, dessen interaktive Vorlesungen räumliches Python zugänglich gemacht haben</li>
+<li><strong>Vigna Purohit</strong> — Tutorin, deren Unterstützung während des gesamten Lernwegs entscheidend war</li>
+</ul>
+</section><section class="case-section case-results" id="case-section-5"><h2>Ergebnis</h2>
+<p>Erfolgreiche Visualisierung der NRW-Bahnhofsdaten entlang von Linien über die Deutsche Bahn API mit Python — Abschluss eines anspruchsvollen Projekts, das den Übergang von keiner Programmiererfahrung zu sicherem räumlichem Python-Scripting markiert.</p>
+<div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+<a class="btn btn--primary btn--sm" href="https://www.linkedin.com/posts/gopangokul_pythonprogramming-spatialanalysis-pandas-activity-7085004644405366784-WofU?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" rel="noopener" target="_blank">LinkedIn-Beitrag ansehen</a>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← Alle Projekte</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span><a href="../zertifikate.html">Zertifikate</a></div></footer>
+</main>
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/image-viewer.js"></script></body>
 </html>

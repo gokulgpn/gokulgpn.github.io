@@ -1,535 +1,449 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projekte · Gokul Gopan</title>
-  <meta name="description" content="GIS- und Raumanalyseprojekte von Gokul Gopan — Erreichbarkeit, Mobilität, Kartografie und Geoprozessierung." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Projekte · Gokul Gopan</title>
+<meta content="GIS- und Raumanalyseprojekte von Gokul Gopan — Erreichbarkeit, Mobilität, Kartografie und Geoprozessierung." name="description"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
 </head>
-
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../index.html" aria-label="Startseite">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">Gokul Gopan</span>
-      </a>
-      <nav class="nav" aria-label="Hauptnavigation">
-        <a href="../index.html" class="nav-link">Startseite</a>
-        <a href="../projekte/" class="nav-link active">Projekte</a>
-        <a href="../erfahrung.html" class="nav-link">Erfahrung</a>
-        <a href="../zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="../kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../../projects/" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav" aria-label="Mobile Navigation">
-        <a href="../index.html">Startseite</a>
-        <a href="../projekte/" class="active">Projekte</a>
-        <a href="../erfahrung.html">Erfahrung</a>
-        <a href="../zertifikate.html">Zertifikate</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="../../projects/">EN</a>
-        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="page-hero">
-        <h1>Projekte</h1>
-        <p>GIS-, Raumanalyse- und Kartografieprojekte zu Erreichbarkeit, Mobilität, ÖPNV und Geoprozessierung.</p>
-      </div>
-
-      <div class="proj-grid">
-
-        <div class="proj-section-title">
-          <h2>Akademische Forschung</h2>
-          <p>Eigenständige Verkehrs- und Raumanalyse an der RWTH Aachen University.</p>
-        </div>
-
-        <a href="masterarbeit-einzelhandelserreichbarkeit.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/thesis-walking-accessibility.jpg" alt="Fußläufige Einzelhandelserreichbarkeit in fünf deutschen Städten" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Masterarbeit: Verkehrsmittelspezifische Einzelhandelserreichbarkeit</h3>
-              <p class="proj-card__desc">Fünf-Städte-Analyse mit r5py, PostGIS, Python und QGIS zum Vergleich der Erreichbarkeit zu Fuß, mit dem Fahrrad, ÖPNV und Pkw.</p>
-              <div class="proj-card__tags"><span>Masterarbeit</span><span>r5py</span><span>PostGIS</span><span>QGIS</span></div>
-            </div>
-          </div>
-        </a>
-
-        <div class="proj-section-title">
-          <h2>Webentwicklungs-Projekte</h2>
-          <p>JavaScript- und HTML/CSS-Projekte, veröffentlicht über GitHub und Netlify.</p>
-        </div>
-
-        <a href="leads-tracker.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/leads_tracker.jpeg" alt="Leads Tracker App" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Leads Tracker App</h3>
-              <p class="proj-card__desc">JavaScript-App zum Speichern und Verwalten nützlicher URLs, veröffentlicht als Live-Netlify-Deployment über GitHub.</p>
-              <div class="proj-card__tags">
-                <span>JavaScript</span><span>Chrome Extension</span><span>GitHub</span><span>Netlify</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="blackjack-game.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/blackjack_app.png" alt="Blackjack Spiel" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Blackjack-Spiel</h3>
-              <p class="proj-card__desc">Browser-basiertes Blackjack-Spiel mit Fokus auf JavaScript-Logik, Punktestand, UI-Zustand und Netlify-Deployment.</p>
-              <div class="proj-card__tags">
-                <span>JavaScript</span><span>Spiel</span><span>GitHub</span><span>Netlify</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="scoreboard.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/scoreboard_app.png" alt="Scoreboard App" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Scoreboard</h3>
-              <p class="proj-card__desc">Einfache Anzeigetafel-App mit Live-Punktesteuerung, gehostet als Netlify-Site über GitHub.</p>
-              <div class="proj-card__tags">
-                <span>JavaScript</span><span>Web-App</span><span>GitHub</span><span>Netlify</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="passenger-counter.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/passenger_counter_app.png" alt="Fahrgastzähler App" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Fahrgastzähler</h3>
-              <p class="proj-card__desc">Fahrgastzähler-App für Münchner U-Bahn-Anwendungsfälle, mit JavaScript entwickelt und auf Netlify bereitgestellt.</p>
-              <div class="proj-card__tags">
-                <span>JavaScript</span><span>Vite</span><span>ÖPNV</span><span>Netlify</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="business-card.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/business_card.png" alt="Digitale Visitenkarte" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Digitale Visitenkarte</h3>
-              <p class="proj-card__desc">Kompakte persönliche Visitenkarte als Webseite — Übung in responsivem HTML/CSS und Netlify-Deployment.</p>
-              <div class="proj-card__tags">
-                <span>HTML</span><span>CSS</span><span>Netlify</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <div class="proj-section-title">
-          <h2>Plan4Better Projekte</h2>
-          <p>Erreichbarkeits-, Mobilitäts- und GOAT-basierte Planungsarbeit aus dem Plan4Better-Umfeld.</p>
-        </div>
-
-        <a href="rhein-neckar-charging.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png" alt="Rhein-Neckar Ladeinfrastruktur Erreichbarkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Rhein-Neckar — Ladeinfrastruktur</h3>
-              <p class="proj-card__desc">Interaktives GOAT-Dashboard zur Fußwegerreichbarkeit öffentlicher Ladesäulen im Rhein-Neckar-Kreis — differenziert nach Ladetyp und Gebäudetyp (MFH/EFH).</p>
-              <div class="proj-card__tags">
-                <span>Ladeinfrastruktur</span><span>Erreichbarkeit</span><span>GOAT</span><span>Dashboard</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="muenster-nahversorgung.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/muenster_nahversorgung.jpeg" alt="Münster Nahversorgung Erreichbarkeit Dashboard" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Münster Nahversorgung — Erreichbarkeit</h3>
-              <p class="proj-card__desc">GOAT-Dashboard zur fußläufigen Erreichbarkeit von Kita, Supermarkt und Apotheke in Münster nach dem BBSR-Standard Nahversorgungs-Erreichbarkeit — ohne einen einzigen lokalen Verarbeitungsschritt.</p>
-              <div class="proj-card__tags">
-                <span>Erreichbarkeit</span><span>GOAT</span><span>Münster</span><span>Nahversorgung</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="rheinbach-waermeplanung.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/waermebedarf_rheinbach.jpeg" alt="Rheinbach Kommunale Wärmeplanung Dashboard" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Rheinbach Kommunale Wärmeplanung</h3>
-              <p class="proj-card__desc">GOAT-Dashboard für die kommunale Wärmeplanung in Rheinbach, NRW — gebäudegenaue Wärmebedarfsanalyse, Gasabhängigkeit und Wärmepumpeneignung auf Basis von LANUV-Offendaten.</p>
-              <div class="proj-card__tags">
-                <span>Wärmeplanung</span><span>GOAT</span><span>NRW</span><span>Offene Daten</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="schwabach-farmland.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/schwabach_landuse.png" alt="322 ha bebaubare Ackerflächen um Schwabach" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">322 ha bebaubare Ackerflächen um Schwabach</h3>
-              <p class="proj-card__desc">Multikriterielle Raumanalyse zur Identifikation ÖPNV-erschlossener, wohnraumnaher Ackerflächen in Schwabach — auf Basis von ALKIS, GTFS und OSM in GOAT.</p>
-              <div class="proj-card__tags">
-                <span>Flächennutzung</span><span>GOAT</span><span>Bayern</span><span>Wohnungsbau</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="munich-drinking-fountains.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/drinking_fountain_accessibility.png" alt="München Trinkbrunnen Erreichbarkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">München — Erreichbarkeit von Trinkbrunnen</h3>
-              <p class="proj-card__desc">Netzwerkbasierte Einzugsbereiche, Landoberflächentemperatur und Bevölkerungsdaten in GOAT — 299 Prioritätszonen für neue Trinkwasserinfrastruktur in München.</p>
-              <div class="proj-card__tags">
-                <span>Erreichbarkeit</span><span>GOAT</span><span>München</span><span>Hitze</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="hannover-ev-charging.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/ev_infrastruktur_hannover.jpeg" alt="Hannover Ladeinfrastruktur Erreichbarkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Hannover — Erreichbarkeit von Ladesäulen</h3>
-              <p class="proj-card__desc">Gebäudegenaue Fußweganalyse zu 1.049 öffentlichen Ladesäulen in Hannover — 92 % der Wohngebäude innerhalb von 10 Gehminuten, 6.686 ohne Fußwegverbindung.</p>
-              <div class="proj-card__tags">
-                <span>Ladeinfrastruktur</span><span>GOAT</span><span>Hannover</span><span>Erreichbarkeit</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="munich-housing-accessibility.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/munich_accessibility_rent_dashboard.jpeg" alt="Münchner Wohnstandorterreichbarkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Münchner Wohnstandorterreichbarkeit</h3>
-              <p class="proj-card__desc">Dashboard zur Verknüpfung von Mietpreisindikatoren mit ÖPNV-Erreichbarkeitsdaten für Münchner Stadtgebiete.</p>
-              <div class="proj-card__tags">
-                <span>Erreichbarkeit</span><span>Dashboard</span><span>GOAT</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="cologne-accessibility-dashboard.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/cologne_accessibility_dashboard.jpeg" alt="Köln Supermarkterreichbarkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Köln — Supermarkterreichbarkeit</h3>
-              <p class="proj-card__desc">H3-Hexagongitter-Karte der Fußwegerreichbarkeit zu Supermärkten in Köln mit dem Closest-Average-Indikator in GOAT.</p>
-              <div class="proj-card__tags">
-                <span>Erreichbarkeit</span><span>Hexagone</span><span>GOAT</span><span>Plan4Better</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="berlin-rent-listing.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/berlin_rent_listing.jpeg" alt="Berlin Mietmarkt Erreichbarkeit und Umweltbewertung" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Berlin — Mietmarkt: Erreichbarkeit &amp; Umwelt</h3>
-              <p class="proj-card__desc">Anreicherung von ~1.000 synthetischen Berliner Inseraten mit gravitations­basiertem Erreichbarkeits­score und Umweltdaten (NO₂, PM10, Lärm) via GOAT.</p>
-              <div class="proj-card__tags">
-                <span>GOAT</span><span>Berlin</span><span>Erreichbarkeit</span><span>Immobilien</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="plan4better-internship.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/goat_platform.png" alt="Plan4Better Praktikum" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Plan4Better — Pflichtpraktikum</h3>
-              <p class="proj-card__desc">GIS-Praktikum bei Plan4Better — Erreichbarkeits-, Walkability- und ÖPNV-Analysen für deutsche Städte mit GOAT.</p>
-              <div class="proj-card__tags">
-                <span>Praktikum</span><span>Erreichbarkeit</span><span>PostGIS</span><span>GOAT</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <div class="proj-section-title">
-          <h2>Raumanalyse-Projekte</h2>
-          <p>GIS-, Kartografie-, ÖPNV-, Mobilitäts- und Geoprozessierungsprojekte außerhalb des Plan4Better-Bereichs.</p>
-        </div>
-
-        <a href="nyc-bike-safety.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/map_challenge_day10_nyc.png" alt="Fahrradsicherheit in NYC" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Fahrradsicherheit in New York City</h3>
-              <p class="proj-card__desc">Prioritätsanalyse für Fahrraddistrikte in Brooklyn und Queens — Kombination aus Radnetz und Straßennetzkontext.</p>
-              <div class="proj-card__tags">
-                <span>Fahrradsicherheit</span><span>QGIS</span><span>NYC</span><span>Foursquare</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="berlin-gtfs-wheelchair.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/berlin_gtfs_wheelchair.jpeg" alt="Berlin GTFS Rollstuhlgerechtigkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Berlin — GTFS &amp; Rollstuhlgerechtigkeit im ÖPNV</h3>
-              <p class="proj-card__desc">GTFS-basierte Visualisierung der Berliner Haltestellendichte und rollstuhlgerechter Haltestellen-Cluster.</p>
-              <div class="proj-card__tags">
-                <span>GTFS</span><span>Barrierefreiheit</span><span>QGIS</span><span>Foursquare</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="cologne-tram-isochrones.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/cologne_tram_isochrone.jpeg" alt="Köln Straßenbahn Isochronen" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Köln — Straßenbahn-Isochronen</h3>
-              <p class="proj-card__desc">Netzwerkbasierte Isochronenanalyse der realen Fahrzeit-Einzugsbereiche von Kölner Straßenbahnhaltestellen.</p>
-              <div class="proj-card__tags">
-                <span>Isochronen</span><span>Netzwerkanalyse</span><span>QGIS</span><span>Kartografie</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="melbourne-walkability.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/melbourne_walkability.png" alt="Melbourne Walkability Kreuzungsdichte" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Melbourne — Walkability &amp; Kreuzungsdichte</h3>
-              <p class="proj-card__desc">Kreuzungsdichteanalyse für Melbourne auf Basis von Fußwegenetz und CLUE-Flächennutzungsdaten.</p>
-              <div class="proj-card__tags">
-                <span>Kreuzungsdichte</span><span>Walkability</span><span>GIS</span><span>Melbourne</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="cape-town-walkability.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/capetown_walkability.png" alt="Kapstadt Walkability" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Kapstadt — Walkability-Index</h3>
-              <p class="proj-card__desc">QGIS-basierter Walkability-Index für Kapstadt, entwickelt im Kurs Mobilitätsforschung und Verkehrsmodellierung an der RWTH Aachen.</p>
-              <div class="proj-card__tags">
-                <span>Walkability</span><span>QGIS</span><span>RWTH Aachen</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="30-day-map-challenge.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/map_challenge_day1_beer.png" alt="30 Day Map Challenge" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">30 Day Map Challenge 2023 &amp; 2025</h3>
-              <p class="proj-card__desc">Karten aus dem #30DayMapChallenge 2023 und 2025 — vielfältige Themen, Techniken und Regionen.</p>
-              <div class="proj-card__tags">
-                <span>Kartografie</span><span>QGIS</span><span>Python</span><span>Design</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="python-bus-stops.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/python_busstop_analysis_1.jpeg" alt="Python Bushaltestellen-Analyse" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Python Raumanalyse — Bushaltestellen</h3>
-              <p class="proj-card__desc">Python-basierte Raumanalyse der Bushaltestellen-Abdeckung mit GeoPandas und OSM-Daten.</p>
-              <div class="proj-card__tags">
-                <span>Python</span><span>GeoPandas</span><span>OSM</span><span>Erreichbarkeit</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="nrw-railway-stations.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/nrw_railway_1.jpg" alt="NRW Bahnhöfe Python Deutsche Bahn API" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">NRW Bahnhöfe — Python &amp; Deutsche Bahn API</h3>
-              <p class="proj-card__desc">Abruf von Bahnhofsdaten über die Deutsche Bahn WEB API und Visualisierung mit GeoPandas und Pandas.</p>
-              <div class="proj-card__tags">
-                <span>Python</span><span>GeoPandas</span><span>Deutsche Bahn API</span><span>Bahn</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="cape-town-waste.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/cape_town_waste_allocation.jpeg" alt="Kapstadt Standortoptimierung Abfallentsorgung" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Kapstadt — Standortoptimierung Abfallentsorgung</h3>
-              <p class="proj-card__desc">Standortoptimierungsmodellierung zur Optimierung der Platzierung von Abfallanlagen in Kapstadt mittels Netzwerkanalyse.</p>
-              <div class="proj-card__tags">
-                <span>Standortoptimierung</span><span>Netzwerkanalyse</span><span>QGIS</span><span>Raumanalyse</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="gauteng-burglary.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/gauteng_burglary.png" alt="Einbruchsrate in Gauteng" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Einbruchsrate in Gauteng</h3>
-              <p class="proj-card__desc">Kriminalitätskartierung je 10.000 Einwohner mit SAPS-Statistiken, AfriPop-Bevölkerungsdaten und QGIS-Zonenstatistik.</p>
-              <div class="proj-card__tags">
-                <span>Kriminalitätskartierung</span><span>QGIS</span><span>Zonenstatistik</span><span>Plotly</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="san-francisco-buffer.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/san_francisco_buffer_1.png" alt="San Francisco Pufferanalyse" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Stadtplanung Pufferanalyse — San Francisco</h3>
-              <p class="proj-card__desc">Pufferzonen um institutionelle Flächennutzungsbereiche in San Francisco mit GeoPandas und Matplotlib.</p>
-              <div class="proj-card__tags">
-                <span>Pufferanalyse</span><span>GeoPandas</span><span>Stadtplanung</span><span>Foursquare Studio</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="berlin-tram-accessibility.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/berlin_tram_accessibility.png" alt="Berlin Straßenbahn Erreichbarkeit" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Berlin — Straßenbahn-Erreichbarkeit</h3>
-              <p class="proj-card__desc">Erreichbarkeitsanalyse des Berliner Straßenbahnnetzes — Bevölkerungsabdeckung im Fußwegeinzugsbereich von Haltestellen.</p>
-              <div class="proj-card__tags">
-                <span>Straßenbahn</span><span>Erreichbarkeit</span><span>QGIS</span><span>Einzugsbereiche</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="gtfs-duisburg-aachen.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/gtfs_duisburg_aachen.png" alt="GTFS Duisburg-Aachen" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">GTFS-Analyse — Duisburg nach Aachen</h3>
-              <p class="proj-card__desc">Verarbeitung und Visualisierung von GTFS-Feed-Daten zur Analyse der ÖPNV-Verbindungen zwischen Duisburg und Aachen.</p>
-              <div class="proj-card__tags">
-                <span>GTFS</span><span>Python</span><span>ÖPNV</span><span>NRW</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="pyqgis-nearest-college.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/pyqgis_nearest_college_1.png" alt="Schule-Hochschule Nähe Kerala" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">Schule-Hochschule Näheanalyse — Kerala</h3>
-              <p class="proj-card__desc">Näheanalyse zwischen Schulen und nächstgelegenen Hochschulen innerhalb von Verwaltungsregionen Keralas mit QGIS-Ausdrücken.</p>
-              <div class="proj-card__tags">
-                <span>Näheanalyse</span><span>QGIS</span><span>Kerala</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="munich-street-network.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/map_challenge_goat.jpeg" alt="München Minimalistisches Straßennetz" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">München — Minimalistisches Straßennetz</h3>
-              <p class="proj-card__desc">Tag 14 des #30DayMapChallenge — minimalistische Karte des Münchner Straßennetzes aus reinen OpenStreetMap-Daten via GOAT.</p>
-              <div class="proj-card__tags">
-                <span>30DayMapChallenge</span><span>OpenStreetMap</span><span>GOAT</span><span>München</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="qgis-tips-workflows.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <div class="proj-card__qgis-thumb" aria-label="QGIS Tipps und Tricks">
-              <img class="proj-card__qgis-logo-img" src="../../assets/images/qgis_logo.png" alt="QGIS Logo" />
-            </div>
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">QGIS Tipps &amp; Tricks</h3>
-              <p class="proj-card__desc">Sammlung von QGIS-Workflow-Beiträgen, direkt auf LinkedIn verlinkt.</p>
-              <div class="proj-card__tags">
-                <span>QGIS</span><span>Tipps</span><span>LinkedIn</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="qgis-geometry-generator.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <div class="proj-card__split-img" aria-label="QGIS Geometry Generator vorher und nachher">
-              <img src="../../assets/images/qgis_geometry_generator_1.jpeg" alt="QGIS Geometry Generator Ausdruck" />
-              <span aria-hidden="true">→</span>
-              <img src="../../assets/images/qgis_geometry_generator_2.jpeg" alt="QGIS Geometry Generator Ergebnis" />
-            </div>
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">QGIS Geometry Generator — RegioStar</h3>
-              <p class="proj-card__desc">Benutzerdefinierte QGIS-Geometry-Generator-Ausdrücke zur Visualisierung von RegioStar-Regionalklassifikationsdaten.</p>
-              <div class="proj-card__tags">
-                <span>QGIS</span><span>Geometry Generator</span><span>Kartografie</span><span>RegioStar</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="qgis-actions.html" style="text-decoration:none; color:inherit;">
-          <div class="proj-card">
-            <img class="proj-card__img" src="../../assets/images/qgis_actions_neighbour.png" alt="QGIS Actions Nachbarsuche" />
-            <div class="proj-card__body">
-              <h3 class="proj-card__title">QGIS Actions — Nachbarsuche</h3>
-              <p class="proj-card__desc">Benutzerdefinierte QGIS-Actions für interaktive Nachbarsuchen und räumliche Abfragen direkt aus dem Kartenfenster.</p>
-              <div class="proj-card__tags">
-                <span>QGIS</span><span>Actions</span><span>Python</span><span>Interaktiv</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-
-    <footer class="footer" style="margin-top:48px;">
-      <div class="container footer__inner">
-        <span>© <span id="year"></span> Gokul Gopan</span>
-        <span class="muted">GIS-Analyst · München</span>
-      </div>
-    </footer>
-  </main>
-
-  <script src="../../assets/js/script.js"></script>
-</body>
+<body class="project-archive"><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a aria-label="Startseite" class="brand" href="../index.html">
+<span aria-hidden="true" class="brand__mark"></span>
+<span class="brand__text">Gokul Gopan</span>
+</a>
+<nav aria-label="Hauptnavigation" class="nav">
+<a class="nav-link" href="../index.html">Startseite</a>
+<a aria-current="page" class="nav-link active" href="../projekte/index.html">Projekte</a>
+<a class="nav-link" href="../erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="../kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../../projects/index.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav aria-label="Mobile Navigation" class="drawer__nav">
+<a href="../index.html">Startseite</a>
+<a aria-current="page" class="active" href="../projekte/index.html">Projekte</a>
+<a href="../erfahrung.html">Erfahrung</a>
+<a href="../kontakt.html">Kontakt</a>
+<a href="../../projects/index.html">EN</a>
+<a class="btn btn--primary btn--block" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container">
+<div class="page-hero">
+<h1>Projekte</h1>
+<p>GIS-, Raumanalyse- und Kartografieprojekte zu Erreichbarkeit, Mobilität, ÖPNV und Geoprozessierung.</p>
+<p class="archive-context">Nach Projektkontext geordnet. Räumliche Analyse und Kartografie verbinden diese Arbeiten.</p><a class="contributions-link" href="../erfahrung.html#plan4better-projects">Auch ansehen: 16 kommunale und regionale Projektbeiträge bei Plan4Better →</a></div>
+<div aria-label="Projektkategorien" class="project-filters" role="group"><button aria-pressed="true" data-filter="all" type="button">Alle Projekte</button><button aria-pressed="false" data-filter="professional" type="button">Plan4Better</button><button aria-pressed="false" data-filter="research" type="button">Studium &amp; Forschung</button><button aria-pressed="false" data-filter="independent" type="button">Eigenständige Projekte</button><button aria-pressed="false" data-filter="web" type="button">Web &amp; Experimente</button></div><div class="proj-grid"><div class="proj-section-title" data-category="professional">
+<h2>Plan4Better Projekte</h2>
+<p>Erreichbarkeits-, Mobilitäts- und GOAT-basierte Planungsarbeit aus dem Plan4Better-Umfeld.</p>
+</div><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Rhein-Neckar Ladeinfrastruktur Erreichbarkeit" class="image-preview" data-image-viewer="" href="../../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png"><img alt="Rhein-Neckar Ladeinfrastruktur Erreichbarkeit" class="proj-card__img" height="1574" loading="lazy" src="../../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png" width="2880"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="rhein-neckar-charging.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Rhein-Neckar — Ladeinfrastruktur</h3>
+<p class="proj-card__desc">Interaktives GOAT-Dashboard zur Fußwegerreichbarkeit öffentlicher Ladesäulen im Rhein-Neckar-Kreis — differenziert nach Ladetyp und Gebäudetyp (MFH/EFH).</p>
+<div class="proj-card__tags">
+<span>Ladeinfrastruktur</span><span>Erreichbarkeit</span><span>GOAT</span><span>Dashboard</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Münster Nahversorgung Erreichbarkeit Dashboard" class="image-preview" data-image-viewer="" href="../../assets/images/muenster_nahversorgung.jpeg"><img alt="Münster Nahversorgung Erreichbarkeit Dashboard" class="proj-card__img" height="1152" loading="lazy" src="../../assets/images/muenster_nahversorgung.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="muenster-nahversorgung.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Münster Nahversorgung — Erreichbarkeit</h3>
+<p class="proj-card__desc">GOAT-Dashboard zur fußläufigen Erreichbarkeit von Kita, Supermarkt und Apotheke in Münster nach dem BBSR-Standard Nahversorgungs-Erreichbarkeit — ohne einen einzigen lokalen Verarbeitungsschritt.</p>
+<div class="proj-card__tags">
+<span>Erreichbarkeit</span><span>GOAT</span><span>Münster</span><span>Nahversorgung</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Rheinbach Kommunale Wärmeplanung Dashboard" class="image-preview" data-image-viewer="" href="../../assets/images/waermebedarf_rheinbach.jpeg"><img alt="Rheinbach Kommunale Wärmeplanung Dashboard" class="proj-card__img" height="1152" loading="lazy" src="../../assets/images/waermebedarf_rheinbach.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="rheinbach-waermeplanung.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Rheinbach Kommunale Wärmeplanung</h3>
+<p class="proj-card__desc">GOAT-Dashboard für die kommunale Wärmeplanung in Rheinbach, NRW — gebäudegenaue Wärmebedarfsanalyse, Gasabhängigkeit und Wärmepumpeneignung auf Basis von LANUV-Offendaten.</p>
+<div class="proj-card__tags">
+<span>Wärmeplanung</span><span>GOAT</span><span>NRW</span><span>Offene Daten</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: 322 ha bebaubare Ackerflächen um Schwabach" class="image-preview" data-image-viewer="" href="../../assets/images/schwabach_landuse.png"><img alt="322 ha bebaubare Ackerflächen um Schwabach" class="proj-card__img" height="1568" loading="lazy" src="../../assets/images/schwabach_landuse.png" width="2376"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="schwabach-farmland.html"><div class="proj-card__body">
+<h3 class="proj-card__title">322 ha bebaubare Ackerflächen um Schwabach</h3>
+<p class="proj-card__desc">Multikriterielle Raumanalyse zur Identifikation ÖPNV-erschlossener, wohnraumnaher Ackerflächen in Schwabach — auf Basis von ALKIS, GTFS und OSM in GOAT.</p>
+<div class="proj-card__tags">
+<span>Flächennutzung</span><span>GOAT</span><span>Bayern</span><span>Wohnungsbau</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: München Trinkbrunnen Erreichbarkeit" class="image-preview" data-image-viewer="" href="../../assets/images/drinking_fountain_accessibility.png"><img alt="München Trinkbrunnen Erreichbarkeit" class="proj-card__img" height="1566" loading="lazy" src="../../assets/images/drinking_fountain_accessibility.png" width="2880"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="munich-drinking-fountains.html"><div class="proj-card__body">
+<h3 class="proj-card__title">München — Erreichbarkeit von Trinkbrunnen</h3>
+<p class="proj-card__desc">Netzwerkbasierte Einzugsbereiche, Landoberflächentemperatur und Bevölkerungsdaten in GOAT — 299 Prioritätszonen für neue Trinkwasserinfrastruktur in München.</p>
+<div class="proj-card__tags">
+<span>Erreichbarkeit</span><span>GOAT</span><span>München</span><span>Hitze</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Hannover Ladeinfrastruktur Erreichbarkeit" class="image-preview" data-image-viewer="" href="../../assets/images/ev_infrastruktur_hannover.jpeg"><img alt="Hannover Ladeinfrastruktur Erreichbarkeit" class="proj-card__img" height="1336" loading="lazy" src="../../assets/images/ev_infrastruktur_hannover.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="hannover-ev-charging.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Hannover — Erreichbarkeit von Ladesäulen</h3>
+<p class="proj-card__desc">Gebäudegenaue Fußweganalyse zu 1.049 öffentlichen Ladesäulen in Hannover — 92 % der Wohngebäude innerhalb von 10 Gehminuten, 6.686 ohne Fußwegverbindung.</p>
+<div class="proj-card__tags">
+<span>Ladeinfrastruktur</span><span>GOAT</span><span>Hannover</span><span>Erreichbarkeit</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Münchner Wohnstandorterreichbarkeit" class="image-preview" data-image-viewer="" href="../../assets/images/munich_accessibility_rent_dashboard.jpeg"><img alt="Münchner Wohnstandorterreichbarkeit" class="proj-card__img" height="910" loading="lazy" src="../../assets/images/munich_accessibility_rent_dashboard.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="munich-housing-accessibility.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Münchner Wohnstandorterreichbarkeit</h3>
+<p class="proj-card__desc">Dashboard zur Verknüpfung von Mietpreisindikatoren mit ÖPNV-Erreichbarkeitsdaten für Münchner Stadtgebiete.</p>
+<div class="proj-card__tags">
+<span>Erreichbarkeit</span><span>Dashboard</span><span>GOAT</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Köln Supermarkterreichbarkeit" class="image-preview" data-image-viewer="" href="../../assets/images/cologne_accessibility_dashboard.jpeg"><img alt="Köln Supermarkterreichbarkeit" class="proj-card__img" height="925" loading="lazy" src="../../assets/images/cologne_accessibility_dashboard.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="cologne-accessibility-dashboard.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Köln — Supermarkterreichbarkeit</h3>
+<p class="proj-card__desc">H3-Hexagongitter-Karte der Fußwegerreichbarkeit zu Supermärkten in Köln mit dem Closest-Average-Indikator in GOAT.</p>
+<div class="proj-card__tags">
+<span>Erreichbarkeit</span><span>Hexagone</span><span>GOAT</span><span>Plan4Better</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Berlin Mietmarkt Erreichbarkeit und Umweltbewertung" class="image-preview" data-image-viewer="" href="../../assets/images/berlin_rent_listing.jpeg"><img alt="Berlin Mietmarkt Erreichbarkeit und Umweltbewertung" class="proj-card__img" height="1400" loading="lazy" src="../../assets/images/berlin_rent_listing.jpeg" width="1400"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="berlin-rent-listing.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Berlin — Mietmarkt: Erreichbarkeit &amp; Umwelt</h3>
+<p class="proj-card__desc">Anreicherung von ~1.000 synthetischen Berliner Inseraten mit gravitations­basiertem Erreichbarkeits­score und Umweltdaten (NO₂, PM10, Lärm) via GOAT.</p>
+<div class="proj-card__tags">
+<span>GOAT</span><span>Berlin</span><span>Erreichbarkeit</span><span>Immobilien</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="professional" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Plan4Better Praktikum" class="image-preview" data-image-viewer="" href="../../assets/images/goat_platform.png"><img alt="Plan4Better Praktikum" class="proj-card__img" height="749" loading="lazy" src="../../assets/images/goat_platform.png" width="1000"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="plan4better-internship.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Plan4Better — Pflichtpraktikum</h3>
+<p class="proj-card__desc">GIS-Praktikum bei Plan4Better — Erreichbarkeits-, Walkability- und ÖPNV-Analysen für deutsche Städte mit GOAT.</p>
+<div class="proj-card__tags">
+<span>Praktikum</span><span>Erreichbarkeit</span><span>PostGIS</span><span>GOAT</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><div class="proj-section-title" data-category="research">
+<h2>Studium &amp; Forschung</h2>
+<p>Masterarbeit und Studienprojekte an der RWTH Aachen.</p>
+</div><article class="archive-item" data-category="research" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Fußläufige Einzelhandelserreichbarkeit in fünf deutschen Städten" class="image-preview" data-image-viewer="" href="../../assets/images/thesis-walking-accessibility.jpg"><img alt="Fußläufige Einzelhandelserreichbarkeit in fünf deutschen Städten" class="proj-card__img" height="1555" loading="lazy" src="../../assets/images/thesis-walking-accessibility.jpg" width="2200"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="masterarbeit-einzelhandelserreichbarkeit.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Masterarbeit: Verkehrsmittelspezifische Einzelhandelserreichbarkeit</h3>
+<p class="proj-card__desc">Fünf-Städte-Analyse mit r5py, PostGIS, Python und QGIS zum Vergleich der Erreichbarkeit zu Fuß, mit dem Fahrrad, ÖPNV und Pkw.</p>
+<div class="proj-card__tags"><span>Masterarbeit</span><span>r5py</span><span>PostGIS</span><span>QGIS</span></div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="research" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Kapstadt Walkability" class="image-preview" data-image-viewer="" href="../../assets/images/capetown_walkability.png"><img alt="Kapstadt Walkability" class="proj-card__img" height="2480" loading="lazy" src="../../assets/images/capetown_walkability.png" width="3507"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="cape-town-walkability.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Kapstadt — Walkability-Index</h3>
+<p class="proj-card__desc">QGIS-basierter Walkability-Index für Kapstadt, entwickelt im Kurs Mobilitätsforschung und Verkehrsmodellierung an der RWTH Aachen.</p>
+<div class="proj-card__tags">
+<span>Walkability</span><span>QGIS</span><span>RWTH Aachen</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><div class="proj-section-title" data-category="independent">
+<h2>Eigenständige Projekte</h2>
+<p>Eigene Analysen, Kartografie und technische Übungen.</p>
+</div><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Fahrradsicherheit in NYC" class="image-preview" data-image-viewer="" href="../../assets/images/map_challenge_day10_nyc.png"><img alt="Fahrradsicherheit in NYC" class="proj-card__img" height="848" loading="lazy" src="../../assets/images/map_challenge_day10_nyc.png" width="1200"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="nyc-bike-safety.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Fahrradsicherheit in New York City</h3>
+<p class="proj-card__desc">Prioritätsanalyse für Fahrraddistrikte in Brooklyn und Queens — Kombination aus Radnetz und Straßennetzkontext.</p>
+<div class="proj-card__tags">
+<span>Fahrradsicherheit</span><span>QGIS</span><span>NYC</span><span>Foursquare</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Berlin GTFS Rollstuhlgerechtigkeit" class="image-preview" data-image-viewer="" href="../../assets/images/berlin_gtfs_wheelchair.jpeg"><img alt="Berlin GTFS Rollstuhlgerechtigkeit" class="proj-card__img" height="1112" loading="lazy" src="../../assets/images/berlin_gtfs_wheelchair.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="berlin-gtfs-wheelchair.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Berlin — GTFS &amp; Rollstuhlgerechtigkeit im ÖPNV</h3>
+<p class="proj-card__desc">GTFS-basierte Visualisierung der Berliner Haltestellendichte und rollstuhlgerechter Haltestellen-Cluster.</p>
+<div class="proj-card__tags">
+<span>GTFS</span><span>Barrierefreiheit</span><span>QGIS</span><span>Foursquare</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Köln Straßenbahn Isochronen" class="image-preview" data-image-viewer="" href="../../assets/images/cologne_tram_isochrone.jpeg"><img alt="Köln Straßenbahn Isochronen" class="proj-card__img" height="723" loading="lazy" src="../../assets/images/cologne_tram_isochrone.jpeg" width="1120"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="cologne-tram-isochrones.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Köln — Straßenbahn-Isochronen</h3>
+<p class="proj-card__desc">Netzwerkbasierte Isochronenanalyse der realen Fahrzeit-Einzugsbereiche von Kölner Straßenbahnhaltestellen.</p>
+<div class="proj-card__tags">
+<span>Isochronen</span><span>Netzwerkanalyse</span><span>QGIS</span><span>Kartografie</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Melbourne Walkability Kreuzungsdichte" class="image-preview" data-image-viewer="" href="../../assets/images/melbourne_walkability.png"><img alt="Melbourne Walkability Kreuzungsdichte" class="proj-card__img" height="848" loading="lazy" src="../../assets/images/melbourne_walkability.png" width="1200"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="melbourne-walkability.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Melbourne — Walkability &amp; Kreuzungsdichte</h3>
+<p class="proj-card__desc">Kreuzungsdichteanalyse für Melbourne auf Basis von Fußwegenetz und CLUE-Flächennutzungsdaten.</p>
+<div class="proj-card__tags">
+<span>Kreuzungsdichte</span><span>Walkability</span><span>GIS</span><span>Melbourne</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: 30 Day Map Challenge" class="image-preview" data-image-viewer="" href="../../assets/images/map_challenge_day1_beer.png"><img alt="30 Day Map Challenge" class="proj-card__img" height="2480" loading="lazy" src="../../assets/images/map_challenge_day1_beer.png" width="3507"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="30-day-map-challenge.html"><div class="proj-card__body">
+<h3 class="proj-card__title">30 Day Map Challenge 2023 &amp; 2025</h3>
+<p class="proj-card__desc">Karten aus dem #30DayMapChallenge 2023 und 2025 — vielfältige Themen, Techniken und Regionen.</p>
+<div class="proj-card__tags">
+<span>Kartografie</span><span>QGIS</span><span>Python</span><span>Design</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Python Bushaltestellen-Analyse" class="image-preview" data-image-viewer="" href="../../assets/images/python_busstop_analysis_1.jpeg"><img alt="Python Bushaltestellen-Analyse" class="proj-card__img" height="1325" loading="lazy" src="../../assets/images/python_busstop_analysis_1.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="python-bus-stops.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Python Raumanalyse — Bushaltestellen</h3>
+<p class="proj-card__desc">Python-basierte Raumanalyse der Bushaltestellen-Abdeckung mit GeoPandas und OSM-Daten.</p>
+<div class="proj-card__tags">
+<span>Python</span><span>GeoPandas</span><span>OSM</span><span>Erreichbarkeit</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: NRW Bahnhöfe Python Deutsche Bahn API" class="image-preview" data-image-viewer="" href="../../assets/images/nrw_railway_1.jpg"><img alt="NRW Bahnhöfe Python Deutsche Bahn API" class="proj-card__img" height="563" loading="lazy" src="../../assets/images/nrw_railway_1.jpg" width="614"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="nrw-railway-stations.html"><div class="proj-card__body">
+<h3 class="proj-card__title">NRW Bahnhöfe — Python &amp; Deutsche Bahn API</h3>
+<p class="proj-card__desc">Abruf von Bahnhofsdaten über die Deutsche Bahn WEB API und Visualisierung mit GeoPandas und Pandas.</p>
+<div class="proj-card__tags">
+<span>Python</span><span>GeoPandas</span><span>Deutsche Bahn API</span><span>Bahn</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Kapstadt Standortoptimierung Abfallentsorgung" class="image-preview" data-image-viewer="" href="../../assets/images/cape_town_waste_allocation.jpeg"><img alt="Kapstadt Standortoptimierung Abfallentsorgung" class="proj-card__img" height="451" loading="lazy" src="../../assets/images/cape_town_waste_allocation.jpeg" width="800"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="cape-town-waste.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Kapstadt — Standortoptimierung Abfallentsorgung</h3>
+<p class="proj-card__desc">Standortoptimierungsmodellierung zur Optimierung der Platzierung von Abfallanlagen in Kapstadt mittels Netzwerkanalyse.</p>
+<div class="proj-card__tags">
+<span>Standortoptimierung</span><span>Netzwerkanalyse</span><span>QGIS</span><span>Raumanalyse</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Einbruchsrate in Gauteng" class="image-preview" data-image-viewer="" href="../../assets/images/gauteng_burglary.png"><img alt="Einbruchsrate in Gauteng" class="proj-card__img" height="2480" loading="lazy" src="../../assets/images/gauteng_burglary.png" width="3507"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="gauteng-burglary.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Einbruchsrate in Gauteng</h3>
+<p class="proj-card__desc">Kriminalitätskartierung je 10.000 Einwohner mit SAPS-Statistiken, AfriPop-Bevölkerungsdaten und QGIS-Zonenstatistik.</p>
+<div class="proj-card__tags">
+<span>Kriminalitätskartierung</span><span>QGIS</span><span>Zonenstatistik</span><span>Plotly</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: San Francisco Pufferanalyse" class="image-preview" data-image-viewer="" href="../../assets/images/san_francisco_buffer_1.png"><img alt="San Francisco Pufferanalyse" class="proj-card__img" height="592" loading="lazy" src="../../assets/images/san_francisco_buffer_1.png" width="654"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="san-francisco-buffer.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Stadtplanung Pufferanalyse — San Francisco</h3>
+<p class="proj-card__desc">Pufferzonen um institutionelle Flächennutzungsbereiche in San Francisco mit GeoPandas und Matplotlib.</p>
+<div class="proj-card__tags">
+<span>Pufferanalyse</span><span>GeoPandas</span><span>Stadtplanung</span><span>Foursquare Studio</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Berlin Straßenbahn Erreichbarkeit" class="image-preview" data-image-viewer="" href="../../assets/images/berlin_tram_accessibility.png"><img alt="Berlin Straßenbahn Erreichbarkeit" class="proj-card__img" height="1112" loading="lazy" src="../../assets/images/berlin_tram_accessibility.png" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="berlin-tram-accessibility.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Berlin — Straßenbahn-Erreichbarkeit</h3>
+<p class="proj-card__desc">Erreichbarkeitsanalyse des Berliner Straßenbahnnetzes — Bevölkerungsabdeckung im Fußwegeinzugsbereich von Haltestellen.</p>
+<div class="proj-card__tags">
+<span>Straßenbahn</span><span>Erreichbarkeit</span><span>QGIS</span><span>Einzugsbereiche</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: GTFS Duisburg-Aachen" class="image-preview" data-image-viewer="" href="../../assets/images/gtfs_duisburg_aachen.png"><img alt="GTFS Duisburg-Aachen" class="proj-card__img" height="848" loading="lazy" src="../../assets/images/gtfs_duisburg_aachen.png" width="1200"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="gtfs-duisburg-aachen.html"><div class="proj-card__body">
+<h3 class="proj-card__title">GTFS-Analyse — Duisburg nach Aachen</h3>
+<p class="proj-card__desc">Verarbeitung und Visualisierung von GTFS-Feed-Daten zur Analyse der ÖPNV-Verbindungen zwischen Duisburg und Aachen.</p>
+<div class="proj-card__tags">
+<span>GTFS</span><span>Python</span><span>ÖPNV</span><span>NRW</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Schule-Hochschule Nähe Kerala" class="image-preview" data-image-viewer="" href="../../assets/images/pyqgis_nearest_college_1.png"><img alt="Schule-Hochschule Nähe Kerala" class="proj-card__img" height="722" loading="lazy" src="../../assets/images/pyqgis_nearest_college_1.png" width="1672"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="pyqgis-nearest-college.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Schule-Hochschule Näheanalyse — Kerala</h3>
+<p class="proj-card__desc">Näheanalyse zwischen Schulen und nächstgelegenen Hochschulen innerhalb von Verwaltungsregionen Keralas mit QGIS-Ausdrücken.</p>
+<div class="proj-card__tags">
+<span>Näheanalyse</span><span>QGIS</span><span>Kerala</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: München Minimalistisches Straßennetz" class="image-preview" data-image-viewer="" href="../../assets/images/map_challenge_goat.jpeg"><img alt="München Minimalistisches Straßennetz" class="proj-card__img" height="1257" loading="lazy" src="../../assets/images/map_challenge_goat.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="munich-street-network.html"><div class="proj-card__body">
+<h3 class="proj-card__title">München — Minimalistisches Straßennetz</h3>
+<p class="proj-card__desc">Tag 14 des #30DayMapChallenge — minimalistische Karte des Münchner Straßennetzes aus reinen OpenStreetMap-Daten via GOAT.</p>
+<div class="proj-card__tags">
+<span>30DayMapChallenge</span><span>OpenStreetMap</span><span>GOAT</span><span>München</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<div aria-label="QGIS Tipps und Tricks" class="proj-card__qgis-thumb">
+<a aria-label="Bild vergrößern: QGIS Logo" class="image-preview" data-image-viewer="" href="../../assets/images/qgis_logo.png"><img alt="QGIS Logo" class="proj-card__qgis-logo-img" height="2157" loading="lazy" src="../../assets/images/qgis_logo.png" width="3600"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+</div>
+<a class="project-card-link" href="qgis-tips-workflows.html"><div class="proj-card__body">
+<h3 class="proj-card__title">QGIS Tipps &amp; Tricks</h3>
+<p class="proj-card__desc">Sammlung von QGIS-Workflow-Beiträgen, direkt auf LinkedIn verlinkt.</p>
+<div class="proj-card__tags">
+<span>QGIS</span><span>Tipps</span><span>LinkedIn</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<div aria-label="QGIS Geometry Generator vorher und nachher" class="proj-card__split-img">
+<a aria-label="Bild vergrößern: QGIS Geometry Generator Ausdruck" class="image-preview" data-image-viewer="" href="../../assets/images/qgis_geometry_generator_1.jpeg"><img alt="QGIS Geometry Generator Ausdruck" height="1131" loading="lazy" src="../../assets/images/qgis_geometry_generator_1.jpeg" width="800"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<span aria-hidden="true">→</span>
+<a aria-label="Bild vergrößern: QGIS Geometry Generator Ergebnis" class="image-preview" data-image-viewer="" href="../../assets/images/qgis_geometry_generator_2.jpeg"><img alt="QGIS Geometry Generator Ergebnis" height="1131" loading="lazy" src="../../assets/images/qgis_geometry_generator_2.jpeg" width="800"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+</div>
+<a class="project-card-link" href="qgis-geometry-generator.html"><div class="proj-card__body">
+<h3 class="proj-card__title">QGIS Geometry Generator — RegioStar</h3>
+<p class="proj-card__desc">Benutzerdefinierte QGIS-Geometry-Generator-Ausdrücke zur Visualisierung von RegioStar-Regionalklassifikationsdaten.</p>
+<div class="proj-card__tags">
+<span>QGIS</span><span>Geometry Generator</span><span>Kartografie</span><span>RegioStar</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="independent" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: QGIS Actions Nachbarsuche" class="image-preview" data-image-viewer="" href="../../assets/images/qgis_actions_neighbour.png"><img alt="QGIS Actions Nachbarsuche" class="proj-card__img" height="1398" loading="lazy" src="../../assets/images/qgis_actions_neighbour.png" width="2371"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="qgis-actions.html"><div class="proj-card__body">
+<h3 class="proj-card__title">QGIS Actions — Nachbarsuche</h3>
+<p class="proj-card__desc">Benutzerdefinierte QGIS-Actions für interaktive Nachbarsuchen und räumliche Abfragen direkt aus dem Kartenfenster.</p>
+<div class="proj-card__tags">
+<span>QGIS</span><span>Actions</span><span>Python</span><span>Interaktiv</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><div class="proj-section-title" data-category="web">
+<h2>Webentwicklungs-Projekte</h2>
+<p>JavaScript- und HTML/CSS-Projekte, veröffentlicht über GitHub und Netlify.</p>
+</div><article class="archive-item" data-category="web" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Leads Tracker App" class="image-preview" data-image-viewer="" href="../../assets/images/leads_tracker.jpeg"><img alt="Leads Tracker App" class="proj-card__img" height="1280" loading="lazy" src="../../assets/images/leads_tracker.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="leads-tracker.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Leads Tracker App</h3>
+<p class="proj-card__desc">JavaScript-App zum Speichern und Verwalten nützlicher URLs, veröffentlicht als Live-Netlify-Deployment über GitHub.</p>
+<div class="proj-card__tags">
+<span>JavaScript</span><span>Chrome Extension</span><span>GitHub</span><span>Netlify</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="web" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Blackjack Spiel" class="image-preview" data-image-viewer="" href="../../assets/images/blackjack_app.png"><img alt="Blackjack Spiel" class="proj-card__img" height="1522" loading="lazy" src="../../assets/images/blackjack_app.png" width="2006"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="blackjack-game.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Blackjack-Spiel</h3>
+<p class="proj-card__desc">Browser-basiertes Blackjack-Spiel mit Fokus auf JavaScript-Logik, Punktestand, UI-Zustand und Netlify-Deployment.</p>
+<div class="proj-card__tags">
+<span>JavaScript</span><span>Spiel</span><span>GitHub</span><span>Netlify</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="web" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Scoreboard App" class="image-preview" data-image-viewer="" href="../../assets/images/scoreboard_app.png"><img alt="Scoreboard App" class="proj-card__img" height="1570" loading="lazy" src="../../assets/images/scoreboard_app.png" width="2038"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="scoreboard.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Scoreboard</h3>
+<p class="proj-card__desc">Einfache Anzeigetafel-App mit Live-Punktesteuerung, gehostet als Netlify-Site über GitHub.</p>
+<div class="proj-card__tags">
+<span>JavaScript</span><span>Web-App</span><span>GitHub</span><span>Netlify</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="web" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Fahrgastzähler App" class="image-preview" data-image-viewer="" href="../../assets/images/passenger_counter_app.png"><img alt="Fahrgastzähler App" class="proj-card__img" height="1538" loading="lazy" src="../../assets/images/passenger_counter_app.png" width="2006"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="passenger-counter.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Fahrgastzähler</h3>
+<p class="proj-card__desc">Fahrgastzähler-App für Münchner U-Bahn-Anwendungsfälle, mit JavaScript entwickelt und auf Netlify bereitgestellt.</p>
+<div class="proj-card__tags">
+<span>JavaScript</span><span>Vite</span><span>ÖPNV</span><span>Netlify</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article><article class="archive-item" data-category="web" data-project-card="">
+<div class="proj-card">
+<a aria-label="Bild vergrößern: Digitale Visitenkarte" class="image-preview" data-image-viewer="" href="../../assets/images/business_card.png"><img alt="Digitale Visitenkarte" class="proj-card__img" height="422" loading="lazy" src="../../assets/images/business_card.png" width="896"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<a class="project-card-link" href="business-card.html"><div class="proj-card__body">
+<h3 class="proj-card__title">Digitale Visitenkarte</h3>
+<p class="proj-card__desc">Kompakte persönliche Visitenkarte als Webseite — Übung in responsivem HTML/CSS und Netlify-Deployment.</p>
+<div class="proj-card__tags">
+<span>HTML</span><span>CSS</span><span>Netlify</span>
+</div>
+<span class="project-open">Projekt ansehen ↗</span></div></a>
+</div>
+</article></div>
+</div>
+<footer class="footer" style="margin-top:48px;">
+<div class="container footer__inner">
+<span>© <span id="year"></span> Gokul Gopan</span>
+<span class="muted">GIS-Analyst · München</span>
+<a href="../zertifikate.html">Zertifikate</a></div>
+</footer>
+</main>
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/image-viewer.js"></script></body>
 </html>

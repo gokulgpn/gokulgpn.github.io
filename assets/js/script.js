@@ -1,107 +1,75 @@
 (() => {
-  const menuBtn = document.querySelector(".menu");
-  const drawer = document.querySelector(".drawer");
-  const yearEl = document.getElementById("year");
+  const de = document.documentElement.lang === 'de';
+  const menu = document.querySelector('.menu');
+  const drawer = document.querySelector('.drawer');
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  const setMenuOpen = (open) => {
-    if (!menuBtn || !drawer) return;
-    menuBtn.setAttribute("aria-expanded", String(open));
+  function setMenu(open, restoreFocus = false) {
+    if (!menu || !drawer) return;
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', de ? (open ? 'Menü schließen' : 'Menü öffnen') : (open ? 'Close menu' : 'Open menu'));
     drawer.hidden = !open;
-    document.documentElement.style.overflow = open ? "hidden" : "";
-  };
+    if (restoreFocus) menu.focus();
+  }
+  menu?.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+  drawer?.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('click', event => {
+    if (menu && drawer && !menu.contains(event.target) && !drawer.contains(event.target)) setMenu(false);
+  });
+  window.matchMedia('(min-width: 921px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
 
-  if (menuBtn && drawer) {
-    setMenuOpen(false);
-
-    menuBtn.addEventListener("click", () => {
-      const isOpen = menuBtn.getAttribute("aria-expanded") === "true";
-      setMenuOpen(!isOpen);
+  const stages = [...document.querySelectorAll('[data-stage]')];
+  stages.forEach(button => button.addEventListener('click', () => {
+    stages.forEach(stage => {
+      const selected = stage === button;
+      stage.setAttribute('aria-pressed', String(selected));
+      document.getElementById(stage.getAttribute('aria-controls')).hidden = !selected;
     });
+  }));
 
-    drawer.addEventListener("click", (e) => {
-      if (e.target.closest("a")) setMenuOpen(false);
-    });
-
-    document.addEventListener("click", (e) => {
-      const isOpen = menuBtn.getAttribute("aria-expanded") === "true";
-      if (!isOpen) return;
-      const clickedInside = drawer.contains(e.target) || menuBtn.contains(e.target);
-      if (!clickedInside) setMenuOpen(false);
-    });
+  const filters = [...document.querySelectorAll('[data-filter]')];
+  const projects = [...document.querySelectorAll('.proj-grid > [data-category]')];
+  if (filters.length) {
+    const status = document.createElement('p');
+    status.className = 'filter-status';
+    status.setAttribute('role', 'status');
+    document.querySelector('.project-filters').after(status);
+    const updateCount = () => {
+      const count = projects.filter(project => project.hasAttribute('data-project-card') && !project.hidden).length;
+      status.textContent = de ? `${count} Projekte` : `${count} projects`;
+    };
+    filters.forEach(button => button.addEventListener('click', () => {
+      filters.forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
+      projects.forEach(project => { project.hidden = button.dataset.filter !== 'all' && project.dataset.category !== button.dataset.filter; });
+      updateCount();
+    }));
+    updateCount();
   }
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") setMenuOpen(false);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') setMenu(false, true);
   });
 
-  // Open portfolio images in a large, keyboard-accessible lightbox.
-  const images = [...document.querySelectorAll("main img:not([data-no-lightbox])")];
-  if (!images.length) return;
-
-  const lightbox = document.createElement("div");
-  lightbox.className = "lightbox";
-  lightbox.hidden = true;
-  lightbox.setAttribute("role", "dialog");
-  lightbox.setAttribute("aria-modal", "true");
-  lightbox.setAttribute("aria-label", "Image preview");
-  lightbox.innerHTML = `
-    <button class="lightbox__close" type="button" aria-label="Close image preview">×</button>
-    <figure class="lightbox__figure">
-      <img class="lightbox__image" alt="" />
-      <figcaption class="lightbox__caption"></figcaption>
-    </figure>`;
-  document.body.appendChild(lightbox);
-
-  const lightboxImage = lightbox.querySelector(".lightbox__image");
-  const lightboxCaption = lightbox.querySelector(".lightbox__caption");
-  const closeButton = lightbox.querySelector(".lightbox__close");
-  let lastFocusedImage = null;
-
-  const closeLightbox = () => {
-    lightbox.hidden = true;
-    document.documentElement.classList.remove("lightbox-open");
-    lightboxImage.removeAttribute("src");
-    if (lastFocusedImage) lastFocusedImage.focus();
-  };
-
-  const openLightbox = (image) => {
-    lastFocusedImage = image;
-    lightboxImage.src = image.currentSrc || image.src;
-    lightboxImage.alt = image.alt || "Enlarged portfolio image";
-    lightboxCaption.textContent = image.alt || "";
-    lightbox.hidden = false;
-    document.documentElement.classList.add("lightbox-open");
-    closeButton.focus();
-  };
-
-  images.forEach((image) => {
-    image.classList.add("zoomable-image");
-    image.setAttribute("tabindex", "0");
-    image.setAttribute("role", "button");
-    image.setAttribute("aria-label", `${image.alt || "Image"}. Open larger view`);
-    image.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      openLightbox(image);
+  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const motionButtons = [...document.querySelectorAll('[data-motion-toggle]')];
+  let paused = motionQuery.matches;
+  const updateMotion = () => {
+    document.documentElement.classList.toggle('motion-paused', paused);
+    motionButtons.forEach(button => {
+      button.setAttribute('aria-pressed', String(paused));
+      button.textContent = motionQuery.matches ? (de ? 'Reduzierte Bewegung' : 'Reduced motion') : (de ? (paused ? 'Animation abspielen' : 'Animation pausieren') : (paused ? 'Play animation' : 'Pause animation'));
+      button.disabled = motionQuery.matches;
     });
-    image.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        openLightbox(image);
-      }
-    });
-  });
-
-  closeButton.addEventListener("click", closeLightbox);
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      setMenuOpen(false);
-      if (!lightbox.hidden) closeLightbox();
-    }
-  });
+  };
+  motionButtons.forEach(button => button.addEventListener('click', () => { paused = !paused; updateMotion(); }));
+  motionQuery.addEventListener('change', () => { paused = motionQuery.matches; updateMotion(); });
+  updateMotion();
+  // Animate only graphics that are on screen. Content is always visible.
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.target.classList.toggle('is-visible', entry.isIntersecting));
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.connected-graph, .signal-board').forEach(graph => observer.observe(graph));
+  }
 })();

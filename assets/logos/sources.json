@@ -1,0 +1,18 @@
+{
+  "qgis": {
+    "asset": "https://www.qgis.org/styleguide/visual/qgis-icon128.svg",
+    "source": "https://www.qgis.org/styleguide/"
+  },
+  "python": {
+    "asset": "https://www.python.org/static/community_logos/python-logo-generic.svg",
+    "source": "https://www.python.org/community/logos/"
+  },
+  "postgresql": {
+    "asset": "https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg",
+    "source": "https://wiki.postgresql.org/wiki/Logo"
+  },
+  "postgis": {
+    "asset": "https://postgis.net/brand.svg",
+    "source": "https://postgis.net/"
+  }
+}

@@ -1,241 +1,189 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Erfahrung · Gokul Gopan</title>
-  <meta name="description" content="Berufserfahrung, Ausbildung und technische Kenntnisse von Gokul Gopan — GIS-Analyst, München." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Erfahrung · Gokul Gopan</title>
+<meta content="Berufserfahrung, Ausbildung und technische Kenntnisse von Gokul Gopan — GIS-Analyst, München." name="description"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Startseite</a>
-        <a href="projekte/" class="nav-link">Projekte</a>
-        <a href="erfahrung.html" class="nav-link active">Erfahrung</a>
-        <a href="zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../experience.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="index.html">Startseite</a>
-        <a href="projekte/">Projekte</a>
-        <a href="erfahrung.html" class="active">Erfahrung</a>
-        <a href="zertifikate.html">Zertifikate</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="../experience.html">EN</a>
-        <a href="../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-bottom:60px;">
-      <div class="page-hero">
-        <h1>Erfahrung &amp; Ausbildung</h1>
-        <p>Beruflicher Werdegang, akademische Ausbildung und technische Kenntnisse in GIS, Mobilität und räumlicher Datenanalyse.</p>
-      </div>
-
-      <!-- Berufserfahrung -->
-      <h2 style="margin-bottom:16px;">Berufserfahrung</h2>
-      <div class="exp-timeline">
-
-        <div class="exp-item">
-          <div class="exp-item__head">
-            <div>
-              <p class="exp-item__role">GIS-Analyst</p>
-              <p class="exp-item__company">Plan4Better GmbH · München</p>
-            </div>
-            <span class="pill glass">September 2024 – heute</span>
-          </div>
-          <ul>
-            <li>Durchführung von Raumanalysen und Geoprozessierungsaufgaben für Mobilitäts-, Erreichbarkeits- und Planungsstudien — einschließlich Isochronen, Einzugsbereiche und netzwerkbasierte Indikatoren.</li>
-            <li>Raumanalysen mit <strong>GOAT</strong>: Erreichbarkeits-Heatmaps, Walkability-Indikatoren, ÖV-Güteklassen und szenariobasierte Planungsanalysen.</li>
-            <li>Einsatz von <strong>QGIS</strong> für räumliche Datenverarbeitung, kartografische Kartenproduktion, Digitalisierung, Georeferenzierung und Geoprozessierungs-Workflows.</li>
-            <li>Aufbereitung, Bereinigung und Integration von Geodaten mit PostgreSQL/PostGIS, mit Fokus auf Datenqualität, Dokumentation und reproduzierbare Workflows.</li>
-            <li>Entwicklung Python-basierter Geoprozessierungswerkzeuge mit GeoPandas, Pandas, Shapely und GDAL/OGR für räumliche Analysen, Automatisierung und Reporting.</li>
-            <li>Erstellung und Pflege technischer Dokumentation für die <strong>GOAT</strong>-Plattform zur Unterstützung von Onboarding und Wissenstransfer.</li>
-            <li>Produktion kartografischer Ausgaben und schriftlicher Berichte für kommunale und regionale Planungsakteure.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-item__head">
-            <div>
-              <p class="exp-item__role">GIS-Praktikant</p>
-              <p class="exp-item__company">Plan4Better GmbH · München</p>
-            </div>
-            <span class="pill glass">Januar 2024 – September 2024</span>
-          </div>
-          <p style="font-size:13px; color:var(--muted); margin: 4px 0 8px;">Pflichtpraktikum im Rahmen des MSc Verkehrsingenieurwesen und Mobilität — RWTH Aachen<br/>Betreut von Dr.-Ing. Andreas Witte &amp; Prof. Dr.-Ing. Tobias Kuhnimhof</p>
-          <ul>
-            <li>Durchführung von Erreichbarkeits- und Fußgänglichkeitsanalysen für Städte wie Augsburg, Amberg und Düsseldorf mit GOAT.</li>
-            <li>Berechnung von ÖV-Güteklassen, Walkability-Index und lokalen Erreichbarkeits-Heatmaps.</li>
-            <li>Anpassung von SQL-Skripten zur Ersetzung kreisförmiger Puffermethoden durch fußläufige Netzwerk-Isochronen zur Verbesserung der Messgenauigkeit.</li>
-            <li>Durchführung von Szenarioanalysen für die Erweiterung von Sharing-Mobilität und Optimierung von Parkraumangeboten.</li>
-            <li>Präsentation von Ergebnissen vor Hochschulbetreuer:innen und Unternehmens-Stakeholdern.</li>
-          </ul>
-          <a class="back-link" href="../projects/plan4better-internship.html" style="margin-top:12px; margin-bottom:0;">Vollständige Praktikumsdetails ansehen →</a>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-item__head">
-            <div>
-              <p class="exp-item__role">Verkäufer / Kassierer</p>
-              <p class="exp-item__company">ALDI Süd · Aachen</p>
-            </div>
-            <span class="pill glass">August 2023 – Dezember 2023</span>
-          </div>
-          <ul>
-            <li>Kundenbetreuung an der Kasse und auf der Verkaufsfläche.</li>
-            <li>Unterstützung bei Regalbestückung, Warenwirtschaft und täglichen Filialabläufen.</li>
-          </ul>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-item__head">
-            <div>
-              <p class="exp-item__role">Operations Associate / Schichtleitung</p>
-              <p class="exp-item__company">Flink GmbH · Aachen</p>
-            </div>
-            <span class="pill glass">August 2021 – August 2023</span>
-          </div>
-          <ul>
-            <li>Unterstützung der Lagerlogistik, Bestandskontrolle, Qualitätsprüfung und Auftragskommissionierung.</li>
-            <li>Koordination von Schichtabläufen in einem schnelllebigen Betriebsumfeld.</li>
-            <li>Kundensupport und operative Fulfillment-Prozesse.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Ausgewählte Projektarbeit -->
-      <h2 style="margin-top:48px; margin-bottom:16px;">Ausgewählte Projektarbeit</h2>
-      <div class="grid2" style="margin-bottom:48px;">
-        <div class="panel glass">
-          <div class="panel__title">Erreichbarkeit, Mobilität &amp; Planung</div>
-          <ul class="list">
-            <li><strong>Erreichbarkeitsanalyse der Parkmöglichkeiten in der Amberger Innenstadt</strong></li>
-            <li><strong>Erreichbarkeitsanalysen zum geplanten Radwegprojekt „Höchste Eisenbahn" in Amberg</strong></li>
-            <li><strong>Erreichbarkeits- und Walkabilityanalysen für das Gebiet rechts der Wertach</strong> <span style="color:var(--muted);">(Augsburg)</span></li>
-            <li><strong>Nahmobilitätskonzept für den 23. Stadtbezirk Allach-Untermenzing</strong> <span style="color:var(--muted);">(München)</span></li>
-            <li><strong>Fokuskonzept Mobilität Stadt Kandel</strong></li>
-            <li><strong>Mobilitätsanalysen für die Stadtteile Hassels und Reisholz in Düsseldorf</strong></li>
-            <li><strong>Sharing-Mobilitätskonzept Harthof</strong> <span style="color:var(--muted);">(München)</span></li>
-            <li><strong>Mobilitätsanalyse Scharfreiterplatz München</strong></li>
-            <li><strong>Mobilitätsanalysen Stadt Sinsheim</strong></li>
-            <li><strong>Mobilitätsanalysen Südliche Weinstraße</strong></li>
-            <li><strong>Kommunale Wärmeplanung für Stadt Mainburg</strong></li>
-            <li><strong>Integriertes Energetisches Quartierskonzept Ortsgemeinde Altrip</strong></li>
-            <li><strong>Energiekonzept im Rahmen des integrierten städtebaulichen Entwicklungskonzepts Luitpoldhöhe</strong></li>
-          </ul>
-        </div>
-        <div class="panel glass">
-          <div class="panel__title">Eigenständige Projekte</div>
-          <ul class="list">
-            <li>München — Erreichbarkeit von Trinkbrunnen &amp; Hitzeprioritätszonen</li>
-            <li>Hannover — Erreichbarkeit von Ladesäulen (gebäudegenau)</li>
-            <li>322 ha bebaubare Ackerflächen um Schwabach</li>
-            <li>Rheinbach Kommunale Wärmeplanung</li>
-            <li>Münchner Wohnstandorterreichbarkeit</li>
-            <li>Berlin GTFS — Rollstuhlgerechtigkeit im ÖPNV</li>
-            <li>Köln Straßenbahn-Isochronen</li>
-            <li>Melbourne Walkability-Index</li>
-            <li>NRW Bahnhofsanalyse — Python &amp; Deutsche Bahn API</li>
-            <li>30 Day Map Challenge 2023 &amp; 2025</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Ausbildung -->
-      <h2 style="margin-bottom:16px;">Ausbildung</h2>
-      <div class="exp-timeline">
-        <div class="exp-item">
-          <div class="exp-item__head">
-            <div>
-              <p class="exp-item__role">MSc Verkehrsingenieurwesen und Mobilität</p>
-              <p class="exp-item__company">RWTH Aachen University · ISB — Lehrstuhl und Institut für Stadtbauwesen und Stadtverkehr</p>
-            </div>
-            <span class="pill glass">November 2020 – Juli 2026</span>
-          </div>
-          <p style="font-size:13px; color:var(--muted); margin:6px 0 8px;">Betreut von Univ.-Prof. Dr.-Ing. Tobias Kuhnimhof</p>
-          <p style="font-size:13px; font-weight:700; margin:0 0 4px;">Masterarbeit, abgeschlossen Juli 2026 · Note 1,3</p>
-          <p style="font-size:13px; margin:0 0 6px;"><em>Bewertung der Erreichbarkeit von Einzelhandelsgeschäften mit bestimmten Verkehrsmitteln in ausgewählten deutschen Städten</em></p>
-          <p style="font-size:13px; margin:0;">Bewertung der Einzelhandelserreichbarkeit in fünf westdeutschen Städten mit <strong>r5py</strong> (R5-Routing-Engine) für Fuß, Fahrrad, ÖPNV und Pkw. Die Erreichbarkeit wurde auf einem 100-m-<strong>Zensus-2022</strong>-Raster modelliert und mit sieben sozioökonomischen Indikatoren verknüpft. Räumliche Muster und Ungleichheiten wurden über <strong>bivariate Kartierung</strong> und <strong>Spearman-Korrelation</strong> untersucht und in QGIS visualisiert.</p>
-        </div>
-        <div class="exp-item">
-          <div class="exp-item__head">
-            <div>
-              <p class="exp-item__role">BTech Produktionstechnik</p>
-              <p class="exp-item__company">National Institute of Technology Calicut</p>
-            </div>
-            <span class="pill glass">März 2015 – April 2019</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Technische Kenntnisse -->
-      <h2 style="margin-top:48px; margin-bottom:16px;">Technische Kenntnisse</h2>
-      <div class="skillgrid">
-        <div class="skill glass">
-          <h3>GIS &amp; Räumliche Analyse</h3>
-          <p>QGIS, Kartografie, Raumanalyse, Georeferenzierung, Digitalisierung, Verschneidungen und Geoprozessierung; Isochronen, Einzugsbereiche und Erreichbarkeitsindikatoren.</p>
-        </div>
-        <div class="skill glass">
-          <h3>Geodatenbanken</h3>
-          <p>PostgreSQL/PostGIS; räumliche Datenvorbereitung, Integration, Qualitätsprüfung und reproduzierbare Geodatenpipelines.</p>
-        </div>
-        <div class="skill glass">
-          <h3>Python &amp; Geoprozessierung</h3>
-          <p>GeoPandas, Pandas, Shapely, GDAL/OGR; Workflow-Automatisierung, Datenaufbereitung und Reporting.</p>
-        </div>
-        <div class="skill glass">
-          <h3>Mobilität &amp; Erreichbarkeit</h3>
-          <p>Fußgänglichkeit und Erreichbarkeitsanalyse, netzwerkbasierte Mobilitätsindikatoren, ÖPNV- und Aktivmobilitätsanalyse.</p>
-        </div>
-        <div class="skill glass">
-          <h3>Reporting &amp; Kartografie</h3>
-          <p>Kartenproduktion für Planungsstudien, technisches Berichtswesen, kommunale und regionale Stakeholder-Kommunikation, MS Office.</p>
-        </div>
-        <div class="skill glass">
-          <h3>Sprachen</h3>
-          <p>Deutsch (Gut) · Englisch (Fließend) · Malayalam (Muttersprache) · Hindi (Gut) · Tamil (Gut)</p>
-        </div>
-      </div>
-
-      <!-- Auszeichnungen -->
-      <h2 style="margin-top:48px; margin-bottom:16px;">Auszeichnungen &amp; Veröffentlichungen</h2>
-      <div class="cards">
-        <article class="card glass">
-          <h3>Best Paper Award · ICSCAN 2019</h3>
-          <p class="muted">International Conference on Systems, Computation, Automation and Networking · März 2019</p>
-        </article>
-        <article class="card glass">
-          <h3>IEEE Xplore Veröffentlichungen · 2019</h3>
-          <ul class="bullets">
-            <li>Performance Analysis of Storage Warehouses in a Food Grain Supply Chain using Data Envelopment Analysis</li>
-            <li>Selection of Warehouse Operator by the Combination of Analytic Hierarchy Process and DEA</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container footer__inner">
-        <span>© <span id="year"></span> Gokul Gopan</span>
-        <span class="muted">GIS-Analyst · München</span>
-      </div>
-    </footer>
-  </main>
-  <script src="../assets/js/script.js"></script>
+<body><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="index.html">Startseite</a>
+<a class="nav-link" href="projekte/index.html">Projekte</a>
+<a aria-current="page" class="nav-link active" href="erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../experience.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="index.html">Startseite</a>
+<a href="projekte/index.html">Projekte</a>
+<a aria-current="page" class="active" href="erfahrung.html">Erfahrung</a>
+<a href="kontakt.html">Kontakt</a>
+<a href="../experience.html">EN</a>
+<a class="btn btn--primary btn--block" href="../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-bottom:60px;">
+<div class="page-hero">
+<h1>Erfahrung &amp; Ausbildung</h1>
+<p>Beruflicher Werdegang, akademische Ausbildung und technische Kenntnisse in GIS, Mobilität und räumlicher Datenanalyse.</p>
+</div>
+<!-- Berufserfahrung -->
+<h2 style="margin-bottom:16px;">Berufserfahrung</h2>
+<div class="exp-timeline">
+<div class="exp-item">
+<div class="exp-item__head">
+<div>
+<p class="exp-item__role">GIS-Analyst</p>
+<p class="exp-item__company">Plan4Better GmbH · München</p>
+</div>
+<span class="pill glass">April 2024 – heute</span>
+</div>
+<ul>
+<li>Durchführung von Raumanalysen und Geoprozessierungsaufgaben für Mobilitäts-, Erreichbarkeits- und Planungsstudien — einschließlich Isochronen, Einzugsbereiche und netzwerkbasierte Indikatoren.</li>
+<li>Raumanalysen mit <strong>GOAT</strong>: Erreichbarkeits-Heatmaps, Walkability-Indikatoren, ÖV-Güteklassen und szenariobasierte Planungsanalysen.</li>
+<li>Einsatz von <strong>QGIS</strong> für räumliche Datenverarbeitung, kartografische Kartenproduktion, Digitalisierung, Georeferenzierung und Geoprozessierungs-Workflows.</li>
+<li>Aufbereitung, Bereinigung und Integration von Geodaten mit PostgreSQL/PostGIS, mit Fokus auf Datenqualität, Dokumentation und reproduzierbare Workflows.</li>
+<li>Entwicklung Python-basierter Geoprozessierungswerkzeuge mit GeoPandas, Pandas, Shapely und GDAL/OGR für räumliche Analysen, Automatisierung und Reporting.</li>
+<li>Erstellung und Pflege technischer Dokumentation für die <strong>GOAT</strong>-Plattform zur Unterstützung von Onboarding und Wissenstransfer.</li>
+<li>Produktion kartografischer Ausgaben und schriftlicher Berichte für kommunale und regionale Planungsakteure.</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="exp-item__head">
+<div>
+<p class="exp-item__role">GIS-Praktikant</p>
+<p class="exp-item__company">Plan4Better GmbH · München</p>
+</div>
+<span class="pill glass">Januar 2024 – März 2024</span>
+</div>
+<p style="font-size:13px; color:var(--muted); margin: 4px 0 8px;">Pflichtpraktikum im Rahmen des MSc Verkehrsingenieurwesen und Mobilität — RWTH Aachen<br/>Betreut von Dr.-Ing. Andreas Witte &amp; Prof. Dr.-Ing. Tobias Kuhnimhof</p>
+<ul>
+<li>Durchführung von Erreichbarkeits- und Fußgänglichkeitsanalysen für Städte wie Augsburg, Amberg und Düsseldorf mit GOAT.</li>
+<li>Berechnung von ÖV-Güteklassen, Walkability-Index und lokalen Erreichbarkeits-Heatmaps.</li>
+<li>Anpassung von SQL-Skripten zur Ersetzung kreisförmiger Puffermethoden durch fußläufige Netzwerk-Isochronen zur Verbesserung der Messgenauigkeit.</li>
+<li>Durchführung von Szenarioanalysen für die Erweiterung von Sharing-Mobilität und Optimierung von Parkraumangeboten.</li>
+<li>Präsentation von Ergebnissen vor Hochschulbetreuer:innen und Unternehmens-Stakeholdern.</li>
+</ul>
+<a class="back-link" href="projekte/plan4better-internship.html" style="margin-top:12px; margin-bottom:0;">Vollständige Praktikumsdetails ansehen →</a>
+</div>
+<details class="experience-detail"><summary>Frühere Berufserfahrung</summary><div class="exp-item">
+<div class="exp-item__head">
+<div>
+<p class="exp-item__role">Verkäufer / Kassierer</p>
+<p class="exp-item__company">ALDI Süd · Aachen</p>
+</div>
+<span class="pill glass">August 2023 – Dezember 2023</span>
+</div>
+<ul>
+<li>Kundenbetreuung an der Kasse und auf der Verkaufsfläche.</li>
+<li>Unterstützung bei Regalbestückung, Warenwirtschaft und täglichen Filialabläufen.</li>
+</ul>
+</div><div class="exp-item">
+<div class="exp-item__head">
+<div>
+<p class="exp-item__role">Operations Associate / Schichtleitung</p>
+<p class="exp-item__company">Flink GmbH · Aachen</p>
+</div>
+<span class="pill glass">August 2021 – August 2023</span>
+</div>
+<ul>
+<li>Unterstützung der Lagerlogistik, Bestandskontrolle, Qualitätsprüfung und Auftragskommissionierung.</li>
+<li>Koordination von Schichtabläufen in einem schnelllebigen Betriebsumfeld.</li>
+<li>Kundensupport und operative Fulfillment-Prozesse.</li>
+</ul>
+</div></details></div>
+<!-- Ausgewählte Projektarbeit -->
+<section class="professional-contributions" id="plan4better-projects"><p class="eyebrow">PLAN4BETTER · PROJEKTBEITRÄGE</p><h2>Kommunale &amp; regionale Planungsprojekte</h2><p>Projekte, zu denen ich mit GIS-Analysen, Erreichbarkeitsbewertungen und Planungsgrundlagen beigetragen habe.</p><div class="contribution-grid"><article><h3>Mobilität &amp; Erreichbarkeit</h3><ul class="contribution-list"><li class="contribution-card"><p class="contribution-place">Amberg · Innenstadt</p><h4>Parken &amp; Erreichbarkeit der Innenstadt</h4><p class="contribution-summary">Eine netzwerkbasierte GOAT-Analyse bewertete die fußläufige Erreichbarkeit von öffentlichen Einrichtungen, Einzelhandel und weiteren Zielen ab Parkhäusern und Parkplätzen. Kumulative Einzugsbereiche wurden mit Bevölkerungsdaten verschnitten, um Erschließung und Lücken sichtbar zu machen.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>GOAT-Netzwerkeinzugsbereiche ab jeder Parkmöglichkeit; Gehzeiten von 3, 5, 7 und 10 Minuten; POI- und Bevölkerungsverschneidung; Lückenanalyse.</dd><dt>Ergebnisse</dt><dd>Erreichbarkeitskarten, kumulierte Bevölkerungserschließung und eine Bewertung von Zugangslücken zur Innenstadt.</dd><dt>Projekttitel</dt><dd>Erreichbarkeitsanalyse der Parkmöglichkeiten in der Amberger Innenstadt</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Amberg</p><h4>Erreichbarkeitsszenarien für den Radweg</h4><p class="contribution-summary">Vergleich des Bestandsnetzes mit zwei Varianten des geplanten Radwegs, darunter eine Variante mit Unterführung. GOAT-Isochronen für den Radverkehr sowie Bevölkerungs- und POI-Daten quantifizierten die Erreichbarkeitsgewinne im Umfeld der Trasse.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>GOAT-Isochronen im Radnetz ab vier Ausgangspunkten; Fahrzeiten von 3, 5, 7 und 10 Minuten; Vergleich von Bestand und zwei Varianten; Bevölkerungs- und POI-Verschneidung.</dd><dt>Ergebnisse</dt><dd>Szenariokarten und Tabellen zu Veränderungen bei erreichbaren Einwohner:innen und Zielen.</dd><dt>Projekttitel</dt><dd>Erreichbarkeitsanalysen zum geplanten Radwegprojekt „Höchste Eisenbahn" in Amberg</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Augsburg · Rechts der Wertach</p><span class="contribution-credit">Mitautor des Berichts</span><h4>ÖPNV-Erreichbarkeit &amp; Walkability</h4><p class="contribution-summary">Mitautor der Erreichbarkeits- und Walkabilitystudie sowie des Nachtrags zu netzwerkfeinen ÖV-Güteklassen. Die Analyse vergleicht die Erschließung nach Wochentag und Tageszeit und berücksichtigt tatsächliche Fußwege sowie räumliche Barrieren.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Erreichbarkeitsanalyse mit GOAT; POI-Einzugsgebiete; Walkability-Indikatoren; netzwerkfeine Einzugsbereiche auf OpenStreetMap-Basis.</dd><dt>Ergebnisse</dt><dd>Vergleichende Erreichbarkeitskarten, Auswertungen der erschlossenen Bevölkerung und ein gemeinsam verfasster Fachbericht.</dd><dt>Projekttitel</dt><dd>Erreichbarkeits- und Walkabilityanalysen für das Gebiet rechts der Wertach</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">München · Allach-Untermenzing</p><h4>Vernetzung im Fuß- &amp; Radverkehr</h4><p class="contribution-summary">GIS-Analyse der Fuß- und Radwegenetze, der Erreichbarkeit alltäglicher Ziele und der ÖPNV-Erschließung. Der Vergleich mit Gesamt-München macht räumliche Barrieren und Versorgungslücken im Stadtbezirk sichtbar.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Netzwerkkonnektivität auf einem hexagonalen Raster; Fuß- und Radeinzugsbereiche; Bevölkerungsverschneidung; ÖV-Güteklassen.</dd><dt>Ergebnisse</dt><dd>Vergleiche zwischen Stadtbezirk und Gesamtstadt sowie räumliche Grundlagen für das Nahmobilitätskonzept.</dd><dt>Projekttitel</dt><dd>Nahmobilitätskonzept für den 23. Stadtbezirk Allach-Untermenzing</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Kandel</p><h4>Räumliche Grundlagen für das Mobilitätskonzept</h4><p class="contribution-summary">GIS-gestützte Bewertung von ÖPNV, Alltagserreichbarkeit und Bedingungen für aktive Mobilität. Verkehrs-, Bevölkerungs- und Wegenetzdaten liefern eine räumliche Grundlage zur Beurteilung lokaler Mobilitätsdefizite.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>GOAT und QGIS; GTFS-Fahrplandaten; Bevölkerungsdaten; netzwerkbasierte Erreichbarkeitsanalyse und kartografische Aufbereitung.</dd><dt>Ergebnisse</dt><dd>Bestandskarten und Erreichbarkeitsbewertungen als Grundlage zur Identifikation von Handlungsbedarf.</dd><dt>Projekttitel</dt><dd>Fokuskonzept Mobilität Stadt Kandel</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Düsseldorf · Hassels &amp; Reisholz</p><span class="contribution-credit">Mitautor des Berichts</span><h4>ÖPNV- &amp; Sharing-Erreichbarkeit</h4><p class="contribution-summary">Mitautor einer Mobilitätsstudie zur ÖPNV-Qualität und Erreichbarkeit von E-Scootern, Bike- und Carsharing. Bestehende Angebote und Erweiterungsszenarien wurden mit der räumlichen Bevölkerungsverteilung verglichen.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>GTFS-basierte ÖV-Güteklassen; Erreichbarkeitsisochronen; Bevölkerungsverschneidung; Sharing-Szenarien.</dd><dt>Ergebnisse</dt><dd>Erschließungskarten und Szenarienvergleiche zur räumlichen Bewertung zusätzlicher Mobilitätsangebote.</dd><dt>Projekttitel</dt><dd>Mobilitätsanalysen für die Stadtteile Hassels und Reisholz in Düsseldorf</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">München · Harthof</p><h4>Quartiersgrundlagen für Sharing-Mobilität</h4><p class="contribution-summary">Übersichtskartierung und soziodemografische Indikatoren auf Quartiersebene unterstützten die Bestandsanalyse des Sharing-Mobilitätskonzepts. Im Mittelpunkt stand eine verständliche räumliche und soziale Einordnung des Quartiers.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Abgrenzung des Untersuchungsgebiets; thematische Kartografie; Vergleich soziodemografischer Quartiersindikatoren.</dd><dt>Ergebnisse</dt><dd>Eine Übersichtskarte und ein kompaktes Quartiersprofil für das Planungsteam.</dd><dt>Projekttitel</dt><dd>Sharing-Mobilitätskonzept Harthof</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">München · Scharfreiterplatz</p><h4>Alltagserreichbarkeit im Quartier</h4><p class="contribution-summary">Bewertung der Erreichbarkeit von Schulen, Alltagszielen, ÖPNV und Sharing-Angeboten für ein integriertes Quartierskonzept. Vergleiche mit dem Stadtgebiet zeigen lokale Defizite und die Bedeutung geplanter Entwicklungen.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Fuß- und Raderreichbarkeit; Bewertung der ÖPNV-Qualität; Bevölkerungserschließung und Quartiersvergleiche.</dd><dt>Ergebnisse</dt><dd>Bestandskarten und Vergleichstabellen für den Mobilitätsbaustein des Quartierskonzepts.</dd><dt>Projekttitel</dt><dd>Mobilitätsanalyse Scharfreiterplatz München</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Sinsheim</p><h4>Multimodale Erreichbarkeit &amp; Erschließung</h4><p class="contribution-summary">Räumliche Analyse der ÖPNV-Qualität und der Erreichbarkeit wichtiger Ziele zu Fuß, mit dem Fahrrad, dem ÖPNV und dem Pkw. Die Verschneidung von Einzugsgebieten und Bevölkerungsdaten zeigt Unterschiede zwischen Stadt und Umland.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Routing und Einzugsgebiete mit GOAT; GTFS-basierte ÖV-Güteklassen; Bevölkerungsverschneidung; Kartografie in QGIS.</dd><dt>Ergebnisse</dt><dd>Vergleichende Erreichbarkeitskarten und Tabellen zur Bevölkerungserschließung für die Mobilitätsanalyse.</dd><dt>Projekttitel</dt><dd>Mobilitätsanalysen Stadt Sinsheim</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Südliche Weinstraße</p><h4>Regionale &amp; touristische Erreichbarkeit</h4><p class="contribution-summary">Regionale Bewertung der ÖPNV-Erschließung, der Erreichbarkeit touristischer Ziele und der Reisezeiten im Vergleich zum Pkw. Gemeindevergleiche berücksichtigen unterschiedliche Bedienzeiträume und die Verteilung der Wohnbevölkerung.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>GTFS-basierte Güteklassen; multimodale Einzugsgebiete; bevölkerungsgewichtete Gemeindeauswertungen; Reisezeitvergleiche mit GOAT.</dd><dt>Ergebnisse</dt><dd>Regionale Vergleichskarten und Tabellen zu Zielerreichbarkeit und ÖPNV-Anbindung.</dd><dt>Projekttitel</dt><dd>Mobilitätsanalysen Südliche Weinstraße</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Schleswig-Holstein · NAH.SH</p><h4>Integration von On-Demand-Verkehren in die ÖV-Güte</h4><p class="contribution-summary">Integration von On-Demand-Verkehren in die ÖV-Güteberechnung 2025 für Schleswig-Holstein. Unterschiedliche Daten zu Haltepunkten und Bediengebieten wurden mit dem liniengebundenen Netz abgeglichen, damit die Erschließung als Gesamtsystem bewertet werden kann.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Harmonisierung von Haltepunkten und Bedienzeiten; Duplikat-Clustering; räumlicher und textbasierter Abgleich mit GTFS-Stationen; 150-Meter-Näherungsregel; Werktags-Betrachtungszeitraum.</dd><dt>Ergebnisse</dt><dd>Ein kombinierter Stationsdatensatz und ÖV-Güteklassen unter Einbezug der berücksichtigten On-Demand-Verkehre.</dd><dt>Projekttitel</dt><dd>On-Demand-Mobilitätsprojekt Schleswig-Holstein</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Schleswig-Holstein · NAH.SH</p><h4>Landesweite Bewertung der ÖV-Güte</h4><p class="contribution-summary">Berechnung der ÖV-Güteklassen 2025 für Schleswig-Holstein: einmal für den liniengebundenen ÖPNV und einmal kombiniert mit On-Demand-Verkehren. Die Auswertung macht Auswirkungen auf die lokale Erschließung und den Zugang der Bevölkerung landesweit vergleichbar.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>GTFS-Fahrplandaten 2025; Abfahrten an einem Dienstag von 06:00 bis 20:00 Uhr; GOAT-Methode für ÖV-Güteklassen; Stationskategorien nach Bedienungshäufigkeit; Zensus-Bevölkerungsraster 2022 und Gemeindegrenzen.</dd><dt>Ergebnisse</dt><dd>Geopackages mit Gemeindestatistiken für alle 1.108 Gemeinden, kombinierten und liniengebundenen Güteklassenflächen sowie 11.247 Haltestellendatensätzen.</dd><dt>Projekttitel</dt><dd>Mobilitätsanalyse Schleswig-Holstein</dd></dl></details></li></ul></article><article><h3>Energie &amp; Wärmeplanung</h3><ul class="contribution-list"><li class="contribution-card contribution-card--compact"><p class="contribution-place">Amberg</p><h4>Kommunale Wärmeplanung</h4></li><li class="contribution-card"><p class="contribution-place">Mainburg</p><h4>Raumanalyse für die kommunale Wärmeplanung</h4><p class="contribution-summary">Räumliche Bewertung von Gebäudestruktur, Wärmebedarf und straßenbezogener Bedarfsdichte. Diese Indikatoren unterstützen die Untersuchung möglicher Wärmenetzgebiete innerhalb der kommunalen Wärmeplanung.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Gebäudebestandsanalyse; räumliche Wärmebedarfskartierung; Wärmeliniendichte; Vergleich möglicher Versorgungsgebiete.</dd><dt>Ergebnisse</dt><dd>Karten und räumliche Indikatoren zur Bewertung künftiger Wärmeversorgungsoptionen.</dd><dt>Projekttitel</dt><dd>Kommunale Wärmeplanung für Stadt Mainburg</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Altrip</p><h4>Gebäudebestand &amp; Wärmebedarf im Quartier</h4><p class="contribution-summary">Räumliche Analyse von Gebäudebestand und Wärmebedarf für ein integriertes energetisches Quartierskonzept. Ein Wärmeatlas auf Blockebene und straßenbezogene Bedarfsindikatoren unterstützen die Bewertung der räumlichen Versorgungsvoraussetzungen.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Analyse von Gebäudemerkmalen; Wärmeatlas auf Blockebene; Wärmeliniendichte und thematische Kartierung.</dd><dt>Ergebnisse</dt><dd>Räumliche Grundlagen zur Beurteilung von Energie- und Wärmeversorgungsoptionen im Quartier.</dd><dt>Projekttitel</dt><dd>Integriertes Energetisches Quartierskonzept Ortsgemeinde Altrip</dd></dl></details></li><li class="contribution-card"><p class="contribution-place">Amberg · Luitpoldhöhe</p><h4>Wärmebedarfskartierung &amp; Netzprüfung</h4><p class="contribution-summary">Die gebäudescharfe Wärmebedarfsanalyse verbindet vorhandene Gasverbrauchsdaten mit Bedarfsschätzungen für andere Gebäude. Räumliche Bedarfsmuster und Wärmeliniendichten unterstützen die Prüfung möglicher Wärmenetztrassen.</p><details class="contribution-detail"><summary>Methoden &amp; Ergebnisse</summary><dl><dt>Methoden</dt><dd>Gebäudescharfer Wärmeatlas; Bedarfsschätzung anhand von Baualter und Sanierungszustand; Wärmeliniendichte.</dd><dt>Ergebnisse</dt><dd>Wärmebedarfskarten und räumliche Indikatoren zum Vergleich möglicher Wärmeversorgungslösungen im Quartier.</dd><dt>Projekttitel</dt><dd>Energiekonzept im Rahmen des integrierten städtebaulichen Entwicklungskonzepts Luitpoldhöhe</dd></dl></details></li></ul></article></div><a class="text-link" href="projekte/index.html">Alle visuellen Fallstudien ansehen →</a></section>
+<!-- Ausbildung -->
+<h2 style="margin-bottom:16px;">Ausbildung</h2>
+<div class="exp-timeline">
+<div class="exp-item">
+<div class="exp-item__head">
+<div>
+<p class="exp-item__role">MSc Verkehrsingenieurwesen und Mobilität</p>
+<p class="exp-item__company">RWTH Aachen University · ISB — Lehrstuhl und Institut für Stadtbauwesen und Stadtverkehr</p>
+</div>
+<span class="pill glass">November 2020 – Juli 2026</span>
+</div>
+<p style="font-size:13px; color:var(--muted); margin:6px 0 8px;">Betreut von Univ.-Prof. Dr.-Ing. Tobias Kuhnimhof</p>
+<p style="font-size:13px; font-weight:700; margin:0 0 4px;">Masterarbeit, abgeschlossen Juli 2026 · Note 1,3</p>
+<p style="font-size:13px; margin:0 0 6px;"><em>Bewertung der Erreichbarkeit von Einzelhandelsgeschäften mit bestimmten Verkehrsmitteln in ausgewählten deutschen Städten</em></p>
+<p style="font-size:13px; margin:0;">Bewertung der Einzelhandelserreichbarkeit in fünf westdeutschen Städten mit <strong>r5py</strong> (R5-Routing-Engine) für Fuß, Fahrrad, ÖPNV und Pkw. Die Erreichbarkeit wurde auf einem 100-m-<strong>Zensus-2022</strong>-Raster modelliert und mit sieben sozioökonomischen Indikatoren verknüpft. Räumliche Muster und Ungleichheiten wurden über <strong>bivariate Kartierung</strong> und <strong>Spearman-Korrelation</strong> untersucht und in QGIS visualisiert.</p>
+</div>
+<div class="exp-item">
+<div class="exp-item__head">
+<div>
+<p class="exp-item__role">BTech Produktionstechnik</p>
+<p class="exp-item__company">National Institute of Technology Calicut</p>
+</div>
+<span class="pill glass">März 2015 – April 2019</span>
+</div>
+</div>
+</div>
+<!-- Technische Kenntnisse -->
+<h2 style="margin-top:48px; margin-bottom:16px;">Technische Kenntnisse</h2>
+<div class="skillgrid">
+<div class="skill glass">
+<h3>GIS &amp; Räumliche Analyse</h3>
+<p>QGIS, Kartografie, Raumanalyse, Georeferenzierung, Digitalisierung, Verschneidungen und Geoprozessierung; Isochronen, Einzugsbereiche und Erreichbarkeitsindikatoren.</p>
+</div>
+<div class="skill glass">
+<h3>Geodatenbanken</h3>
+<p>SQL · PostgreSQL/PostGIS; räumliche Datenvorbereitung, Integration, Qualitätsprüfung und reproduzierbare Geodatenpipelines.</p>
+</div>
+<div class="skill glass">
+<h3>Python &amp; Geoprozessierung</h3>
+<p>GeoPandas, Pandas, Shapely, GDAL/OGR; Workflow-Automatisierung, Datenaufbereitung und Reporting.</p>
+</div>
+<div class="skill glass">
+<h3>Mobilität &amp; Erreichbarkeit</h3>
+<p>Fußgänglichkeit und Erreichbarkeitsanalyse, netzwerkbasierte Mobilitätsindikatoren, ÖPNV- und Aktivmobilitätsanalyse.</p>
+</div>
+<div class="skill glass">
+<h3>Reporting &amp; Kartografie</h3>
+<p>Kartenproduktion für Planungsstudien, technisches Berichtswesen, kommunale und regionale Stakeholder-Kommunikation, MS Office.</p>
+</div>
+<div class="skill glass">
+<h3>Sprachen</h3>
+<p>Deutsch (Gut) · Englisch (Fließend) · Malayalam (Muttersprache) · Hindi (Gut) · Tamil (Gut)</p>
+</div>
+</div>
+<!-- Auszeichnungen -->
+<h2 style="margin-top:48px; margin-bottom:16px;">Auszeichnungen &amp; Veröffentlichungen</h2>
+<div class="cards">
+<article class="card glass">
+<h3>Best Paper Award · ICSCAN 2019</h3>
+<p class="muted">International Conference on Systems, Computation, Automation and Networking · März 2019</p>
+</article>
+<article class="card glass">
+<h3>IEEE Xplore Veröffentlichungen · 2019</h3>
+<ul class="bullets">
+<li>Performance Analysis of Storage Warehouses in a Food Grain Supply Chain using Data Envelopment Analysis</li>
+<li>Selection of Warehouse Operator by the Combination of Analytic Hierarchy Process and DEA</li>
+</ul>
+</article>
+</div>
+</div>
+<footer class="footer">
+<div class="container footer__inner">
+<span>© <span id="year"></span> Gokul Gopan</span>
+<span class="muted">GIS-Analyst · München</span>
+<a href="zertifikate.html">Zertifikate</a></div>
+</footer>
+</main>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

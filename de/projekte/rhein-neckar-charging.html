@@ -1,105 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rhein-Neckar — Ladeinfrastruktur-Erreichbarkeit · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Rhein-Neckar — Ladeinfrastruktur-Erreichbarkeit · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../../de/index.html" class="nav-link">Startseite</a>
-        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
-        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
-        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="../kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../../projects/rhein-neckar-charging.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../../de/index.html">Startseite</a>
-        <a href="../../de/projekte/" class="active">Projekte</a>
-        <a href="../../de/erfahrung.html">Erfahrung</a>
-        <a href="../../de/zertifikate.html">Zertifikate</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="../../projects/rhein-neckar-charging.html">🇬🇧 EN</a>
-        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="../">← Zurück zu Projekten</a>
-
-      <div class="proj-detail__hero">
-        <img src="../../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png" alt="Rhein-Neckar Ladeinfrastruktur Erreichbarkeit Dashboard" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>Rhein-Neckar — Ladeinfrastruktur-Erreichbarkeit</h1>
-          <div class="proj-detail__tags">
-            <span>Ladeinfrastruktur</span><span>Erreichbarkeit</span><span>GOAT</span><span>Dashboard</span><span>Rhein-Neckar</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <h2>Überblick</h2>
-        <p>Ein interaktives GOAT-Dashboard zur Analyse der Erreichbarkeit <strong>öffentlicher Ladeinfrastruktur</strong> im gesamten <strong>Rhein-Neckar-Kreis</strong>. Die Analyse bewertet Fußwegeinzugsbereiche von Normal- (<em>Normalladeeinrichtung</em>) und Schnellladestationen (<em>Schnellladeeinrichtung</em>) und schlüsselt die erreichte Bevölkerung nach Gebäudetyp — Mehrfamilienhäuser (MFH) und Einfamilienhäuser (EFH) — für jede Gemeinde auf.</p>
-        <p>Das Dashboard ermöglicht es Planern, Gemeinden mit geringer Ladeabdeckung zu identifizieren und zu verstehen, welche Wohngebiete durch das bestehende Ladenetz am stärksten unterversorgt sind.</p>
-
-        <h2>Methodik</h2>
-        <div class="steps">
-          <div class="step">
-            <h3>Ladestationsdaten</h3>
-            <p>Laden aller öffentlichen Ladestandorte im Rhein-Neckar-Kreis, klassifiziert nach Typ: <strong>Normalladeeinrichtung</strong> (AC-Laden) und <strong>Schnellladeeinrichtung</strong> (DC-Schnellladen).</p>
-          </div>
-          <div class="step">
-            <h3>Fußwegzeitbasierte Erreichbarkeit</h3>
-            <p>Generierung von Fußwegeinzugsbereichen in 2-, 4-, 6-, 8- und 10-Minuten-Intervallen von jeder Ladestation über das netzwerkbasierte Erreichbarkeits-Engine der GOAT-Plattform — mit Identifikation der bei jedem Schwellenwert erreichbaren Bevölkerung.</p>
-          </div>
-          <div class="step">
-            <h3>Bevölkerungssegmentierung nach Gebäudetyp</h3>
-            <p>Überlagerung von nach <strong>MFH</strong> (Mehrfamilienhaus) und <strong>EFH</strong> (Einfamilienhaus) differenzierten Bevölkerungsdaten, um zu verstehen, ob sich die Ladeerreichbarkeit je nach Wohnkontext unterscheidet.</p>
-          </div>
-          <div class="step">
-            <h3>Gemeinde-Dashboard</h3>
-            <p>Aufbau eines interaktiven GOAT-Dashboards mit einem <em>Kommune-Auswählen</em>-Filter und einer gemeindebezogenen Tabelle mit Gesamtladestationen, Normalladern, Schnellladern, Gesamteinwohnern und Einwohnern nach Gebäudetyp — für gezielte Vergleiche aller Gemeinden im Landkreis.</p>
-          </div>
-        </div>
-
-        <h2>Dashboard-Funktionen</h2>
-        <ul>
-          <li>Filter nach Gemeinde (<em>Kommune Auswählen</em>) zur Fokussierung von Karte und Statistiken</li>
-          <li>Filter nach Ladertyp — Normal- vs. Schnellladen</li>
-          <li><em>Bevölkerung nach Gehzeit</em> — erreichte Bevölkerung bei jedem Fußwegzeitintervall</li>
-          <li><em>Erschlossene Bevölkerung [%]</em> — Bevölkerungsanteil als Choropleth pro Gemeinde</li>
-          <li>Gemeinde-Tabelle: <em>Erschließung je Kommune differenziert nach Wohngebiettyp und Ladetechnologie</em></li>
-          <li>Heatmap-Ebene zum Angebot-Nachfrage-Verhältnis (Ladesäulen vs. Bevölkerung)</li>
-        </ul>
-
-        <h2>Tools &amp; Technologien</h2>
-        <ul>
-          <li>GOAT (Plan4Better) — Erreichbarkeits-Engine, Dashboard und Visualisierung</li>
-          <li>Fußwegeinzugsbereiche (2–10 Minuten) für netzwerkbasierte Abdeckungsanalyse</li>
-          <li>Bevölkerungsdaten nach Gebäudetyp (MFH / EFH) segmentiert</li>
-          <li>Öffentliche EV-Ladestationsdaten für den Rhein-Neckar-Kreis</li>
-        </ul>
-
-        <h2>Ergebnis</h2>
-        <p>Geliefert wurde ein vollständig interaktives Erreichbarkeits-Dashboard für den Rhein-Neckar-Kreis, das Planern und politischen Entscheidungsträgern ein klares, gemeindebezogenes Bild davon vermittelt, wo öffentliche Ladeinfrastruktur gut versorgt ist und wo Investitionen am dringendsten benötigt werden — differenziert nach Ladertyp und Wohnkontext.</p>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
-  </main>
-  <script src="../../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../../de/index.html">Startseite</a>
+<a class="nav-link active" href="../../de/projekte/index.html">Projekte</a>
+<a class="nav-link" href="../../de/erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="../kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../../projects/rhein-neckar-charging.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../../de/index.html">Startseite</a>
+<a class="active" href="../../de/projekte/index.html">Projekte</a>
+<a href="../../de/erfahrung.html">Erfahrung</a>
+<a href="../kontakt.html">Kontakt</a>
+<a href="../../projects/rhein-neckar-charging.html">🇬🇧 EN</a>
+<a class="btn btn--primary btn--block" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="../index.html">← Zurück zu Projekten</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Bild vergrößern: Rhein-Neckar Ladeinfrastruktur Erreichbarkeit Dashboard" class="image-preview" data-image-viewer="" href="../../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png"><img alt="Rhein-Neckar Ladeinfrastruktur Erreichbarkeit Dashboard" height="1574" loading="eager" src="../../assets/images/ladeinfrastruktur_rhein_neckar_dashboard.png" width="2880"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>Rhein-Neckar — Ladeinfrastruktur-Erreichbarkeit</h1>
+<div class="proj-detail__tags">
+<span>Ladeinfrastruktur</span><span>Erreichbarkeit</span><span>GOAT</span><span>Dashboard</span><span>Rhein-Neckar</span>
+</div>
+</div>
+</div>
+<div class="case-layout"><nav aria-label="Auf dieser Seite" class="case-nav"><p class="eyebrow">PROJEKTÜBERSICHT</p><a href="#project-visual">Karte / Vorschau ↗</a><a href="#case-section-1">Überblick</a><a href="#case-section-2">Analyseworkflow</a><a href="#case-section-3">Dashboard-Funktionen</a><a href="#case-section-4">Tools &amp; Technologien</a><a href="#case-section-5">Ergebnis</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Überblick</h2>
+<p>Ein interaktives GOAT-Dashboard zur Analyse der Erreichbarkeit <strong>öffentlicher Ladeinfrastruktur</strong> im gesamten <strong>Rhein-Neckar-Kreis</strong>. Die Analyse bewertet Fußwegeinzugsbereiche von Normal- (<em>Normalladeeinrichtung</em>) und Schnellladestationen (<em>Schnellladeeinrichtung</em>) und schlüsselt die erreichte Bevölkerung nach Gebäudetyp — Mehrfamilienhäuser (MFH) und Einfamilienhäuser (EFH) — für jede Gemeinde auf.</p>
+<p>Das Dashboard ermöglicht es Planern, Gemeinden mit geringer Ladeabdeckung zu identifizieren und zu verstehen, welche Wohngebiete durch das bestehende Ladenetz am stärksten unterversorgt sind.</p>
+</section><section class="case-section" id="case-section-2"><h2>Analyseworkflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Animation pausieren</button><p class="flow-hint">Schritte aufklappen, um die Details zu lesen.</p><ol aria-label="Projektworkflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">Ladestationsdaten</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Laden aller öffentlichen Ladestandorte im Rhein-Neckar-Kreis, klassifiziert nach Typ: <strong>Normalladeeinrichtung</strong> (AC-Laden) und <strong>Schnellladeeinrichtung</strong> (DC-Schnellladen).</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Fußwegzeitbasierte Erreichbarkeit</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Generierung von Fußwegeinzugsbereichen in 2-, 4-, 6-, 8- und 10-Minuten-Intervallen von jeder Ladestation über das netzwerkbasierte Erreichbarkeits-Engine der GOAT-Plattform — mit Identifikation der bei jedem Schwellenwert erreichbaren Bevölkerung.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Bevölkerungssegmentierung nach Gebäudetyp</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Überlagerung von nach <strong>MFH</strong> (Mehrfamilienhaus) und <strong>EFH</strong> (Einfamilienhaus) differenzierten Bevölkerungsdaten, um zu verstehen, ob sich die Ladeerreichbarkeit je nach Wohnkontext unterscheidet.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">Gemeinde-Dashboard</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Aufbau eines interaktiven GOAT-Dashboards mit einem <em>Kommune-Auswählen</em>-Filter und einer gemeindebezogenen Tabelle mit Gesamtladestationen, Normalladern, Schnellladern, Gesamteinwohnern und Einwohnern nach Gebäudetyp — für gezielte Vergleiche aller Gemeinden im Landkreis.</p></div></details></li></ol></div>
+</section><section class="case-section" id="case-section-3"><h2>Dashboard-Funktionen</h2>
+<ul>
+<li>Filter nach Gemeinde (<em>Kommune Auswählen</em>) zur Fokussierung von Karte und Statistiken</li>
+<li>Filter nach Ladertyp — Normal- vs. Schnellladen</li>
+<li><em>Bevölkerung nach Gehzeit</em> — erreichte Bevölkerung bei jedem Fußwegzeitintervall</li>
+<li><em>Erschlossene Bevölkerung [%]</em> — Bevölkerungsanteil als Choropleth pro Gemeinde</li>
+<li>Gemeinde-Tabelle: <em>Erschließung je Kommune differenziert nach Wohngebiettyp und Ladetechnologie</em></li>
+<li>Heatmap-Ebene zum Angebot-Nachfrage-Verhältnis (Ladesäulen vs. Bevölkerung)</li>
+</ul>
+</section><section class="case-section case-reference" id="case-section-4"><h2>Tools &amp; Technologien</h2>
+<ul>
+<li>GOAT (Plan4Better) — Erreichbarkeits-Engine, Dashboard und Visualisierung</li>
+<li>Fußwegeinzugsbereiche (2–10 Minuten) für netzwerkbasierte Abdeckungsanalyse</li>
+<li>Bevölkerungsdaten nach Gebäudetyp (MFH / EFH) segmentiert</li>
+<li>Öffentliche EV-Ladestationsdaten für den Rhein-Neckar-Kreis</li>
+</ul>
+</section><section class="case-section case-results" id="case-section-5"><h2>Ergebnis</h2>
+<p>Geliefert wurde ein vollständig interaktives Erreichbarkeits-Dashboard für den Rhein-Neckar-Kreis, das Planern und politischen Entscheidungsträgern ein klares, gemeindebezogenes Bild davon vermittelt, wo öffentliche Ladeinfrastruktur gut versorgt ist und wo Investitionen am dringendsten benötigt werden — differenziert nach Ladertyp und Wohnkontext.</p>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← Alle Projekte</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span><a href="../zertifikate.html">Zertifikate</a></div></footer>
+</main>
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/image-viewer.js"></script></body>
 </html>

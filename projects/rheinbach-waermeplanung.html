@@ -1,115 +1,86 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rheinbach Kommunale Wärmeplanung · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Rheinbach Kommunale Wärmeplanung · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/rheinbach-waermeplanung.html" class="lang-toggle" aria-label="Zur deutschen Version">🇩🇪 DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../index.html">Home</a>
-        <a href="../projects/" class="active">Projects</a>
-        <a href="../experience.html">Experience</a>
-        <a href="../certifications.html">Certifications</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../de/projekte/rheinbach-waermeplanung.html">🇩🇪 DE</a><a href="../assets/GOKUL-CV.pdf" target="_blank" class="btn btn--primary btn--block">Download CV</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="index.html">← Back to Projects</a>
-
-      <div class="proj-detail__hero">
-        <img src="../assets/images/waermebedarf_rheinbach.jpeg" alt="Rheinbach Kommunale Wärmeplanung Dashboard" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>Rheinbach Kommunale Wärmeplanung</h1>
-          <div class="proj-detail__tags">
-            <span>Wärmeplanung</span><span>GOAT</span><span>NRW</span><span>Open Data</span><span>Plan4Better</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <h2>Overview</h2>
-        <p>An interactive <strong>GOAT dashboard</strong> for kommunale Wärmeplanung in <strong>Rheinbach, NRW</strong>, built on open data from the <strong>LANUV Wärmestudie NRW</strong>. The goal was to make building-level heat demand data genuinely useful for municipal planners — not just display it on a map, but surface the indicators that matter in a clean, clickable interface.</p>
-        <p>Users can click on any building and immediately see key heat-planning indicators in a custom HTML popup, making the data easier to explain to non-GIS stakeholders than a standard attribute table. The workflow is based entirely on open data and can be replicated for any NRW municipality by changing the AGS code.</p>
-
-        <h2>Key Numbers</h2>
-        <ul>
-          <li><strong>14,961</strong> heated residential buildings analysed</li>
-          <li><strong>922</strong> city blocks with heat demand data</li>
-          <li><strong>38.7 %</strong> of city blocks primarily run on gas</li>
-          <li><strong>18,635 kWh/a</strong> average heat demand per building</li>
-        </ul>
-
-        <h2>Methodology</h2>
-        <div class="steps">
-          <div class="step">
-            <h3>Data Source — LANUV Wärmestudie NRW</h3>
-            <p>Loaded building-level heat demand data from the <strong>LANUV Wärmestudie NRW</strong> open dataset. The data covers heated residential buildings across NRW and includes spatial geometry, energy demand, and building characteristics — all accessible by AGS code, making the workflow portable across municipalities.</p>
-          </div>
-          <div class="step">
-            <h3>Building-Level Indicators</h3>
-            <p>For each building the dashboard surfaces: <strong>Gesamtwärmebedarf</strong>, <strong>Raumwärme</strong> and <strong>Warmwasser</strong> split, <strong>Nutzfläche</strong>, <strong>Gebäudehöhe</strong>, <strong>Sanierungsklasse</strong>, <strong>Wärmepumpen-Eignung</strong>, and <strong>JAZ values</strong> for both Luft-Wärmepumpe and Geo-Wärmepumpe — giving planners the full picture at a single click.</p>
-          </div>
-          <div class="step">
-            <h3>Custom HTML Popup Design</h3>
-            <p>Customised the GOAT feature info popup using HTML so the layout is structured and readable — closer to a planning brief than a raw GIS attribute dump. This makes it significantly easier to use in conversations with municipal clients who are not GIS users.</p>
-          </div>
-          <div class="step">
-            <h3>City Block Aggregation</h3>
-            <p>Aggregated building data to <strong>922 city blocks</strong> to enable neighbourhood-level heat demand mapping and identify which blocks are most dependent on gas heating, supporting prioritisation for retrofit and heat network planning.</p>
-          </div>
-        </div>
-
-        <h2>Dashboard Features</h2>
-        <ul>
-          <li>Click any building to see full Wärmeplanung indicators in a clean custom popup</li>
-          <li>Gesamtwärmebedarf, Raumwärme and Warmwasser split per building</li>
-          <li>Nutzfläche, Gebäudehöhe, and Sanierungsklasse at a glance</li>
-          <li>Wärmepumpen-Eignung with JAZ values for Luft-WP and Geo-WP</li>
-          <li>City block layer showing gas dependency distribution across Rheinbach</li>
-          <li>Replicable for any NRW municipality by changing the AGS code</li>
-        </ul>
-
-        <h2>Tools &amp; Technologies</h2>
-        <ul>
-          <li>GOAT (Plan4Better) — dashboard, map visualisation and custom popup design</li>
-          <li>LANUV Wärmestudie NRW — open data source for building-level heat demand</li>
-          <li>HTML — custom popup layout for non-GIS stakeholder communication</li>
-          <li>AGS-based workflow for portability across NRW municipalities</li>
-        </ul>
-
-        <h2>Outcome</h2>
-        <p>Delivered a fully interactive kommunale Wärmeplanung dashboard for Rheinbach that translates LANUV open data into a planning tool — with building-level detail, readable popups, and city block aggregations that give municipal planners a clear picture of heat demand, gas dependency, and heat pump suitability across the city.</p>
-
-        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/20206faa-a2a8-4ebb-9941-74c6715b1d8d" target="_blank" rel="noopener">Open Live Dashboard</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
-  </main>
-  <script src="../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Skip to content</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a aria-label="Zur deutschen Version" class="lang-toggle" href="../de/projekte/rheinbach-waermeplanung.html">DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+<a aria-label="Email Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Contact</a><button aria-controls="drawer" aria-expanded="false" aria-label="Open menu" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../index.html">Home</a>
+<a class="active" href="../projects/index.html">Projects</a>
+<a href="../experience.html">Experience</a>
+<a href="../contact.html">Contact</a>
+<a href="../de/projekte/rheinbach-waermeplanung.html">🇩🇪 DE</a><a class="btn btn--primary btn--block" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="index.html">← Back to Projects</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Enlarge image: Rheinbach Kommunale Wärmeplanung Dashboard" class="image-preview" data-image-viewer="" href="../assets/images/waermebedarf_rheinbach.jpeg"><img alt="Rheinbach Kommunale Wärmeplanung Dashboard" height="1152" loading="eager" src="../assets/images/waermebedarf_rheinbach.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>Rheinbach Kommunale Wärmeplanung</h1>
+<div class="proj-detail__tags">
+<span>Wärmeplanung</span><span>GOAT</span><span>NRW</span><span>Open Data</span><span>Plan4Better</span>
+</div>
+</div>
+</div>
+<div class="case-layout"><nav aria-label="On this page" class="case-nav"><p class="eyebrow">IN THIS PROJECT</p><a href="#project-visual">Map / visual preview ↗</a><a href="#case-section-1">Overview</a><a href="#case-section-2">Key Numbers</a><a href="#case-section-3">Workflow</a><a href="#case-section-4">Dashboard Features</a><a href="#case-section-5">Tools &amp; Technologies</a><a href="#case-section-6">Outcome</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Overview</h2>
+<p>An interactive <strong>GOAT dashboard</strong> for kommunale Wärmeplanung in <strong>Rheinbach, NRW</strong>, built on open data from the <strong>LANUV Wärmestudie NRW</strong>. The goal was to make building-level heat demand data genuinely useful for municipal planners — not just display it on a map, but surface the indicators that matter in a clean, clickable interface.</p>
+<p>Users can click on any building and immediately see key heat-planning indicators in a custom HTML popup, making the data easier to explain to non-GIS stakeholders than a standard attribute table. The workflow is based entirely on open data and can be replicated for any NRW municipality by changing the AGS code.</p>
+</section><section class="case-section" id="case-section-2"><h2>Key Numbers</h2>
+<ul>
+<li><strong>14,961</strong> heated residential buildings analysed</li>
+<li><strong>922</strong> city blocks with heat demand data</li>
+<li><strong>38.7 %</strong> of city blocks primarily run on gas</li>
+<li><strong>18,635 kWh/a</strong> average heat demand per building</li>
+</ul>
+</section><section class="case-section" id="case-section-3"><h2>Workflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Pause animation</button><p class="flow-hint">Follow the process. Expand a step for the details.</p><ol aria-label="Project workflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">Data Source — LANUV Wärmestudie NRW</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Loaded building-level heat demand data from the <strong>LANUV Wärmestudie NRW</strong> open dataset. The data covers heated residential buildings across NRW and includes spatial geometry, energy demand, and building characteristics — all accessible by AGS code, making the workflow portable across municipalities.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Building-Level Indicators</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>For each building the dashboard surfaces: <strong>Gesamtwärmebedarf</strong>, <strong>Raumwärme</strong> and <strong>Warmwasser</strong> split, <strong>Nutzfläche</strong>, <strong>Gebäudehöhe</strong>, <strong>Sanierungsklasse</strong>, <strong>Wärmepumpen-Eignung</strong>, and <strong>JAZ values</strong> for both Luft-Wärmepumpe and Geo-Wärmepumpe — giving planners the full picture at a single click.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Custom HTML Popup Design</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Customised the GOAT feature info popup using HTML so the layout is structured and readable — closer to a planning brief than a raw GIS attribute dump. This makes it significantly easier to use in conversations with municipal clients who are not GIS users.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">City Block Aggregation</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Aggregated building data to <strong>922 city blocks</strong> to enable neighbourhood-level heat demand mapping and identify which blocks are most dependent on gas heating, supporting prioritisation for retrofit and heat network planning.</p></div></details></li></ol></div>
+</section><section class="case-section" id="case-section-4"><h2>Dashboard Features</h2>
+<ul>
+<li>Click any building to see full Wärmeplanung indicators in a clean custom popup</li>
+<li>Gesamtwärmebedarf, Raumwärme and Warmwasser split per building</li>
+<li>Nutzfläche, Gebäudehöhe, and Sanierungsklasse at a glance</li>
+<li>Wärmepumpen-Eignung with JAZ values for Luft-WP and Geo-WP</li>
+<li>City block layer showing gas dependency distribution across Rheinbach</li>
+<li>Replicable for any NRW municipality by changing the AGS code</li>
+</ul>
+</section><section class="case-section case-reference" id="case-section-5"><h2>Tools &amp; Technologies</h2>
+<ul>
+<li>GOAT (Plan4Better) — dashboard, map visualisation and custom popup design</li>
+<li>LANUV Wärmestudie NRW — open data source for building-level heat demand</li>
+<li>HTML — custom popup layout for non-GIS stakeholder communication</li>
+<li>AGS-based workflow for portability across NRW municipalities</li>
+</ul>
+</section><section class="case-section case-results" id="case-section-6"><h2>Outcome</h2>
+<p>Delivered a fully interactive kommunale Wärmeplanung dashboard for Rheinbach that translates LANUV open data into a planning tool — with building-level detail, readable popups, and city block aggregations that give municipal planners a clear picture of heat demand, gas dependency, and heat pump suitability across the city.</p>
+<div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+<a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/20206faa-a2a8-4ebb-9941-74c6715b1d8d" rel="noopener" target="_blank">Open Live Dashboard</a>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← All projects</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span><a href="../certifications.html">Certifications</a></div></footer>
+</main>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/image-viewer.js"></script></body>
 </html>

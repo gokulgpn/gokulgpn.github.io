@@ -1,124 +1,93 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Münster Nahversorgung Erreichbarkeit · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Münster Nahversorgung Erreichbarkeit · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../../de/index.html" class="nav-link">Startseite</a>
-        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
-        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
-        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="../kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../../projects/muenster-nahversorgung.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../../de/index.html">Startseite</a>
-        <a href="../../de/projekte/" class="active">Projekte</a>
-        <a href="../../de/erfahrung.html">Erfahrung</a>
-        <a href="../../de/zertifikate.html">Zertifikate</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="../../projects/muenster-nahversorgung.html">🇬🇧 EN</a>
-        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="../">← Zurück zu Projekten</a>
-
-      <div class="proj-detail__hero">
-        <img src="../../assets/images/muenster_nahversorgung.jpeg" alt="Münster Nahversorgung Erreichbarkeit Dashboard" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>Münster Nahversorgung — Erreichbarkeit</h1>
-          <div class="proj-detail__tags">
-            <span>Erreichbarkeit</span><span>GOAT</span><span>Münster</span><span>Nahversorgung</span><span>Plan4Better</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <h2>Überblick</h2>
-        <p>Erreicht man eine <strong>Kita</strong>, einen <strong>Supermarkt</strong> und eine <strong>Apotheke</strong> in 10 Minuten zu Fuß? Das ist der Maßstab der <strong>BBSR Nahversorgungs-Erreichbarkeit</strong> für jedes Wohngebiet in Münster — und genau die Frage, die dieses Dashboard blockgenau beantwortet.</p>
-        <p>Vollständig im <strong>GOAT Workflow</strong> (Plan4Better) umgesetzt — ein Isochronen-Tool plus SQL-Editor, ohne einen einzigen lokalen Verarbeitungsschritt in der gesamten Pipeline. Die Einzugsbereiche aller drei Einrichtungstypen werden direkt in GOAT berechnet und mit einer einzigen SQL-Abfrage kombiniert, um jedes Wohngebiet danach zu bewerten, wie viele der drei Einrichtungen zu Fuß erreichbar sind.</p>
-        <p>Datengrundlage: <strong>ALKIS-Flächennutzung</strong>, <strong>OpenStreetMap</strong> und <strong>Stadt Münster Open Data</strong>.</p>
-
-        <h2>Ergebnisse</h2>
-        <ul>
-          <li><strong>63,3 %</strong> der Bevölkerung sind vollständig erschlossen — alle drei Einrichtungen in 10 Minuten erreichbar</li>
-          <li><strong>5 %</strong> liegen in einer echten <em>Erschließungslücke</em> — keine der drei Einrichtungen zu Fuß erreichbar</li>
-          <li><strong>14.251 Einwohner</strong> ohne fußläufigen Zugang zur Grundversorgung</li>
-        </ul>
-
-        <h2>Methodik</h2>
-        <div class="steps">
-          <div class="step">
-            <h3>BBSR-Standard Nahversorgungs-Erreichbarkeit</h3>
-            <p>Angewendet wurde die <strong>BBSR</strong>-Methodik zur Erreichbarkeit der Grundversorgung: Ein Wohngebiet gilt nur dann als vollständig erschlossen, wenn Kita, Supermarkt und Apotheke alle innerhalb von 10 Gehminuten erreichbar sind.</p>
-          </div>
-          <div class="step">
-            <h3>Drei Einzugsbereiche, ein Workflow</h3>
-            <p>Berechnung der Einzugsbereiche für Kita, Supermarkt und Apotheke direkt als Live-Datensätze in GOAT — keine Shapefiles, kein lokaler Import, nichts vorher auf dem Desktop verarbeitet.</p>
-          </div>
-          <div class="step">
-            <h3>Individuelle SQL-Bewertung</h3>
-            <p>Eine einzige SQL-Abfrage überlagert alle drei Einzugsbereiche und bewertet jedes Wohngebiet mit einem Score von 0 bis 3, je nachdem wie viele Einrichtungstypen erreichbar sind — geschrieben, ausgeführt und gespeichert direkt im Browser.</p>
-          </div>
-          <div class="step">
-            <h3>Ergebnis als neuer Datensatz gespeichert</h3>
-            <p>Das bewertete Ergebnis wird direkt als neuer Datensatz im Projekt gespeichert, bereit zum Stylen und für das Dashboard — ohne Export, ohne erneuten Import, ohne Formatkonvertierung.</p>
-          </div>
-        </div>
-
-        <h2>Dashboard-Funktionen</h2>
-        <ul>
-          <li>Vierstufige Erreichbarkeits-Klassifizierung: Erschließungslücke, eingeschränkt erschlossen, gut erschlossen, vollständig erschlossen</li>
-          <li>Bevölkerungsebene zur Umrechnung von Flächenklassen in Einwohnerzahlen</li>
-          <li>Stadtbezirke zur Orientierung innerhalb Münsters</li>
-          <li>Donut-Chart mit dem Bevölkerungsanteil je Erreichbarkeitsklasse</li>
-        </ul>
-
-        <h2>Tools &amp; Technologien</h2>
-        <ul>
-          <li>GOAT (Plan4Better) Workflows — Einzugsbereiche, individuelles SQL, Dashboard</li>
-          <li>ALKIS-Flächennutzung — Gebäude- und Flächennutzungsgrundlage</li>
-          <li>OpenStreetMap — Fußwegenetz und Einrichtungsstandorte</li>
-          <li>Stadt Münster Open Data — ergänzende kommunale Datensätze</li>
-          <li>BBSR Nahversorgungs-Erreichbarkeit — Erreichbarkeitsmethodik</li>
-        </ul>
-
-        <h2>Ein ehrlicher Hinweis</h2>
-        <p>Die Analyse berücksichtigt <strong>97,6 %</strong> der Bevölkerung Münsters. Die restlichen <strong>2,4 %</strong>, rund <strong>7.030 Einwohner</strong> im <em>Außenbereich</em>, sind nicht enthalten — die ALKIS-basierte Methode löst Erreichbarkeit nur innerhalb bebauter Wohngebiete auf.</p>
-
-        <h2>Ergebnis</h2>
-        <p>Ein vollständig interaktives Nahversorgungs-Dashboard für Münster, entstanden ohne einen einzigen lokalen Verarbeitungsschritt — von den Einzugsbereichen über die Bewertung bis zur finalen Karte läuft alles in GOAT. Es gibt Planern einen blockgenauen Überblick darüber, wo die Grundversorgung bereits funktioniert, wo sie nur eingeschränkt gegeben ist, und wo eine echte Erschließungslücke Einwohner ohne fußläufige Kita, Supermarkt oder Apotheke zurücklässt.</p>
-
-        <h2>Workflow</h2>
-        <p>Die gesamte Bewertungspipeline liegt in einem einzigen GOAT-Workflow — drei Einzugsbereiche fließen in einen individuellen SQL-Schritt, der direkt als neuer Datensatz gespeichert wird. Keine lokale GIS-Software, keine Export-/Import-Umwege.</p>
-        <img src="../../assets/images/muenster_nahversorhung_02.jpeg" alt="GOAT Workflow für die Münster Nahversorgungs-Bewertung — Einzugsbereiche, individuelles SQL, Ergebnisdatensatz" style="width:100%; border-radius:12px; margin-top:1rem;" />
-
-        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/a557b266-5694-4df4-a2fc-328e35b1fad7" target="_blank" rel="noopener">Live-Dashboard öffnen</a>
-          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_nahversorgung-erreichbarkeit-gis-activity-7490270348253474816-xsDE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" target="_blank" rel="noopener">LinkedIn-Beitrag</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
-  </main>
-  <script src="../../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../../de/index.html">Startseite</a>
+<a class="nav-link active" href="../../de/projekte/index.html">Projekte</a>
+<a class="nav-link" href="../../de/erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="../kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../../projects/muenster-nahversorgung.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../../de/index.html">Startseite</a>
+<a class="active" href="../../de/projekte/index.html">Projekte</a>
+<a href="../../de/erfahrung.html">Erfahrung</a>
+<a href="../kontakt.html">Kontakt</a>
+<a href="../../projects/muenster-nahversorgung.html">🇬🇧 EN</a>
+<a class="btn btn--primary btn--block" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="../index.html">← Zurück zu Projekten</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Bild vergrößern: Münster Nahversorgung Erreichbarkeit Dashboard" class="image-preview" data-image-viewer="" href="../../assets/images/muenster_nahversorgung.jpeg"><img alt="Münster Nahversorgung Erreichbarkeit Dashboard" height="1152" loading="eager" src="../../assets/images/muenster_nahversorgung.jpeg" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>Münster Nahversorgung — Erreichbarkeit</h1>
+<div class="proj-detail__tags">
+<span>Erreichbarkeit</span><span>GOAT</span><span>Münster</span><span>Nahversorgung</span><span>Plan4Better</span>
+</div>
+</div>
+</div>
+<div class="case-layout"><nav aria-label="Auf dieser Seite" class="case-nav"><p class="eyebrow">PROJEKTÜBERSICHT</p><a href="#project-visual">Karte / Vorschau ↗</a><a href="#case-section-1">Überblick</a><a href="#case-section-2">Ergebnisse</a><a href="#case-section-3">Analyseworkflow</a><a href="#case-section-4">Dashboard-Funktionen</a><a href="#case-section-5">Tools &amp; Technologien</a><a href="#case-section-6">Ein ehrlicher Hinweis</a><a href="#case-section-7">Ergebnis</a><a href="#case-section-8">Workflow</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Überblick</h2>
+<p>Erreicht man eine <strong>Kita</strong>, einen <strong>Supermarkt</strong> und eine <strong>Apotheke</strong> in 10 Minuten zu Fuß? Das ist der Maßstab der <strong>BBSR Nahversorgungs-Erreichbarkeit</strong> für jedes Wohngebiet in Münster — und genau die Frage, die dieses Dashboard blockgenau beantwortet.</p>
+<p>Vollständig im <strong>GOAT Workflow</strong> (Plan4Better) umgesetzt — ein Isochronen-Tool plus SQL-Editor, ohne einen einzigen lokalen Verarbeitungsschritt in der gesamten Pipeline. Die Einzugsbereiche aller drei Einrichtungstypen werden direkt in GOAT berechnet und mit einer einzigen SQL-Abfrage kombiniert, um jedes Wohngebiet danach zu bewerten, wie viele der drei Einrichtungen zu Fuß erreichbar sind.</p>
+<p>Datengrundlage: <strong>ALKIS-Flächennutzung</strong>, <strong>OpenStreetMap</strong> und <strong>Stadt Münster Open Data</strong>.</p>
+</section><section class="case-section case-results" id="case-section-2"><h2>Ergebnisse</h2>
+<ul>
+<li><strong>63,3 %</strong> der Bevölkerung sind vollständig erschlossen — alle drei Einrichtungen in 10 Minuten erreichbar</li>
+<li><strong>5 %</strong> liegen in einer echten <em>Erschließungslücke</em> — keine der drei Einrichtungen zu Fuß erreichbar</li>
+<li><strong>14.251 Einwohner</strong> ohne fußläufigen Zugang zur Grundversorgung</li>
+</ul>
+</section><section class="case-section" id="case-section-3"><h2>Analyseworkflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Animation pausieren</button><p class="flow-hint">Schritte aufklappen, um die Details zu lesen.</p><ol aria-label="Projektworkflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">BBSR-Standard Nahversorgungs-Erreichbarkeit</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Angewendet wurde die <strong>BBSR</strong>-Methodik zur Erreichbarkeit der Grundversorgung: Ein Wohngebiet gilt nur dann als vollständig erschlossen, wenn Kita, Supermarkt und Apotheke alle innerhalb von 10 Gehminuten erreichbar sind.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Drei Einzugsbereiche, ein Workflow</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Berechnung der Einzugsbereiche für Kita, Supermarkt und Apotheke direkt als Live-Datensätze in GOAT — keine Shapefiles, kein lokaler Import, nichts vorher auf dem Desktop verarbeitet.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Individuelle SQL-Bewertung</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Eine einzige SQL-Abfrage überlagert alle drei Einzugsbereiche und bewertet jedes Wohngebiet mit einem Score von 0 bis 3, je nachdem wie viele Einrichtungstypen erreichbar sind — geschrieben, ausgeführt und gespeichert direkt im Browser.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">Ergebnis als neuer Datensatz gespeichert</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Das bewertete Ergebnis wird direkt als neuer Datensatz im Projekt gespeichert, bereit zum Stylen und für das Dashboard — ohne Export, ohne erneuten Import, ohne Formatkonvertierung.</p></div></details></li></ol></div>
+</section><section class="case-section" id="case-section-4"><h2>Dashboard-Funktionen</h2>
+<ul>
+<li>Vierstufige Erreichbarkeits-Klassifizierung: Erschließungslücke, eingeschränkt erschlossen, gut erschlossen, vollständig erschlossen</li>
+<li>Bevölkerungsebene zur Umrechnung von Flächenklassen in Einwohnerzahlen</li>
+<li>Stadtbezirke zur Orientierung innerhalb Münsters</li>
+<li>Donut-Chart mit dem Bevölkerungsanteil je Erreichbarkeitsklasse</li>
+</ul>
+</section><section class="case-section case-reference" id="case-section-5"><h2>Tools &amp; Technologien</h2>
+<ul>
+<li>GOAT (Plan4Better) Workflows — Einzugsbereiche, individuelles SQL, Dashboard</li>
+<li>ALKIS-Flächennutzung — Gebäude- und Flächennutzungsgrundlage</li>
+<li>OpenStreetMap — Fußwegenetz und Einrichtungsstandorte</li>
+<li>Stadt Münster Open Data — ergänzende kommunale Datensätze</li>
+<li>BBSR Nahversorgungs-Erreichbarkeit — Erreichbarkeitsmethodik</li>
+</ul>
+</section><section class="case-section" id="case-section-6"><h2>Ein ehrlicher Hinweis</h2>
+<p>Die Analyse berücksichtigt <strong>97,6 %</strong> der Bevölkerung Münsters. Die restlichen <strong>2,4 %</strong>, rund <strong>7.030 Einwohner</strong> im <em>Außenbereich</em>, sind nicht enthalten — die ALKIS-basierte Methode löst Erreichbarkeit nur innerhalb bebauter Wohngebiete auf.</p>
+</section><section class="case-section case-results" id="case-section-7"><h2>Ergebnis</h2>
+<p>Ein vollständig interaktives Nahversorgungs-Dashboard für Münster, entstanden ohne einen einzigen lokalen Verarbeitungsschritt — von den Einzugsbereichen über die Bewertung bis zur finalen Karte läuft alles in GOAT. Es gibt Planern einen blockgenauen Überblick darüber, wo die Grundversorgung bereits funktioniert, wo sie nur eingeschränkt gegeben ist, und wo eine echte Erschließungslücke Einwohner ohne fußläufige Kita, Supermarkt oder Apotheke zurücklässt.</p>
+</section><section class="case-section" id="case-section-8"><h2>Workflow</h2>
+<p>Die gesamte Bewertungspipeline liegt in einem einzigen GOAT-Workflow — drei Einzugsbereiche fließen in einen individuellen SQL-Schritt, der direkt als neuer Datensatz gespeichert wird. Keine lokale GIS-Software, keine Export-/Import-Umwege.</p>
+<a aria-label="Bild vergrößern: GOAT Workflow für die Münster Nahversorgungs-Bewertung — Einzugsbereiche, individuelles SQL, Ergebnisdatensatz" class="image-preview" data-image-viewer="" href="../../assets/images/muenster_nahversorhung_02.jpeg"><img alt="GOAT Workflow für die Münster Nahversorgungs-Bewertung — Einzugsbereiche, individuelles SQL, Ergebnisdatensatz" height="1152" loading="lazy" src="../../assets/images/muenster_nahversorhung_02.jpeg" style="width:100%; border-radius:12px; margin-top:1rem;" width="2048"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+<a class="btn btn--primary btn--sm" href="https://goat.plan4better.de/map/public/a557b266-5694-4df4-a2fc-328e35b1fad7" rel="noopener" target="_blank">Live-Dashboard öffnen</a>
+<a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/gopangokul_nahversorgung-erreichbarkeit-gis-activity-7490270348253474816-xsDE?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAChA1BEBi3B8KUIetCSraKbiRtlYlbT4HyM" rel="noopener" target="_blank">LinkedIn-Beitrag</a>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← Alle Projekte</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span><a href="../zertifikate.html">Zertifikate</a></div></footer>
+</main>
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/image-viewer.js"></script></body>
 </html>

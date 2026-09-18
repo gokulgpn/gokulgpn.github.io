@@ -1,117 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>322 Hektar bebaubare Ackerflächen um Schwabach · Gokul Gopan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>322 Hektar bebaubare Ackerflächen um Schwabach · Gokul Gopan</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
 </head>
-<body>
-  <header class="header glass">
-    <div class="container header__inner">
-      <a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
-      <nav class="nav">
-        <a href="../../de/index.html" class="nav-link">Startseite</a>
-        <a href="../../de/projekte/" class="nav-link active">Projekte</a>
-        <a href="../../de/erfahrung.html" class="nav-link">Erfahrung</a>
-        <a href="../../de/zertifikate.html" class="nav-link">Zertifikate</a>
-        <a href="../kontakt.html" class="nav-link">Kontakt</a>
-        <a href="../../projects/schwabach-farmland.html" class="lang-toggle" aria-label="Switch to English">🇬🇧 EN</a>
-        <a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
-      </nav>
-      <button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-    </div>
-    <div id="drawer" class="drawer glass" hidden>
-      <nav class="drawer__nav">
-        <a href="../../de/index.html">Startseite</a>
-        <a href="../../de/projekte/" class="active">Projekte</a>
-        <a href="../../de/erfahrung.html">Erfahrung</a>
-        <a href="../../de/zertifikate.html">Zertifikate</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="../../projects/schwabach-farmland.html">🇬🇧 EN</a>
-        <a href="../../assets/GOKUL-CV-DE.pdf" target="_blank" class="btn btn--primary btn--block">Lebenslauf</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container" style="padding-top:36px; padding-bottom:60px;">
-      <a class="back-link" href="../">← Zurück zu Projekten</a>
-
-      <div class="proj-detail__hero">
-        <img src="../../assets/images/schwabach_landuse.png" alt="322 Hektar bebaubare Ackerflächen um Schwabach" />
-        <div class="proj-detail__hero-overlay"></div>
-        <div class="proj-detail__hero-meta">
-          <h1>322 Hektar bebaubare Ackerflächen um Schwabach</h1>
-          <div class="proj-detail__tags">
-            <span>Flächennutzung</span><span>GOAT</span><span>Bayern</span><span>Wohnungsbau</span><span>Plan4Better</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj-detail__body">
-        <h2>Überblick</h2>
-        <p>Eine multikriterielle Raumanalyse zur Identifikation von Ackerflächen rund um <strong>Schwabach, Bayern</strong> (ca. 40.000 Einwohner), die realistisch für Wohnbebauung in Frage kommen. Die Arbeit befasst sich mit dem Spannungsfeld zwischen Wohnraumnachfrage und Flächenschutz — kartiert werden Flächen, die ÖPNV-erschlossen, an bestehende Wohngebiete angrenzend, geometrisch geeignet und nicht bewaldet sind, ausschließlich auf Basis von Open-Source-Daten.</p>
-        <p>Die Analyse wurde als <a href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" target="_blank" rel="noopener">Plan4Better-Blogbeitrag</a> veröffentlicht und ist für jede deutsche Gemeinde mit ALKIS-Abdeckung und veröffentlichten GTFS-Feeds vollständig reproduzierbar.</p>
-
-        <h2>Wichtige Ergebnisse</h2>
-        <ul>
-          <li><strong>322 Hektar</strong> bahnpriorisierte bebaubare Ackerflächen identifiziert</li>
-          <li><strong>842 Hektar</strong> buspriorisierte bebaubare Ackerflächen (Obergrenze)</li>
-          <li>Alle Datenquellen offen und öffentlich verfügbar — ALKIS, GTFS, OSM</li>
-          <li>Workflow für jede deutsche Gemeinde replizierbar durch Anpassung von AGS-Code und Schwellenwerten</li>
-        </ul>
-
-        <h2>Methodik</h2>
-        <div class="steps">
-          <div class="step">
-            <h3>ÖPNV-Erreichbarkeitsfilter</h3>
-            <p>Anwendung von <strong>800-m-Puffern</strong> um Bahnhaltestellen und <strong>500-m-Puffern</strong> um Bushaltestellen gemäß BBSR- und VDV-Planungsrichtlinien. Bahnnahe Standorte wurden priorisiert, da Schieneninfrastruktur langlebiger ist als Buslinien über Planungshorizonte hinweg.</p>
-          </div>
-          <div class="step">
-            <h3>Wohngebiet-Nachbarschaftsfilter</h3>
-            <p>Nur Flächen innerhalb von <strong>100 m zu bestehenden Wohngebieten</strong> wurden berücksichtigt, um Lückenbebauung statt Siedlungsspreizung an der Stadtperipherie zu fördern.</p>
-          </div>
-          <div class="step">
-            <h3>Geometriefilter für Parzellen</h3>
-            <p>Anwendung einer <strong>Mindestparzellengröße von 0,5 Hektar</strong> und eines <strong>Polsby-Popper-Kompaktheitswertes über 0,3</strong>, um langgestreckte oder unregelmäßig geformte Splitterflächen auszuschließen, die praktisch nicht bebaubar wären.</p>
-          </div>
-          <div class="step">
-            <h3>Waldausschluss</h3>
-            <p>Entfernung aller Waldflächen gemäß <strong>Bundeswaldgesetz</strong>, sodass im Ergebnis ausschließlich echte Ackerflächen verbleiben.</p>
-          </div>
-        </div>
-
-        <h2>Datenquellen</h2>
-        <ul>
-          <li><strong>ALKIS</strong>-Flurstücke — Bayern Geoportal</li>
-          <li><strong>GTFS</strong>-Haltestellen — DELFI Deutschland</li>
-          <li><strong>OpenStreetMap</strong>-Bahnlinien</li>
-        </ul>
-
-        <h2>Tools &amp; Technologien</h2>
-        <ul>
-          <li>GOAT (Plan4Better) — Raumanalyse, multikriterielle Filterung und Kartenvisualisierung</li>
-          <li>ALKIS, GTFS (DELFI), OpenStreetMap — offene Datenquellen</li>
-          <li>Polsby-Popper-Kompaktheitsbewertung für die Parzellengeometrie-Filterung</li>
-        </ul>
-
-        <h2>Einschränkungen</h2>
-        <p>Die Analyse identifiziert ausschließlich räumliche Eignung — Grundstückseigentum und Verkaufsbereitschaft bleiben wesentliche praktische Hürden in der deutschen Raumplanung. Die ÖPNV-Nähe verwendet geradlinige Pufferung statt realer Einzugsbereiche auf Basis von Straßennetzen und Topografie. Buslinienhäufigkeitsdaten wurden nicht einbezogen, weshalb die 842-ha-Zahl eine Obergrenze darstellt.</p>
-
-        <h2>Ergebnis</h2>
-        <p>Geliefert wurde eine transparente, auf offenen Daten basierende Flächeneignungsanalyse, die Planern in Schwabach ein klares räumliches Bild davon vermittelt, wo Ackerflächen realistisch neuen Wohnraum ermöglichen könnten — mit einem reproduzierbaren Workflow, der für andere bayerische und deutsche Gemeinden angepasst werden kann.</p>
-
-        <div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
-          <a class="btn btn--primary btn--sm" href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" target="_blank" rel="noopener">Blogbeitrag lesen</a>
-          <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/plan4better_urbanplanning-housing-gis-activity-7472634118581944321-MlfK" target="_blank" rel="noopener">LinkedIn-Beitrag</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span></div></footer>
-  </main>
-  <script src="../../assets/js/script.js"></script>
-</body>
+<body class="case-study"><a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="header glass">
+<div class="container header__inner">
+<a class="brand" href="../../de/index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+<nav class="nav">
+<a class="nav-link" href="../../de/index.html">Startseite</a>
+<a class="nav-link active" href="../../de/projekte/index.html">Projekte</a>
+<a class="nav-link" href="../../de/erfahrung.html">Erfahrung</a>
+<a class="nav-link" href="../kontakt.html">Kontakt</a>
+<a aria-label="Switch to English" class="lang-toggle" href="../../projects/schwabach-farmland.html">EN</a>
+<a class="btn btn--primary btn--sm" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+<a aria-label="E-Mail an Gokul" class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Kontakt</a><button aria-controls="drawer" aria-expanded="false" aria-label="Menü öffnen" class="menu" type="button"><span></span><span></span><span></span></button>
+</div>
+<div class="drawer glass" hidden="" id="drawer">
+<nav class="drawer__nav">
+<a href="../../de/index.html">Startseite</a>
+<a class="active" href="../../de/projekte/index.html">Projekte</a>
+<a href="../../de/erfahrung.html">Erfahrung</a>
+<a href="../kontakt.html">Kontakt</a>
+<a href="../../projects/schwabach-farmland.html">🇬🇧 EN</a>
+<a class="btn btn--primary btn--block" href="../../assets/GOKUL-CV-DE.pdf" target="_blank">Lebenslauf</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container" style="padding-top:36px; padding-bottom:60px;">
+<a class="back-link" href="../index.html">← Zurück zu Projekten</a>
+<div class="proj-detail__hero" id="project-visual">
+<a aria-label="Bild vergrößern: 322 Hektar bebaubare Ackerflächen um Schwabach" class="image-preview" data-image-viewer="" href="../../assets/images/schwabach_landuse.png"><img alt="322 Hektar bebaubare Ackerflächen um Schwabach" height="1568" loading="eager" src="../../assets/images/schwabach_landuse.png" width="2376"/><span aria-hidden="true" class="image-preview__hint"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6M10 7v6M7 10h6"></path></svg></span></a>
+<div class="proj-detail__hero-overlay"></div>
+<div class="proj-detail__hero-meta">
+<h1>322 Hektar bebaubare Ackerflächen um Schwabach</h1>
+<div class="proj-detail__tags">
+<span>Flächennutzung</span><span>GOAT</span><span>Bayern</span><span>Wohnungsbau</span><span>Plan4Better</span>
+</div>
+</div>
+</div>
+<div class="case-layout"><nav aria-label="Auf dieser Seite" class="case-nav"><p class="eyebrow">PROJEKTÜBERSICHT</p><a href="#project-visual">Karte / Vorschau ↗</a><a href="#case-section-1">Überblick</a><a href="#case-section-2">Wichtige Ergebnisse</a><a href="#case-section-3">Analyseworkflow</a><a href="#case-section-4">Datenquellen</a><a href="#case-section-5">Tools &amp; Technologien</a><a href="#case-section-6">Einschränkungen</a><a href="#case-section-7">Ergebnis</a></nav><div class="proj-detail__body">
+<section class="case-section" id="case-section-1"><h2>Überblick</h2>
+<p>Eine multikriterielle Raumanalyse zur Identifikation von Ackerflächen rund um <strong>Schwabach, Bayern</strong> (ca. 40.000 Einwohner), die realistisch für Wohnbebauung in Frage kommen. Die Arbeit befasst sich mit dem Spannungsfeld zwischen Wohnraumnachfrage und Flächenschutz — kartiert werden Flächen, die ÖPNV-erschlossen, an bestehende Wohngebiete angrenzend, geometrisch geeignet und nicht bewaldet sind, ausschließlich auf Basis von Open-Source-Daten.</p>
+<p>Die Analyse wurde als <a href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" rel="noopener" target="_blank">Plan4Better-Blogbeitrag</a> veröffentlicht und ist für jede deutsche Gemeinde mit ALKIS-Abdeckung und veröffentlichten GTFS-Feeds vollständig reproduzierbar.</p>
+</section><section class="case-section case-results" id="case-section-2"><h2>Wichtige Ergebnisse</h2>
+<ul>
+<li><strong>322 Hektar</strong> bahnpriorisierte bebaubare Ackerflächen identifiziert</li>
+<li><strong>842 Hektar</strong> buspriorisierte bebaubare Ackerflächen (Obergrenze)</li>
+<li>Alle Datenquellen offen und öffentlich verfügbar — ALKIS, GTFS, OSM</li>
+<li>Workflow für jede deutsche Gemeinde replizierbar durch Anpassung von AGS-Code und Schwellenwerten</li>
+</ul>
+</section><section class="case-section" id="case-section-3"><h2>Analyseworkflow</h2>
+<div class="flow-diagram"><button aria-pressed="false" class="motion-toggle" data-motion-toggle="" type="button">Animation pausieren</button><p class="flow-hint">Schritte aufklappen, um die Details zu lesen.</p><ol aria-label="Projektworkflow" class="flow-graph connected-graph"><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path></svg></span><span class="flow-number">01</span><span class="flow-title">ÖPNV-Erreichbarkeitsfilter</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Anwendung von <strong>800-m-Puffern</strong> um Bahnhaltestellen und <strong>500-m-Puffern</strong> um Bushaltestellen gemäß BBSR- und VDV-Planungsrichtlinien. Bahnnahe Standorte wurden priorisiert, da Schieneninfrastruktur langlebiger ist als Buslinien über Planungshorizonte hinweg.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"></path></svg></span><span class="flow-number">02</span><span class="flow-title">Wohngebiet-Nachbarschaftsfilter</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Nur Flächen innerhalb von <strong>100 m zu bestehenden Wohngebieten</strong> wurden berücksichtigt, um Lückenbebauung statt Siedlungsspreizung an der Stadtperipherie zu fördern.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="5" cy="5" r="2"></circle><circle cx="19" cy="7" r="2"></circle><circle cx="9" cy="19" r="2"></circle><path d="m7 5 10 2M6 7l3 10m3 1 6-9"></path></svg></span><span class="flow-number">03</span><span class="flow-title">Geometriefilter für Parzellen</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Anwendung einer <strong>Mindestparzellengröße von 0,5 Hektar</strong> und eines <strong>Polsby-Popper-Kompaktheitswertes über 0,3</strong>, um langgestreckte oder unregelmäßig geformte Splitterflächen auszuschließen, die praktisch nicht bebaubar wären.</p></div></details><span aria-hidden="true" class="graph-connection"><i></i></span></li><li class="flow-node"><details><summary><span class="flow-symbol"><svg aria-hidden="true" class="line-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"></path></svg></span><span class="flow-number">04</span><span class="flow-title">Waldausschluss</span><span class="flow-expand">Details +</span></summary><div class="flow-content"><p>Entfernung aller Waldflächen gemäß <strong>Bundeswaldgesetz</strong>, sodass im Ergebnis ausschließlich echte Ackerflächen verbleiben.</p></div></details></li></ol></div>
+</section><section class="case-section case-reference" id="case-section-4"><h2>Datenquellen</h2>
+<ul>
+<li><strong>ALKIS</strong>-Flurstücke — Bayern Geoportal</li>
+<li><strong>GTFS</strong>-Haltestellen — DELFI Deutschland</li>
+<li><strong>OpenStreetMap</strong>-Bahnlinien</li>
+</ul>
+</section><section class="case-section case-reference" id="case-section-5"><h2>Tools &amp; Technologien</h2>
+<ul>
+<li>GOAT (Plan4Better) — Raumanalyse, multikriterielle Filterung und Kartenvisualisierung</li>
+<li>ALKIS, GTFS (DELFI), OpenStreetMap — offene Datenquellen</li>
+<li>Polsby-Popper-Kompaktheitsbewertung für die Parzellengeometrie-Filterung</li>
+</ul>
+</section><section class="case-section" id="case-section-6"><h2>Einschränkungen</h2>
+<p>Die Analyse identifiziert ausschließlich räumliche Eignung — Grundstückseigentum und Verkaufsbereitschaft bleiben wesentliche praktische Hürden in der deutschen Raumplanung. Die ÖPNV-Nähe verwendet geradlinige Pufferung statt realer Einzugsbereiche auf Basis von Straßennetzen und Topografie. Buslinienhäufigkeitsdaten wurden nicht einbezogen, weshalb die 842-ha-Zahl eine Obergrenze darstellt.</p>
+</section><section class="case-section case-results" id="case-section-7"><h2>Ergebnis</h2>
+<p>Geliefert wurde eine transparente, auf offenen Daten basierende Flächeneignungsanalyse, die Planern in Schwabach ein klares räumliches Bild davon vermittelt, wo Ackerflächen realistisch neuen Wohnraum ermöglichen könnten — mit einem reproduzierbaren Workflow, der für andere bayerische und deutsche Gemeinden angepasst werden kann.</p>
+<div class="proj-detail__links" style="margin-top:2rem; display:flex; gap:8px; flex-wrap:wrap;">
+<a class="btn btn--primary btn--sm" href="https://www.plan4better.de/en/post/322-hectares-of-buildable-farmland-around-schwabach" rel="noopener" target="_blank">Blogbeitrag lesen</a>
+<a class="btn btn--outline btn--sm" href="https://www.linkedin.com/posts/plan4better_urbanplanning-housing-gis-activity-7472634118581944321-MlfK" rel="noopener" target="_blank">LinkedIn-Beitrag</a>
+</div>
+</section><div class="case-end"><a class="btn btn--primary" href="index.html">← Alle Projekte</a></div></div></div>
+</div>
+<footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS-Analyst · München</span><a href="../zertifikate.html">Zertifikate</a></div></footer>
+</main>
+<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/image-viewer.js"></script></body>
 </html>
