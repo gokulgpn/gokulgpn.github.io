@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QGIS plugins developed by Gokul Gopan for basemaps, shared layer styles, print layouts and PNG metadata export.">
+  <title>QGIS plugin development · Gokul Gopan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="case-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header glass"><div class="container header__inner">
+    <a class="brand" href="../index.html"><span class="brand__mark"></span><span class="brand__text">Gokul Gopan</span></a>
+    <nav class="nav"><a href="../index.html">Home</a><a class="active" href="index.html">Projects</a><a href="../experience.html">Experience</a><a href="../contact.html">Contact</a><a class="lang-toggle" href="../de/projekte/qgis-cartography-toolkit.html">DE</a><a class="btn btn--primary btn--sm" href="../assets/GOKUL-CV.pdf" target="_blank">Download CV</a></nav>
+    <a class="mobile-contact" href="mailto:gokulgpn70@gmail.com">Contact</a><button class="menu" type="button" aria-controls="drawer" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div><div class="drawer glass" id="drawer" hidden><nav class="drawer__nav"><a href="../index.html">Home</a><a href="index.html">Projects</a><a href="../experience.html">Experience</a><a href="../contact.html">Contact</a><a href="../de/projekte/qgis-cartography-toolkit.html">Deutsch</a></nav></div></header>
+  <main id="main"><div class="container plugin-page">
+    <a class="back-link" href="index.html">← Back to Projects</a>
+    <section class="plugin-hero"><img class="plugin-hero-logo" src="../assets/logos/qgis.svg" alt="QGIS logo"><div><p class="eyebrow">PLAN4BETTER · PYQGIS</p><h1>From a database layer to a finished map.</h1><p class="plugin-intro">A connected QGIS workflow I developed: add a shared basemap and layout, apply the correct database style to the project layer, then export the finished map with its note embedded as PNG metadata.</p></div></section>
+    <div class="case-layout"><nav class="case-nav" aria-label="On this page"><p class="eyebrow">WORKFLOW</p><a href="#basemap">01 · Add basemap</a><a href="#styling">02 · Apply style</a><a href="#layout">03 · Open layout</a><a href="#export">04 · Export metadata</a></nav>
+      <div class="proj-detail__body">
+        <section class="case-section plugin-section" id="basemap"><p class="eyebrow">01 / LAYOUT TOOLS</p><h2>Add the shared basemap into the QGIS project.</h2><p>The project already contains the database layer <code>amenity_mainburg</code>. I use Layout Tools to add <strong>BasemapDE Vektor – Straßenfokus</strong> from the shared project template. The full QGIS layer panel is visible: the new basemap appears below the database layer.</p>
+          <figure class="plugin-fullshot"><a data-image-viewer href="../assets/images/qgis-plugin-basemap-added.png"><img src="../assets/images/qgis-plugin-basemap-added.png" alt="QGIS Layout Tools with amenity_mainburg in the Layers panel and BasemapDE Vektor – Straßenfokus added" loading="lazy"></a><figcaption>The layout/basemap plugin selects the shared template and adds the vector basemap to the current QGIS project.</figcaption></figure>
+        </section>
+        <section class="case-section plugin-section" id="styling"><p class="eyebrow">02 / P4B STYLING</p><h2>Apply the correct database style and rename the layer.</h2><p>With the layer and basemap in place, P4B Styling reads the active vector layer and lists only compatible styles from PostgreSQL. Here the input is <code>amenity_mainburg</code> and the selected point style is <strong>Apotheke</strong>. Applying it changes the map symbols and sets the display name to <strong>Apotheke</strong>.</p>
+          <div class="plugin-sequence"><figure class="plugin-fullshot"><a data-image-viewer href="../assets/images/qgis-plugin-style-picker.png"><img src="../assets/images/qgis-plugin-style-picker.png" alt="P4B Styling plugin selecting amenity_mainburg and Apotheke style"></a><figcaption>Select the database layer and the matching stored style.</figcaption></figure><figure class="plugin-fullshot"><a data-image-viewer href="../assets/images/qgis-plugin-style-applied.png"><img src="../assets/images/qgis-plugin-style-applied.png" alt="QGIS map after P4B Styling applies the Apotheke style and renames the layer"></a><figcaption>The same layer is renamed <strong>Apotheke</strong> and receives pharmacy symbols. The layer panel and basemap remain visible.</figcaption></figure></div>
+          <details class="plugin-technical"><summary>What the code does</summary><p>It loads QML definitions from PostgreSQL, filters the style list by QGIS geometry type, writes the selected QML to a temporary file, calls <code>loadNamedStyle()</code>, refreshes the canvas and renames the layer. The underlying features and attributes are unchanged.</p></details>
+        </section>
+        <section class="case-section plugin-section" id="layout"><p class="eyebrow">03 / LAYOUT TOOLS</p><h2>Open the imported print layout.</h2><p>The layout selected from the shared template is registered in QGIS and becomes available through Project → Layouts. Opening <strong>Bevölkerungsdichte</strong> brings the template into the Layout Manager, including its map frame, title, legend, logos, scale bar, north arrow and metadata fields.</p>
+          <div class="plugin-sequence"><figure class="plugin-fullshot"><a data-image-viewer href="../assets/images/qgis-plugin-layout-menu.png"><img src="../assets/images/qgis-plugin-layout-menu.png" alt="QGIS Project menu showing imported Bevölkerungsdichte layout"></a><figcaption>The imported layout is available from the QGIS Project menu.</figcaption></figure><figure class="plugin-fullshot"><a data-image-viewer href="../assets/images/qgis-plugin-layout-editor.png"><img src="../assets/images/qgis-plugin-layout-editor.png" alt="QGIS Layout Manager showing the imported Bevölkerung print layout"></a><figcaption>The shared print layout opens with map, legend, scale bar, north arrow and description fields ready for project-specific content.</figcaption></figure></div>
+        </section>
+        <section class="case-section plugin-section" id="export"><p class="eyebrow">04 / EXPORT WITH METADATA</p><h2>Export the map and keep its note attached.</h2><p>The export tool selects one or more QGIS print layouts, renders each one at 300 dpi and saves it as a PNG. It reads the layout item named <code>Description</code>, cleans its line breaks and stores that note in the PNG metadata together with an author field.</p><p>This prepares the output for a later workflow: the map image and its note can be extracted together and given to an LLM as context. The plugin itself does not call an LLM.</p>
+          <div class="plugin-export-visual"><div><strong>QGIS print layout</strong><span>Map + Description item</span></div><b aria-hidden="true">→</b><div><strong>300 dpi PNG</strong><span>QgsLayoutExporter</span></div><b aria-hidden="true">→</b><div><strong>Map note metadata</strong><span>Comment + Author for downstream LLM context</span></div></div>
+        </section>
+        <section class="case-section plugin-section" id="result"><p class="eyebrow">RESULT</p><h2>A repeatable map-production workflow inside QGIS.</h2><p>Layout Tools brings standardised basemaps and layouts into the project. P4B Styling makes the project layer readable and consistently named. The exporter preserves the map note with the final image. My employer reference confirms internal use of the styling and layout plugins and faster, more consistent map production.</p><p class="plugin-stack">Python · PyQGIS · Qt · PostgreSQL · QML · XML · Pillow</p></section>
+      </div>
+    </div>
+  </div></main>
+  <footer class="footer"><div class="container footer__inner"><span>© <span id="year"></span> Gokul Gopan</span><span class="muted">GIS Analyst · Munich</span></div></footer>
+  <script src="../assets/js/script.js"></script><script src="../assets/js/image-viewer.js"></script>
+</body></html>
