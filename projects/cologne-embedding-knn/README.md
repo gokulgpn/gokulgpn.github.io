@@ -4,6 +4,10 @@
 
 Evaluate whether pretrained Google Satellite Embeddings can support accurate four-class land-cover classification of Cologne, Germany with a lightweight K-Nearest Neighbors (KNN) classifier.
 
+## Learning attribution
+
+Methodology was informed by Ujaval Gandhi's [Spatial Thoughts End-to-End Google Earth Engine course](https://courses.spatialthoughts.com/end-to-end-gee.html).
+
 ## Data and features
 
 - Predictor source: `GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL`

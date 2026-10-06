@@ -8,6 +8,10 @@ Build a transparent four-class land-cover classification for Munich, Germany, us
 
 Munich, Germany. The analysis uses `COPERNICUS/S2_SR_HARMONIZED` Level-2A surface reflectance from May–September 2026. The input collection contains 91 Sentinel-2 scenes before compositing. Google Cloud Score+ masks cloud-affected pixels using a 0.60 clear-pixel threshold before a growing-season median composite is created.
 
+## Learning attribution
+
+Methodology was informed by Ujaval Gandhi's [Spatial Thoughts End-to-End Google Earth Engine course](https://courses.spatialthoughts.com/end-to-end-gee.html).
+
 Predictors are B2 (blue), B3 (green), B4 (red), B8 (near infrared), B11 (SWIR1), B12 (SWIR2), NDVI and MNDWI.
 
 ## Workflow
