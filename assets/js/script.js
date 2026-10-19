@@ -72,4 +72,18 @@
     }, { threshold: 0.15 });
     document.querySelectorAll('.connected-graph, .signal-board').forEach(graph => observer.observe(graph));
   }
+
+  // Hint when a workflow's steps overflow and can be scrolled horizontally.
+  document.querySelectorAll('.flow-graph').forEach(graph => {
+    const diagram = graph.closest('.flow-diagram');
+    if (!diagram) return;
+    const updateScrollState = () => {
+      diagram.classList.toggle('has-overflow', graph.scrollWidth > graph.clientWidth + 1);
+      diagram.classList.toggle('at-start', graph.scrollLeft <= 1);
+      diagram.classList.toggle('at-end', graph.scrollLeft + graph.clientWidth >= graph.scrollWidth - 1);
+    };
+    graph.addEventListener('scroll', updateScrollState);
+    window.addEventListener('resize', updateScrollState);
+    updateScrollState();
+  });
 })();

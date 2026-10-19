@@ -1584,7 +1584,13 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .case-study .metric__label { font-size: 12px; color: var(--muted); margin-top: 5px; }
 
 /* Semantic workflow graph: readable without JavaScript, with expandable nodes. */
-.flow-diagram { margin: 20px 0 30px; padding: 24px; background: #edf2e9; border: 1px solid #d9e2d4; border-radius: 14px; }
+.flow-diagram { position: relative; margin: 20px 0 30px; padding: 24px; background: #edf2e9; border: 1px solid #d9e2d4; border-radius: 14px; }
+.flow-diagram::before, .flow-diagram::after { content: ''; position: absolute; top: 24px; bottom: 14px; width: 48px; pointer-events: none; opacity: 0; transition: opacity .2s; z-index: 1; }
+.flow-diagram::before { left: 24px; border-radius: 14px 0 0 14px; background: linear-gradient(270deg, transparent, #edf2e9); }
+.flow-diagram::after { right: 24px; border-radius: 0 14px 14px 0; background: linear-gradient(90deg, transparent, #edf2e9); }
+.flow-diagram.has-overflow:not(.at-start)::before { opacity: 1; }
+.flow-diagram.has-overflow:not(.at-end)::after { opacity: 1; }
+@media (max-width: 620px) { .flow-diagram::before, .flow-diagram::after { display: none; } }
 .proj-detail__body .flow-hint { margin: 0 0 22px; font-size: 12px; color: var(--muted); }
 .flow-graph { display: flex; align-items: flex-start; gap: 28px; overflow-x: auto; list-style: none; padding: 3px 3px 14px !important; margin: 0 !important; scrollbar-width: thin; scrollbar-color: #a6bba6 transparent; }
 .flow-node { position: relative; flex: 1 0 175px; min-width: 0; max-width: 280px; list-style: none; }
